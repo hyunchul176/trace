@@ -22,8 +22,46 @@
   *{box-sizing:border-box;}
   html{scrollbar-gutter:stable;}
   body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;font-weight:450;line-height:1.58;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word;font-variant-numeric:tabular-nums;}
-  .wrap{max-width:1160px;margin:0 auto;padding:30px 22px 90px;}
+  .wrap{max-width:1160px;margin:0 auto;padding:22px 22px 90px;}
   a{color:var(--accent);}
+  /* site header: nav + subnav + hero */
+  .site{border-bottom:1px solid var(--line);}
+  .navbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0 12px;flex-wrap:wrap;}
+  .brand{display:flex;flex-direction:column;gap:2px;text-decoration:none;cursor:pointer;}
+  .brand .bw{font-size:24px;font-weight:800;letter-spacing:-.02em;color:var(--ink);line-height:1;}
+  .brand .bw .dot{color:var(--accent);}
+  .brand .bs{font-size:10px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--slate-soft);}
+  .navright{display:flex;align-items:center;gap:11px;}
+  .navghost{display:inline-flex;align-items:center;gap:6px;background:none;border:0;cursor:pointer;font:inherit;font-size:14px;font-weight:600;color:var(--slate);padding:6px 4px;}
+  .navghost:hover{color:var(--accent);}
+  .navghost .svgi{width:17px;height:17px;}
+  .btn-primary{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;border:0;border-radius:10px;padding:10px 16px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 6px 16px -8px rgba(40,75,201,.55);}
+  .btn-primary:hover{background:var(--accent-ink);}
+  .btn-primary .svgi{width:17px;height:17px;}
+  .ghicon{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:9px;border:1px solid var(--line-strong);color:var(--ink);text-decoration:none;flex:none;}
+  .ghicon:hover{border-color:var(--accent);color:var(--accent);}
+  .ghicon .svgi{width:18px;height:18px;}
+  .subnav{display:flex;align-items:center;gap:2px;flex-wrap:wrap;}
+  .subnav-sep{width:1px;height:16px;background:var(--line-strong);margin:0 10px;}
+  .scopenav,.catnav{display:flex;gap:2px;flex-wrap:wrap;}
+  .navtab{background:none;border:0;cursor:pointer;font:inherit;font-size:14.5px;font-weight:600;color:var(--slate);padding:11px 11px;border-bottom:2.5px solid transparent;line-height:1;}
+  .navtab:hover{color:var(--ink);}
+  .navtab.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:700;}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center;padding:30px 0 34px;}
+  .hero-text h1{font-size:clamp(30px,4.2vw,45px);font-weight:800;line-height:1.2;letter-spacing:-.02em;margin:0 0 16px;color:var(--ink);}
+  .hero-text h1 .acc{color:var(--accent);}
+  .hero-text p{font-size:16px;color:var(--slate);line-height:1.6;margin:0;max-width:46ch;}
+  .hero-art{min-width:0;}
+  .hero-art svg{width:100%;height:auto;max-height:290px;display:block;}
+  @media(max-width:840px){.hero{grid-template-columns:1fr;padding:22px 0 24px;}.hero-art{display:none;}}
+  .cta-banner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:36px 0 6px;padding:22px 26px;border-radius:18px;background:linear-gradient(120deg,#17296B 0%,#243B86 62%,#3A2E86 100%);color:#fff;}
+  .cta-left{display:flex;align-items:center;gap:16px;}
+  .cta-ic{flex:none;width:46px;height:46px;border-radius:13px;background:rgba(255,255,255,.14);display:grid;place-items:center;}
+  .cta-ic .svgi{width:24px;height:24px;color:#fff;}
+  .cta-tt{font-size:17px;font-weight:800;}
+  .cta-sub{font-size:13.5px;color:rgba(255,255,255,.76);margin-top:3px;}
+  .btn-light{background:#fff;color:var(--accent-ink);border:0;border-radius:10px;padding:11px 18px;font:inherit;font-size:14px;font-weight:800;cursor:pointer;white-space:nowrap;}
+  .btn-light:hover{background:#EEF1FB;}
   header.top{border-bottom:2px solid var(--ink);padding-bottom:20px;}
   .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
   .brand{display:flex;flex-direction:column;gap:6px;cursor:pointer;}
@@ -129,14 +167,23 @@
   .countbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:20px 0 6px;}
   .muted{color:var(--slate-soft);font-weight:600;}
   /* refined card */
-  .card{padding:17px 19px 15px;border-radius:14px;}
-  .chead{display:flex;align-items:center;gap:8px;margin-bottom:12px;}
+  .card{padding:16px 18px 14px;border-radius:14px;border-left:4px solid var(--cc,var(--line-strong));}
+  .chead{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px;}
+  .ctile{flex:none;width:44px;height:44px;border-radius:12px;position:relative;overflow:hidden;display:grid;place-items:center;background:color-mix(in srgb,var(--cc) 14%,#fff);color:var(--cc);}
+  .ctile .svgi{width:23px;height:23px;}
+  .ctile img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:7px;}
+  .chbody{flex:1;min-width:0;}
+  .chrow{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;}
+  .ceyebrow{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;line-height:1.4;}
+  .ceyebrow .cn{color:var(--cc);}
+  .ceyebrow .sc{color:var(--slate-soft);font-weight:600;}
+  .chbody h3{font-size:18px;font-weight:800;margin:3px 0 0;line-height:1.28;letter-spacing:-.015em;}
   .cicon{flex:none;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:color-mix(in srgb,var(--cc) 13%,#fff);color:var(--cc);}
   .cicon .svgi{width:17px;height:17px;}
-  .ctag{font-size:13px;font-weight:800;color:var(--cc);letter-spacing:-.01em;}
   .cscope{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--slate-soft);}
-  .chead .pill{margin-left:auto;}
-  .card h3{font-size:19px;font-weight:800;margin:0 0 11px;line-height:1.28;letter-spacing:-.015em;}
+  .chev{color:var(--slate-soft);display:grid;place-items:center;transition:transform .15s,color .15s;}
+  .chev .svgi{width:19px;height:19px;}
+  .card:hover .chev{color:var(--accent);transform:translateX(2px);}
   .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:13px;}
   .chip-s{font-size:11.5px;font-weight:600;color:var(--slate);background:var(--ground);border:1px solid var(--line);border-radius:7px;padding:3px 9px;}
   .chip-s.st{color:var(--cc);background:color-mix(in srgb,var(--cc) 9%,#fff);border-color:color-mix(in srgb,var(--cc) 24%,#fff);font-weight:700;}
@@ -154,7 +201,7 @@
   .logo{flex:none;position:relative;width:26px;height:26px;border-radius:7px;overflow:hidden;background:color-mix(in srgb,var(--cc) 12%,#fff);border:1px solid var(--line);display:grid;place-items:center;}
   .logo .mm{font-size:9px;font-weight:800;color:var(--cc);letter-spacing:-.03em;line-height:1;padding:0 1px;}
   .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:3px;}
-  .cfoot .org{margin:0;font-size:12px;color:var(--slate-soft);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .cfoot .org{margin:0;font-size:12px;color:var(--slate-soft);font-weight:600;flex:1;min-width:0;line-height:1.35;}
   .offbtn{flex:none;font-size:12.5px;font-weight:700;color:var(--accent);text-decoration:none;border:1px solid var(--line-strong);border-radius:8px;padding:6px 12px;white-space:nowrap;transition:border-color .14s,background .14s;display:inline-flex;align-items:center;gap:5px;}
   .offbtn:hover{border-color:var(--accent);background:var(--accent-soft);}
   .detail .whatis{font-size:16px;margin:8px 0 4px;}
@@ -222,43 +269,46 @@
 <body>
 
 <div class="wrap">
-  <header class="top">
-    <div class="toprow">
-      <div class="brand" id="brand">
-        <h1 class="wordmark">TRA<span class="dot">C</span>E</h1>
-        <div class="tagline" id="tagline"></div>
-      </div>
-      <div class="toptools">
-        <a class="tlink gh" href="https://github.com/hyunchul176/trace" target="_blank" rel="noopener">★ GitHub</a>
-        <a class="tlink" href="#about" id="aboutlink"></a>
+  <header class="site">
+    <div class="navbar">
+      <a class="brand" id="brand" href="#">
+        <span class="bw">TRA<span class="dot">C</span>E</span>
+        <span class="bs">For Transportation Researchers</span>
+      </a>
+      <div class="navright">
+        <button class="navghost" id="deadlinesLink" type="button"></button>
+        <button class="btn-primary" id="recoBtn" type="button"></button>
         <div class="lang" role="group" aria-label="Language">
           <button type="button" data-lang="ko">한국어</button>
           <button type="button" data-lang="en">EN</button>
         </div>
+        <a class="ghicon" id="ghLink" href="https://github.com/hyunchul176/trace" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"></a>
       </div>
     </div>
-    <div class="summary" id="summary"></div>
+    <div class="subnav">
+      <div class="scopenav" id="scopeNav"></div>
+      <span class="subnav-sep"></span>
+      <div class="catnav" id="catNav"></div>
+    </div>
+    <section class="hero">
+      <div class="hero-text"><h1 id="heroH"></h1><p id="heroP"></p></div>
+      <div class="hero-art"></div>
+    </section>
   </header>
   <div id="listview">
     <div class="controls">
       <div class="rowseg">
-        <div class="seg scope" id="segScope"></div>
-        <div class="seg cat" id="segCat"></div>
         <div class="searchwrap"><input type="search" id="search" autocomplete="off"></div>
         <select class="monthsel" id="monthsel"></select>
         <select class="sortsel" id="sortsel"></select>
       </div>
-      <div class="toolbar">
-        <button class="recocard" id="recoBtn"></button>
-        <div class="filters">
-          <div class="rowfilters" id="rowFields"></div>
-          <div class="rowfilters" id="rowCareer"></div>
-          <div class="rowfilters" id="rowToggles"></div>
-        </div>
-      </div>
+      <div class="rowfilters" id="rowFields"></div>
+      <div class="rowfilters" id="rowCareer"></div>
+      <div class="rowfilters" id="rowToggles"></div>
     </div>
     <div class="countbar"><div class="countline" id="countline"></div></div>
     <div id="results"></div>
+    <div class="cta-banner" id="ctaBanner"></div>
   </div>
   <div class="detail" id="detail" style="display:none"></div>
   <section class="about" id="about">
@@ -293,6 +343,9 @@ window.__traceInit = function(){
   var UI = {
     ko:{
       tagline:"교통 연구를 위한 <b>어워드 · 챌린지 · 펠로우십 · 데이터셋</b> 큐레이션. 자율주행 포함, 국내·해외 망라.",
+      heroH:'연구의 가치를 인정받을<br><span class="acc">다음 기회를 찾아보세요</span>',
+      heroP:'교통 분야의 어워드·워크샵·챌린지·펠로우십을 한눈에 확인하고<br>연구 성과를 더 넓은 무대로 연결하세요.',
+      navDeadlines:"마감 일정", ctaTitle:"마감 임박 공고를 놓치지 마세요", ctaSub:"관심 분야를 골라 나에게 맞는 기회를 바로 찾아보세요.", ctaBtn:"나에게 맞는 기회 찾기",
       about:"About", sKr:"Korean", sIntl:"International", sTotal:"전체", sOpen:"진행 중", sSoon:"임박",
       scopeIntl:"International", scopeKr:"Korean",
       catAll:"전체", award:"어워드", challenge:"챌린지", fellowship:"펠로우십", dataset:"데이터셋", workshop:"워크샵",
@@ -327,6 +380,9 @@ window.__traceInit = function(){
     },
     en:{
       tagline:"A curated hub of <b>Awards · Challenges · Fellowships · Datasets</b> for transportation research — autonomous driving included, Korean & international.",
+      heroH:'Find your next<br><span class="acc">recognition &amp; opportunity</span>',
+      heroP:'Awards, workshops, challenges and fellowships in transportation — all in one place,<br>connecting your research to a wider stage.',
+      navDeadlines:"Deadlines", ctaTitle:"Don\'t miss upcoming deadlines", ctaSub:"Pick your fields and find opportunities that fit — right now.", ctaBtn:"Find opportunities for me",
       about:"About", sKr:"Korean", sIntl:"International", sTotal:"Total", sOpen:"Open", sSoon:"Soon",
       scopeIntl:"International", scopeKr:"Korean",
       catAll:"All", award:"Awards", challenge:"Challenges", fellowship:"Fellowships", dataset:"Datasets", workshop:"Workshops",
@@ -384,7 +440,7 @@ window.__traceInit = function(){
     workshop:{ko:"라이징스타·커리어 워크샵",en:"Rising-star & career workshops"}
   };
   var SUBTYPE = {
-    "dissertation-award":{ko:"박사학위 논문 시상",en:"Dissertation prize"},"best-paper-award":{ko:"우수논문상",en:"Best paper award"},"best-paper":{ko:"우수논문상",en:"Best paper award"},"journal-best-paper":{ko:"저널 우수논문상",en:"Journal best paper"},"conference-best-paper":{ko:"학회 우수논문상",en:"Conference best paper"},"student-paper-award":{ko:"학생 논문상",en:"Student paper award"},"student-award":{ko:"우수학생상",en:"Outstanding student award"},"early-career-award":{ko:"신진연구자상",en:"Early-career award"},"young-researcher-award":{ko:"젊은연구자상",en:"Young researcher award"},"mid-career-award":{ko:"중견연구자상",en:"Mid-career award"},"lifetime-achievement-award":{ko:"공로상",en:"Lifetime achievement award"},"achievement-award":{ko:"업적상",en:"Achievement award"},"institutional-award":{ko:"기관 시상",en:"Institutional award"},
+    "dissertation-award":{ko:"박사학위 논문상",en:"Dissertation prize"},"best-paper-award":{ko:"우수논문상",en:"Best paper award"},"best-paper":{ko:"우수논문상",en:"Best paper award"},"journal-best-paper":{ko:"저널 우수논문상",en:"Journal best paper"},"conference-best-paper":{ko:"학회 우수논문상",en:"Conference best paper"},"student-paper-award":{ko:"학생 논문상",en:"Student paper award"},"student-award":{ko:"우수학생상",en:"Outstanding student award"},"early-career-award":{ko:"신진연구자상",en:"Early-career award"},"young-researcher-award":{ko:"젊은연구자상",en:"Young researcher award"},"mid-career-award":{ko:"중견연구자상",en:"Mid-career award"},"lifetime-achievement-award":{ko:"공로상",en:"Lifetime achievement award"},"achievement-award":{ko:"업적상",en:"Achievement award"},"institutional-award":{ko:"기관상",en:"Institutional award"},
     "motion-prediction":{ko:"궤적 예측 챌린지",en:"Motion prediction challenge"},"sim-agents":{ko:"시뮬레이션 에이전트 챌린지",en:"Sim-agents challenge"},"planning":{ko:"자율주행 계획 챌린지",en:"Planning challenge"},"closed-loop-driving":{ko:"폐루프 주행 챌린지",en:"Closed-loop driving challenge"},"end-to-end":{ko:"E2E 자율주행 챌린지",en:"End-to-end driving challenge"},"scenario-mining":{ko:"시나리오 마이닝 챌린지",en:"Scenario mining challenge"},"multi-track":{ko:"종합 벤치마크 워크샵",en:"Multi-track benchmark"},"data-challenge":{ko:"데이터 챌린지",en:"Data challenge"},"data-competition":{ko:"데이터 경진대회",en:"Data competition"},"data-competition-platform":{ko:"데이터 대회 플랫폼",en:"Data competition platform"},"hackathon":{ko:"해커톤",en:"Hackathon"},"student-competition":{ko:"학생 경진대회",en:"Student competition"},"student-paper-competition":{ko:"학생 논문 경진대회",en:"Student paper competition"},"autonomous-driving-competition":{ko:"자율주행 경진대회",en:"Autonomous driving competition"},"ai-algorithm-competition":{ko:"AI 알고리즘 대회",en:"AI algorithm competition"},"idea-paper-competition":{ko:"아이디어·논문 공모전",en:"Idea & paper contest"},"public-contest":{ko:"공모전",en:"Public contest"},
     "scholarship":{ko:"장학금",en:"Scholarship"},"student-scholarship":{ko:"학생 장학금",en:"Student scholarship"},"phd-fellowship":{ko:"박사 펠로우십",en:"PhD fellowship"},"postdoc":{ko:"박사후 펠로우십",en:"Postdoc fellowship"},"postdoc-fellowship":{ko:"박사후 펠로우십",en:"Postdoc fellowship"},"grant":{ko:"연구비",en:"Research grant"},"early-career-research-grant":{ko:"신진 연구비",en:"Early-career grant"},"young-researcher-grant":{ko:"신진 연구비",en:"Young researcher grant"},
     "av-perception":{ko:"자율주행 인식 데이터셋",en:"AV perception dataset"},"motion-forecasting":{ko:"궤적 예측 데이터셋",en:"Motion forecasting dataset"},"motion-planning":{ko:"계획 벤치마크",en:"Planning benchmark"},"traffic-forecasting":{ko:"교통 예측 데이터셋",en:"Traffic forecasting dataset"},"naturalistic-trajectory":{ko:"실주행 궤적 데이터셋",en:"Naturalistic trajectory dataset"},
@@ -406,12 +462,40 @@ window.__traceInit = function(){
     gift:'<rect x="3.5" y="9" width="17" height="11" rx="1.5"/><path d="M3.5 13h17M12 9v11M12 9C12 9 10.5 4.4 8 5.2 5.9 5.8 8 9 12 9zM12 9s1.5-4.6 4-3.8C18.1 5.8 16 9 12 9z"/>',
     target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/>',
     chevron:'<path d="m9 6 6 6-6 6"/>',
-    ext:'<path d="M14 4h6v6M20 4l-8 8M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/>'
+    ext:'<path d="M14 4h6v6M20 4l-8 8M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/>',
+    bell:'<path d="M6 9a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"/><path d="M10.4 20a2 2 0 0 0 3.2 0"/>',
+    github:'<path d="M9 19c-4 1.4-4-2-6-2m12 4v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.5 11.5 0 0 0-6 0C6.3 3 5.3 3.3 5.3 3.3a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.7c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/>'
   };
   function catIcon(c){return svg(ICONS[c]||ICONS.award);}
+  var HERO_ART='<svg viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'+
+    '<defs><linearGradient id="tw-blob" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9F0FE"/><stop offset="1" stop-color="#F6F9FE"/></linearGradient>'+
+    '<linearGradient id="tw-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#CFDCFB"/><stop offset="1" stop-color="#93AEF0"/></linearGradient></defs>'+
+    '<ellipse cx="300" cy="162" rx="186" ry="150" fill="url(#tw-blob)"/>'+
+    '<g fill="#D6E1F8"><rect x="58" y="196" width="20" height="62" rx="2"/><rect x="84" y="172" width="16" height="86" rx="2"/><rect x="392" y="184" width="18" height="74" rx="2"/><rect x="416" y="206" width="16" height="52" rx="2"/></g>'+
+    '<g stroke="#93ABEE" stroke-width="2.4" stroke-linecap="round" fill="none"><line x1="38" y1="258" x2="262" y2="258"/><line x1="150" y1="150" x2="150" y2="258"/><path d="M150 156 96 258M150 156 206 258M150 172 120 258M150 172 182 258"/></g>'+
+    '<g><rect x="72" y="240" width="70" height="16" rx="6" fill="#B7C8F4"/><circle cx="88" cy="258" r="3.4" fill="#7E9BEE"/><circle cx="126" cy="258" r="3.4" fill="#7E9BEE"/></g>'+
+    '<g><rect x="300" y="252" width="70" height="12" rx="3" fill="#C4D2F6"/><rect x="322" y="224" width="26" height="30" rx="3" fill="#AEC0F2"/>'+
+    '<polygon points="335,118 372,139 372,183 335,204 298,183 298,139" fill="url(#tw-glass)" stroke="#7E9BEE" stroke-width="2.4"/>'+
+    '<path d="M319 168q-8 -6 -6 -18q10 4 8 16M351 168q8 -6 6 -18q-10 4 -8 16" stroke="#5E7BE0" stroke-width="2" fill="none" stroke-linecap="round"/>'+
+    '<path d="M335 144l4.6 9.3 10.3 1.2-7.6 7 2 10.3-9.3-5.1-9.3 5.1 2-10.3-7.6-7 10.3-1.2z" fill="#fff" stroke="#6E8BEA" stroke-width="1.6" stroke-linejoin="round"/></g>'+
+    '</svg>';
   function orgHost(e){try{var h=new URL(e.url).hostname.replace(/^www\./,"");var p=h.split(".");if(p.length<=2)return h;var last=p[p.length-1],sec=p[p.length-2];if(last.length===2&&/^(co|or|ac|go|ne|com|net|org|edu|gov)$/.test(sec))return p.slice(-3).join(".");return p.slice(-2).join(".");}catch(_){return "";}}
   function orgMono(e){var o=e.org||"";var p=/\(([^)]*)\)/.exec(o);if(p){var la=/[A-Za-z][A-Za-z0-9&.]{1,5}/.exec(p[1]);if(la)return la[0].replace(/\./g,"").toUpperCase().slice(0,4);}var w0=(o.split(/[\s\/]+/)[0]||"");if(/^[A-Z0-9]{2,6}$/.test(w0))return w0.slice(0,4);var ws=o.split(/[\s\/·,]+/).filter(function(x){return x&&x!=="&"&&!/^(of|and|the|for|de)$/i.test(x);});return (ws.slice(0,3).map(function(x){return x[0];}).join("")||"·").toUpperCase().slice(0,3);}
   function logoHTML(e){var mono=esc(orgMono(e));var img=(LOGOS&&orgHost(e))?'<img src="https://www.google.com/s2/favicons?sz=64&domain='+esc(orgHost(e))+'" alt="" loading="lazy" onerror="this.remove()">':'';return '<span class="logo cat-'+e.category+'"><span class="mm">'+mono+'</span>'+img+'</span>';}
+  function tileHTML(e){var host=orgHost(e);var img=(LOGOS&&host)?'<img src="https://www.google.com/s2/favicons?sz=64&domain='+esc(host)+'" alt="" loading="lazy" onerror="this.remove()">':'';return '<span class="ctile cat-'+e.category+'">'+catIcon(e.category)+img+'</span>';}
+  function primaryFieldLabel(e){var g=coarseOf(e)[0];return g?GROUPS[g][state.lang]:"";}
+  function summaryText(e){var f=primaryFieldLabel(e),sub=subtypeLabel(e),c=e.category;
+    if(state.lang==="ko"){
+      if(c==="award")return f?f+" 분야의 "+sub+"입니다.":sub+"입니다.";
+      if(c==="challenge")return f?f+" 관련 "+sub+"입니다.":sub+"입니다.";
+      if(c==="fellowship")return f?f+" 분야 연구자를 위한 "+sub+"입니다.":sub+"입니다.";
+      if(c==="dataset")return sub+"입니다.";
+      if(c==="workshop")return f?f+" 분야 "+sub+"입니다.":sub+"입니다.";
+      return sub+"입니다.";
+    }
+    if(c==="fellowship")return f?sub+" for researchers in "+f+".":sub+".";
+    return f?sub+" in "+f+".":sub+".";
+  }
 
   var state = {lang:"ko",scope:"international",cat:"all",fields:[],careers:[],month:"",q:"",sort:"deadline",openOnly:false,koreaOnly:false,funded:false,membFree:false};
   var today = new Date(); today.setHours(0,0,0,0);
@@ -462,20 +546,16 @@ window.__traceInit = function(){
     var t=UI[state.lang]; var s=computeStatus(e);
     var scopeLab=e.scope==="korean"?t.sKr:t.sIntl;
     var restricted=e.restricted?' <span class="restricted">'+esc(t.restricted)+'</span>':'';
-    var chips='<span class="chip-s st">'+esc(subtypeLabel(e))+'</span>'+coarseOf(e).slice(0,2).map(function(g){return '<span class="chip-s">'+esc(GROUPS[g][state.lang])+'</span>';}).join("");
-    var sum=e.eligibilityNote?'<div class="csum">'+esc(e.eligibilityNote)+'</div>':'';
     var prizeRow=e.prize?'<div class="row"><span class="ri">'+svg(ICONS.gift)+'</span><span class="rl">'+esc(t.prizeK)+'</span><span class="rv">'+esc(e.prize)+'</span></div>':'';
     return '<div class="card cat-'+e.category+(s.key==="past"?" past":"")+'" data-id="'+esc(e.id)+'">'+
-      '<div class="chead"><span class="cicon">'+catIcon(e.category)+'</span><span class="ctag">'+esc(t[e.category])+'</span><span class="cscope">'+esc(scopeLab)+'</span><span class="pill '+s.key+'">'+esc(s.pill)+'</span></div>'+
-      '<h3>'+esc(e.title)+'</h3>'+
-      '<div class="chips">'+chips+'</div>'+
-      sum+
+      '<div class="chead">'+tileHTML(e)+'<div class="chbody"><div class="chrow"><span class="ceyebrow"><span class="cn">'+esc(t[e.category])+'</span> <span class="sc">· '+esc(scopeLab)+'</span></span><span class="pill '+s.key+'">'+esc(s.pill)+'</span></div><h3>'+esc(e.title)+'</h3></div></div>'+
+      '<div class="csum">'+esc(summaryText(e))+'</div>'+
       '<div class="rows">'+
         '<div class="row"><span class="ri">'+svg(ICONS.user)+'</span><span class="rl">'+esc(t.forWho)+'</span><span class="rv tgt">'+esc(careerShort(e))+restricted+'</span></div>'+
         '<div class="row"><span class="ri">'+svg(ICONS.calendar)+'</span><span class="rl">'+esc(t.kDeadline)+'</span><span class="rv">'+esc(shortWhen(e,s))+'</span></div>'+
         prizeRow+
       '</div>'+
-      '<div class="cfoot"><span class="orgwrap">'+logoHTML(e)+'<span class="org">'+esc(e.org)+'</span></span><a class="offbtn" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(t.official)+' '+svg(ICONS.ext)+'</a></div></div>';
+      '<div class="cfoot"><span class="org">'+esc(e.org)+'</span><span class="chev">'+svg(ICONS.chevron)+'</span></div></div>';
   }
 
   function render(){
@@ -614,18 +694,18 @@ window.__traceInit = function(){
   function chip(cls,n,l){return '<div class="schip '+cls+'"><span class="n">'+n+'</span><span class="l">'+esc(l)+'</span></div>';}
   function buildStatic(){
     var t=UI[state.lang];
-    document.getElementById("tagline").innerHTML=t.tagline;
-    document.getElementById("aboutlink").textContent=t.about;
-    document.getElementById("recoBtn").innerHTML='<span class="ricon">'+svg(ICONS.target)+'</span><span class="rtxt"><span class="rt">'+esc(t.recoCardT)+'</span><span class="rs">'+esc(t.recoCardSub)+'</span></span><span class="rchev">'+svg(ICONS.chevron)+'</span>';
+    document.getElementById("heroH").innerHTML=t.heroH;
+    document.getElementById("heroP").innerHTML=t.heroP;
+    var ha=document.querySelector(".hero-art"); if(ha&&!ha.getAttribute("data-done")){ha.innerHTML=HERO_ART;ha.setAttribute("data-done","1");}
+    var gh=document.getElementById("ghLink"); if(gh&&!gh.getAttribute("data-done")){gh.innerHTML=svg(ICONS.github);gh.setAttribute("data-done","1");}
+    document.getElementById("recoBtn").innerHTML=svg(ICONS.target)+'<span>'+esc(t.recoCardT)+'</span>';
+    document.getElementById("deadlinesLink").innerHTML=svg(ICONS.calendar)+'<span>'+esc(t.navDeadlines)+'</span>';
     document.documentElement.lang=state.lang;
     document.getElementById("search").placeholder=t.searchPh;
-    var kr=DATA.filter(function(e){return e.scope==="korean";}).length; var intln=DATA.length-kr;
-    var openN=DATA.filter(function(e){var s=computeStatus(e);return s.key==="open"||s.key==="soon";}).length;
-    var soonN=DATA.filter(function(e){return computeStatus(e).key==="soon";}).length;
-    document.getElementById("summary").innerHTML=chip("",DATA.length,t.sTotal)+chip("intl",intln,t.sIntl)+chip("kr",kr,t.sKr)+chip("open",openN,t.sOpen)+chip("soon",soonN,t.sSoon);
     var sc=[["international",t.scopeIntl],["korean",t.scopeKr]];
-    document.getElementById("segScope").innerHTML=sc.map(function(x){return '<button data-scope="'+x[0]+'" class="'+(state.scope===x[0]?"active":"")+'">'+esc(x[1])+'</button>';}).join("");
-    document.getElementById("segCat").innerHTML=CATS.map(function(c){return '<button data-cat="'+c+'" class="'+(state.cat===c?"active":"")+'">'+esc(t[c])+'</button>';}).join("");
+    document.getElementById("scopeNav").innerHTML=sc.map(function(x){return '<button class="navtab '+(state.scope===x[0]?"active":"")+'" data-scope="'+x[0]+'">'+esc(x[1])+'</button>';}).join("");
+    document.getElementById("catNav").innerHTML=CATS.map(function(c){return '<button class="navtab '+(state.cat===c?"active":"")+'" data-cat="'+c+'">'+esc(t[c])+'</button>';}).join("");
+    var cb=document.getElementById("ctaBanner"); if(cb) cb.innerHTML='<div class="cta-left"><span class="cta-ic">'+svg(ICONS.bell)+'</span><div><div class="cta-tt">'+esc(t.ctaTitle)+'</div><div class="cta-sub">'+esc(t.ctaSub)+'</div></div></div><button class="btn-light" id="ctaReco" type="button">'+esc(t.ctaBtn)+' ›</button>';
     var sorts=[["deadline",t.sortDeadline],["month",t.sortMonth],["name",t.sortName],["verified",t.sortVerified]];
     document.getElementById("sortsel").innerHTML=sorts.map(function(x){return '<option value="'+x[0]+'" '+(state.sort===x[0]?"selected":"")+'>'+esc(x[1])+'</option>';}).join("");
     var mopts='<option value="">'+esc(t.monthAny)+'</option>';
@@ -668,13 +748,14 @@ window.__traceInit = function(){
       return;
     }
     if(el.matches(".lang button")){state.lang=el.getAttribute("data-lang");buildStatic();if(document.getElementById("detail").style.display!=="none"){route();}else{render();}return;}
-    if(el.matches("#recoBtn")||(el.closest&&el.closest("#recoBtn"))){openReco();return;}
+    if(el.matches("#recoBtn")||el.matches("#ctaReco")||(el.closest&&(el.closest("#recoBtn")||el.closest("#ctaReco")))){openReco();return;}
+    if(el.matches("#deadlinesLink")||(el.closest&&el.closest("#deadlinesLink"))){state.sort="month";buildStatic();render();var rr=document.getElementById("results");if(rr&&rr.scrollIntoView)rr.scrollIntoView({behavior:"smooth",block:"start"});return;}
     if(el.matches("#dback")){nav("");return;}
     if(el.matches("#shareBtn")){var b=el;var href=location.href;if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(href).then(function(){b.textContent=UI[state.lang].shared;setTimeout(function(){b.textContent=b.getAttribute("data-def");},1500);});}return;}
     var rc=el.closest && el.closest(".relcard"); if(rc){nav("#/o/"+rc.getAttribute("data-id"));return;}
     if(el.matches("#brand")||(el.closest&&el.closest("#brand"))){nav("");return;}
-    if(el.matches("#segScope button")){state.scope=el.getAttribute("data-scope");buildStatic();render();return;}
-    if(el.matches("#segCat button")){var cc=el.getAttribute("data-cat");state.cat=(state.cat===cc?"all":cc);buildStatic();render();return;}
+    var stab=el.closest&&el.closest("#scopeNav .navtab"); if(stab){state.scope=stab.getAttribute("data-scope");buildStatic();render();return;}
+    var ctab=el.closest&&el.closest("#catNav .navtab"); if(ctab){var cc=ctab.getAttribute("data-cat");state.cat=(state.cat===cc?"all":cc);buildStatic();render();return;}
     if(el.matches(".chip.fld")){var f=el.getAttribute("data-field");var i=state.fields.indexOf(f);if(i>=0)state.fields.splice(i,1);else state.fields.push(f);buildStatic();render();return;}
     if(el.matches(".chip.cr")){var c=el.getAttribute("data-career");var ic=state.careers.indexOf(c);if(ic>=0)state.careers.splice(ic,1);else state.careers.push(c);buildStatic();render();return;}
     if(el.matches(".chip.tog")){var k2=el.getAttribute("data-tog");state[k2]=!state[k2];buildStatic();render();return;}
