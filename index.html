@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TRACE — Transportation Research: Awards, Challenges & Events</title>
+<meta name="description" content="A curated hub of awards, challenges, fellowships and datasets for transportation and mobility research — autonomous driving included, Korean and international.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --ground:#F7F8FB; --panel:#FFFFFF; --ink:#161A24; --slate:#464C5E;
+    --slate-soft:#697083; --line:#E6E8EF; --line-strong:#D2D6E1;
+    --accent:#284BC9; --accent-ink:#1B347F; --accent-soft:#EAEEFB;
+    --kr:#0E7C66; --kr-soft:#E2F3EE; --intl:#4B4291; --intl-soft:#ECEAF9;
+    --open:#12795A; --open-bg:#E4F3EC; --soon:#A45B0C; --soon-bg:#FAECD9;
+    --recur:#3357C4; --recur-bg:#E9EEFC; --roll:#5B6478; --roll-bg:#EEF0F5;
+    --tbd:#6C5FB0; --tbd-bg:#EFEBFA; --past:#9298A8; --past-bg:#F0F1F5;
+    --sans:'Pretendard','Pretendard Variable',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+    --mono:ui-monospace,'SFMono-Regular','Cascadia Mono',Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:16.5px;font-weight:420;line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1160px;margin:0 auto;padding:30px 22px 90px;}
+  a{color:var(--accent);}
+  header.top{border-bottom:2px solid var(--ink);padding-bottom:20px;}
+  .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
+  .brand{display:flex;flex-direction:column;gap:6px;}
+  .wordmark{font-size:clamp(34px,6vw,54px);font-weight:800;letter-spacing:-0.03em;line-height:.9;margin:0;}
+  .wordmark .dot{color:var(--accent);}
+  .tagline{font-size:14px;color:var(--slate);font-weight:500;}
+  .tagline b{color:var(--ink);font-weight:700;}
+  .toptools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end;}
+  .lang{display:inline-flex;border:1px solid var(--line-strong);border-radius:999px;overflow:hidden;font-family:var(--mono);font-size:12px;}
+  .lang button{border:0;background:transparent;cursor:pointer;padding:7px 13px;color:var(--slate);font:inherit;}
+  .lang button.active{background:var(--ink);color:#fff;}
+  .tlink{font-size:13px;font-weight:600;color:var(--slate);text-decoration:none;border:1px solid var(--line-strong);border-radius:999px;padding:7px 13px;display:inline-flex;gap:6px;align-items:center;}
+  .tlink:hover{border-color:var(--accent);color:var(--accent);}
+  .tlink.gh{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .tlink.gh:hover{background:#000;color:#fff;}
+  .summary{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 6px;}
+  .schip{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;display:flex;gap:9px;align-items:baseline;}
+  .schip .n{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;}
+  .schip .l{font-size:12.5px;color:var(--slate);font-weight:500;}
+  .schip.kr .n{color:var(--kr);} .schip.intl .n{color:var(--intl);} .schip.open .n{color:var(--open);} .schip.soon .n{color:var(--soon);}
+  .controls{position:sticky;top:0;z-index:20;background:var(--ground);padding:14px 0 12px;margin-top:8px;border-bottom:1px solid var(--line);}
+  .rowseg{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;}
+  .seg{display:inline-flex;background:var(--panel);border:1px solid var(--line-strong);border-radius:10px;padding:3px;gap:2px;}
+  .seg button{border:0;background:transparent;cursor:pointer;font:inherit;font-size:13.5px;font-weight:600;color:var(--slate);padding:7px 13px;border-radius:7px;white-space:nowrap;}
+  .seg button.active{background:var(--accent);color:#fff;}
+  .seg.scope button.active[data-scope="korean"]{background:var(--kr);}
+  .seg.scope button.active[data-scope="international"]{background:var(--intl);}
+  .searchwrap{position:relative;flex:1;min-width:200px;}
+  .searchwrap input{width:100%;font:inherit;font-size:14.5px;padding:9px 13px;border:1px solid var(--line-strong);border-radius:9px;background:var(--panel);color:var(--ink);}
+  .searchwrap input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent);}
+  select.sortsel{font:inherit;font-size:13.5px;font-weight:600;padding:8px 11px;border:1px solid var(--line-strong);border-radius:9px;background:var(--panel);color:var(--ink);cursor:pointer;}
+  .rowfilters{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px;align-items:center;}
+  .chip{border:1px solid var(--line-strong);background:var(--panel);color:var(--slate);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap;}
+  .chip:hover{border-color:var(--accent);}
+  .chip.on{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink);}
+  .chip.tog.on{background:var(--kr-soft);border-color:var(--kr);color:var(--kr);}
+  .filterlabel{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--slate-soft);font-weight:700;margin-right:2px;}
+  .clearbtn{font-size:12.5px;font-weight:600;color:var(--slate);background:none;border:0;cursor:pointer;text-decoration:underline;}
+  .countline{font-size:13px;color:var(--slate);margin:16px 0 4px;font-weight:500;}
+  .countline b{color:var(--ink);font-weight:700;}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:15px;margin-top:10px;}
+  .monthhdr{grid-column:1/-1;font-size:15px;font-weight:800;color:var(--ink);letter-spacing:-.01em;margin:16px 0 2px;padding-bottom:6px;border-bottom:1px solid var(--line-strong);display:flex;gap:9px;align-items:baseline;}
+  .monthhdr .mc{font-family:var(--mono);font-size:12px;color:var(--slate-soft);font-weight:600;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 17px 15px;display:flex;flex-direction:column;transition:border-color .16s,box-shadow .16s,transform .16s;}
+  .card:hover{border-color:var(--line-strong);box-shadow:0 6px 22px -14px rgba(22,26,36,.34);transform:translateY(-1px);}
+  .card.past{opacity:.72;}
+  .ctop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:9px;}
+  .badges{display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+  .cat{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:var(--accent-soft);color:var(--accent-ink);}
+  .cat[data-cat="challenge"]{background:#fdeede;color:#9a5a10;} .cat[data-cat="fellowship"]{background:#e7f4ee;color:#0f6f52;}
+  .cat[data-cat="dataset"]{background:#eef0f5;color:#4a5162;} .cat[data-cat="workshop"]{background:#f0eafb;color:#5a4aa2;}
+  .scopetag{font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;}
+  .scopetag.korean{background:var(--kr-soft);color:var(--kr);} .scopetag.international{background:var(--intl-soft);color:var(--intl);}
+  .pill{font-size:11.5px;font-weight:700;font-family:var(--mono);padding:4px 9px;border-radius:999px;white-space:nowrap;}
+  .pill.open{color:var(--open);background:var(--open-bg);} .pill.soon{color:var(--soon);background:var(--soon-bg);}
+  .pill.recurring{color:var(--recur);background:var(--recur-bg);} .pill.rolling{color:var(--roll);background:var(--roll-bg);}
+  .pill.tbd{color:var(--tbd);background:var(--tbd-bg);} .pill.past{color:var(--past);background:var(--past-bg);}
+  .org{font-size:11.5px;color:var(--slate-soft);font-weight:700;letter-spacing:.02em;margin-bottom:2px;}
+  .card h3{font-size:17.5px;font-weight:700;margin:0 0 2px;line-height:1.22;letter-spacing:-.01em;}
+  .titleko{font-size:13px;color:var(--slate);font-weight:500;margin-bottom:9px;}
+  .dline{display:flex;gap:9px;align-items:baseline;margin:6px 0 10px;flex-wrap:wrap;}
+  .dl{font-family:var(--mono);font-size:13.5px;font-weight:700;font-variant-numeric:tabular-nums;}
+  .dsub{font-family:var(--mono);font-size:12px;color:var(--slate);}
+  .frow{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;}
+  .ftag{font-size:11px;font-weight:600;color:var(--slate);background:var(--ground);border:1px solid var(--line);border-radius:5px;padding:2px 7px;}
+  .note{font-size:13px;color:var(--slate);line-height:1.45;margin:0 0 10px;}
+  .prize{font-size:12.5px;color:var(--ink);font-weight:600;margin:0 0 10px;}
+  .prize .k{color:var(--slate-soft);font-weight:700;}
+  .flag{font-size:12px;color:var(--soon);background:var(--soon-bg);border-radius:7px;padding:6px 9px;margin:0 0 10px;line-height:1.4;}
+  .restricted{font-size:11.5px;font-weight:700;color:var(--intl);}
+  .cfoot{margin-top:auto;display:flex;gap:14px;align-items:center;padding-top:4px;}
+  .cfoot a{font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;gap:5px;align-items:center;}
+  .cfoot a.src{color:var(--slate-soft);font-weight:600;font-size:12px;}
+  .cfoot a:hover{text-decoration:underline;}
+  .empty{grid-column:1/-1;text-align:center;padding:50px 20px;color:var(--slate);}
+  section.about{margin-top:56px;border-top:2px solid var(--ink);padding-top:26px;}
+  section.about h2{font-size:22px;font-weight:800;margin:0 0 10px;letter-spacing:-.01em;}
+  .about p{max-width:70ch;color:var(--slate);font-size:14.5px;}
+  .contribs{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0 6px;}
+  .person{background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:15px 17px;min-width:250px;}
+  .person .role{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin-bottom:5px;}
+  .person .nm{font-size:16.5px;font-weight:700;}
+  .person .aff{font-size:13px;color:var(--slate);margin-top:2px;}
+  .person .lnks{margin-top:7px;display:flex;gap:12px;}
+  .person a{font-size:13px;font-weight:600;text-decoration:none;}
+  .person a:hover{text-decoration:underline;}
+  .contribnote{font-size:13px;color:var(--slate);background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:12px 15px;margin-top:14px;max-width:75ch;}
+  footer.foot{margin-top:30px;font-size:12.5px;color:var(--slate-soft);line-height:1.6;border-top:1px solid var(--line);padding-top:16px;}
+  @media (max-width:640px){.grid{grid-template-columns:1fr;}.wrap{padding:22px 15px 70px;}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="top">
+    <div class="toprow">
+      <div class="brand">
+        <h1 class="wordmark">TRA<span class="dot">C</span>E</h1>
+        <div class="tagline" id="tagline"></div>
+      </div>
+      <div class="toptools">
+        <a class="tlink gh" href="https://github.com/hyunchul176/trace" target="_blank" rel="noopener" id="ghlink">★ GitHub</a>
+        <a class="tlink" href="#about" id="aboutlink"></a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ko">한국어</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+    <div class="summary" id="summary"></div>
+  </header>
+  <div class="controls">
+    <div class="rowseg">
+      <div class="seg scope" id="segScope"></div>
+      <div class="seg cat" id="segCat"></div>
+      <div class="searchwrap"><input type="search" id="search" autocomplete="off"></div>
+      <select class="sortsel" id="sortsel"></select>
+    </div>
+    <div class="rowfilters" id="rowFields"></div>
+    <div class="rowfilters" id="rowToggles"></div>
+  </div>
+  <div class="countline" id="countline"></div>
+  <div class="grid" id="grid"></div>
+  <section class="about" id="about">
+    <h2 id="aboutTitle"></h2>
+    <p id="aboutBody"></p>
+    <div class="contribs">
+      <div class="person">
+        <div class="role" id="roleAdvisor"></div>
+        <div class="nm">Prof. Inhi Kim</div>
+        <div class="aff" id="affAdvisor"></div>
+        <div class="lnks"><a href="https://inhi.kim/" target="_blank" rel="noopener">inhi.kim →</a></div>
+      </div>
+      <div class="person">
+        <div class="role" id="roleMaker"></div>
+        <div class="nm">Hyunchul Park</div>
+        <div class="aff" id="affMaker"></div>
+        <div class="lnks"><a href="https://hyunchul176.github.io/" target="_blank" rel="noopener">hyunchul176.github.io →</a></div>
+      </div>
+    </div>
+    <div class="contribnote" id="contribNote"></div>
+    <footer class="foot" id="foot"></footer>
+  </section>
+</div>
+
+<script>
+window.__traceInit = function(){
+  var DATA = window.DATA;
+  var MS_DAY = 86400000;
+  var MONTHS = {ko:["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],en:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]};
+  var UI = {
+    ko:{
+      tagline:"교통 연구를 위한 <b>어워드 · 챌린지 · 펠로우십 · 데이터셋</b> 큐레이션. 자율주행 포함, 국내·해외 망라.",
+      about:"About", sKr:"Korean", sIntl:"International", sTotal:"전체", sOpen:"진행 중", sSoon:"임박",
+      scopeIntl:"International", scopeKr:"Korean",
+      catAll:"전체", award:"어워드", challenge:"챌린지", fellowship:"펠로우십", dataset:"데이터셋", workshop:"워크샵",
+      searchPh:"제목·기관·키워드 검색…",
+      sortDeadline:"마감 임박순", sortMonth:"월별 그룹", sortName:"이름순", sortVerified:"최근 확인순",
+      fieldsLabel:"분야", clear:"필터 초기화",
+      togOpen:"진행 중·예정만", togKorea:"한국에서 지원 가능만",
+      results:"건 표시", of:" / 전체 ",
+      pOpen:"D-", pSoon:"임박 D-", pToday:"오늘 마감", pRecur:"연례", pNext:"다음 ~", pRolling:"상시", pTbd:"미정", pPast:"종료",
+      dNext:"다음 예상", dRolling:"상시·연중", dTbd:"공고 예정", dPastEd:"과거 회차 (참고용)", daysLeft:"일 남음",
+      prizeK:"혜택", restricted:"⚠ 해외 소속 필요 가능", official:"공식 페이지", sourceL:"출처",
+      emptyTitle:"조건에 맞는 항목이 없습니다", emptyBody:"필터를 줄이거나 초기화해 보세요.",
+      aboutTitle:"About TRACE",
+      aboutBody:"TRACE는 교통·모빌리티 연구자를 위한 어워드, 공모전·챌린지, 펠로우십·연구비, 데이터셋 정보를 한곳에 모으는 커뮤니티 리소스입니다. 전통 교통공학부터 자율주행까지 아우르며, International과 Korean 기회를 함께 다룹니다. 모든 항목은 공식 페이지 링크와 최종 확인일을 함께 제공합니다.",
+      roleAdvisor:"Advisor · Contributor", affAdvisor:"KAIST 조천식모빌리티대학원 · TUPA (Transport and Urban Planning Arena)",
+      roleMaker:"Creator · Maintainer", affMaker:"Ph.D. Student, TUPA, KAIST",
+      contribNote:"이 사이트는 커뮤니티 기여로 유지됩니다. 누락된 상·챌린지·펠로우십 또는 마감일 갱신 제보를 환영합니다 — GitHub 저장소에서 data.json에 항목을 추가하는 Pull Request를 보내주세요.",
+      foot:"상태: 마감이 남아 있으면 <b>진행 중</b>(14일 이내 임박), 연례 시상은 <b>연례 · 다음 예상 월</b>, 데이터셋 등은 <b>상시</b>, 미공고는 <b>미정</b>, 지난 일회성은 <b>종료</b>. 마감·자격은 공식 페이지에서 재확인하세요. 최종 확인 2026-07-02."
+    },
+    en:{
+      tagline:"A curated hub of <b>Awards · Challenges · Fellowships · Datasets</b> for transportation research — autonomous driving included, Korean & international.",
+      about:"About", sKr:"Korean", sIntl:"International", sTotal:"Total", sOpen:"Open", sSoon:"Soon",
+      scopeIntl:"International", scopeKr:"Korean",
+      catAll:"All", award:"Awards", challenge:"Challenges", fellowship:"Fellowships", dataset:"Datasets", workshop:"Workshops",
+      searchPh:"Search title, org, keyword…",
+      sortDeadline:"By deadline", sortMonth:"Group by month", sortName:"By name", sortVerified:"Recently verified",
+      fieldsLabel:"Fields", clear:"Clear filters",
+      togOpen:"Open / upcoming only", togKorea:"Eligible from Korea only",
+      results:" shown", of:" of ",
+      pOpen:"D-", pSoon:"Soon D-", pToday:"Due today", pRecur:"Annual", pNext:"next ~", pRolling:"Rolling", pTbd:"TBA", pPast:"Closed",
+      dNext:"Next expected", dRolling:"Year-round", dTbd:"To be announced", dPastEd:"Past edition (reference)", daysLeft:"days left",
+      prizeK:"Prize", restricted:"⚠ May require non-Korea affiliation", official:"Official page", sourceL:"source",
+      emptyTitle:"No matching entries", emptyBody:"Try removing or clearing some filters.",
+      aboutTitle:"About TRACE",
+      aboutBody:"TRACE is a community resource gathering awards, competitions & challenges, fellowships & grants, and datasets for transportation and mobility researchers. It spans traditional transportation engineering through autonomous driving, and covers both Korean and international opportunities. Every entry links to an official page with a last-verified date.",
+      roleAdvisor:"Advisor · Contributor", affAdvisor:"KAIST Cho Chun Shik Graduate School of Mobility · TUPA (Transport and Urban Planning Arena)",
+      roleMaker:"Creator · Maintainer", affMaker:"Ph.D. Student, TUPA, KAIST",
+      contribNote:"This site is maintained by the community. Suggestions for missing awards, challenges or fellowships — and deadline updates — are welcome: open a Pull Request adding an entry to data.json in the GitHub repository.",
+      foot:"Status: Open if a deadline is ahead (Soon within 14 days); annual prizes show Annual + next expected month; datasets show Rolling; unannounced show TBA; past one-time shows Closed. Always re-confirm deadlines and eligibility on the official page. Last verified 2026-07-02."
+    }
+  };
+  var GROUPS = {
+    "av":{ko:"자율주행",en:"Autonomous Driving"},
+    "traffic-its":{ko:"교통·ITS",en:"Traffic & ITS"},
+    "planning":{ko:"계획·행태·정책",en:"Planning & Policy"},
+    "transit-freight":{ko:"대중교통·물류",en:"Transit & Freight"},
+    "safety":{ko:"안전·인간요인",en:"Safety & Human Factors"},
+    "data-ai":{ko:"데이터·ML·OR",en:"Data, ML & OR"},
+    "modes":{ko:"기타 수단",en:"Other Modes"}
+  };
+  var GROUP_ORDER = ["av","traffic-its","planning","transit-freight","safety","data-ai","modes"];
+  var F2G = {
+    "autonomous-driving":"av","traffic-flow":"traffic-its","ITS":"traffic-its",
+    "road-safety":"safety","human-factors":"safety",
+    "planning":"planning","travel-behavior":"planning","policy-economics":"planning",
+    "public-transit":"transit-freight","logistics-freight":"transit-freight",
+    "data-science-ML":"data-ai","prediction-forecasting":"data-ai","optimization-OR":"data-ai",
+    "aviation":"modes","rail":"modes","maritime":"modes","electrification":"modes"
+  };
+  function coarseOf(e){ var s={}; (e.fields||[]).forEach(function(f){var g=F2G[f];if(g)s[g]=1;}); return GROUP_ORDER.filter(function(g){return s[g];}); }
+  var CATS = ["award","challenge","fellowship","dataset","workshop"];
+
+  var state = {lang:"ko",scope:"international",cat:"all",fields:[],q:"",sort:"deadline",openOnly:false,koreaOnly:false};
+  var today = new Date(); today.setHours(0,0,0,0);
+
+  function parseMonth(rec){ if(!rec) return null; var m=/^annual-(\d{2})$/.exec(rec); return m?parseInt(m[1],10):null; }
+  function nextMonthDate(mon){ var y=today.getFullYear(); var d=new Date(y,mon-1,1); if(d<new Date(today.getFullYear(),today.getMonth(),1)) d=new Date(y+1,mon-1,1); return d; }
+  function computeStatus(e){
+    var t=UI[state.lang];
+    if(e.deadline){
+      var d=new Date(e.deadline+"T00:00:00");
+      var days=Math.round((d-today)/MS_DAY);
+      if(days>=0){
+        var key=days<=14?"soon":"open";
+        var lab=days===0?t.pToday:(key==="soon"?t.pSoon+days:t.pOpen+days);
+        return {key:key,pill:lab,sort:d.getTime(),sub:days===0?"":days+" "+t.daysLeft,dl:e.deadline};
+      }
+      if(e.recurrence==="one-time") return {key:"past",pill:t.pPast,sort:8e15,sub:t.dPastEd,dl:e.deadline};
+    }
+    var rec=e.recurrence||"tbd";
+    if(rec==="rolling") return {key:"rolling",pill:t.pRolling,sort:7e15,sub:t.dRolling,dl:null};
+    if(rec==="one-time") return {key:"past",pill:t.pPast,sort:8e15,sub:t.dPastEd,dl:e.deadline||null};
+    if(rec==="tbd") return {key:"tbd",pill:t.pTbd,sort:6.5e15,sub:t.dTbd,dl:null};
+    var mon=parseMonth(rec);
+    if(mon){ var nd=nextMonthDate(mon); return {key:"recurring",pill:t.pRecur+" · "+t.pNext+MONTHS[state.lang][mon-1],sort:nd.getTime()+1e11,sub:t.dNext+" ~"+MONTHS[state.lang][mon-1]+" "+nd.getFullYear(),dl:null}; }
+    var recurLab = rec==="biennial"?(state.lang==="ko"?"격년":"Biennial"):rec==="triennial"?(state.lang==="ko"?"3년마다":"Triennial"):t.pRecur;
+    return {key:"recurring",pill:recurLab,sort:6e15,sub:"",dl:null};
+  }
+  function matches(e){
+    if(e.scope!==state.scope) return false;
+    if(state.cat!=="all" && e.category!==state.cat) return false;
+    if(state.fields.length){ var cg=coarseOf(e); if(!state.fields.some(function(g){return cg.indexOf(g)>=0;})) return false; }
+    if(state.koreaOnly && e.restricted) return false;
+    if(state.openOnly){ var s=computeStatus(e); if(s.key==="past"||s.key==="tbd") return false; }
+    if(state.q){ var q=state.q.toLowerCase(); var hay=[e.title,e.titleKo||"",e.org,(e.fields||[]).join(" "),e.eligibilityNote||""].join(" ").toLowerCase(); if(hay.indexOf(q)<0) return false; }
+    return true;
+  }
+  function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+  function cardHTML(e){
+    var t=UI[state.lang]; var s=computeStatus(e);
+    var fields=coarseOf(e).map(function(g){return '<span class="ftag">'+esc(GROUPS[g][state.lang])+'</span>';}).join("");
+    var titleko=(state.lang==="ko"&&e.titleKo)?'<div class="titleko">'+esc(e.titleKo)+'</div>':'';
+    var dsub=s.sub?'<span class="dsub">'+esc(s.sub)+'</span>':'';
+    var restricted=(e.restricted&&!state.koreaOnly)?' · <span class="restricted">'+esc(t.restricted)+'</span>':'';
+    var prize=e.prize?'<div class="prize"><span class="k">'+esc(t.prizeK)+':</span> '+esc(e.prize)+'</div>':'';
+    var flag=e.flag?'<div class="flag">'+esc(e.flag)+'</div>':'';
+    var src=(e.source&&e.source!==e.url)?'<a class="src" href="'+esc(e.source)+'" target="_blank" rel="noopener">'+esc(t.sourceL)+' ↗</a>':'';
+    return '<div class="card '+(s.key==="past"?"past":"")+'">'+
+      '<div class="ctop"><div class="badges">'+
+        '<span class="cat" data-cat="'+e.category+'">'+esc(t[e.category])+'</span>'+
+        '<span class="scopetag '+e.scope+'">'+(e.scope==="korean"?esc(t.sKr):esc(t.sIntl))+'</span>'+
+      '</div><span class="pill '+s.key+'">'+esc(s.pill)+'</span></div>'+
+      '<div class="org">'+esc(e.org)+'</div><h3>'+esc(e.title)+'</h3>'+titleko+
+      '<div class="dline"><span class="dl">'+(s.dl?esc(s.dl):(s.key==="rolling"?esc(t.pRolling):s.key==="tbd"?esc(t.pTbd):esc(t.pRecur)))+'</span>'+dsub+restricted+'</div>'+
+      '<div class="frow">'+fields+'</div>'+
+      (e.eligibilityNote?'<div class="note">'+esc(e.eligibilityNote)+'</div>':'')+prize+flag+
+      '<div class="cfoot"><a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(t.official)+' →</a>'+src+'</div></div>';
+  }
+  function render(){
+    var t=UI[state.lang];
+    var list=DATA.filter(matches);
+    if(state.sort==="name") list.sort(function(a,b){return a.title.localeCompare(b.title);});
+    else if(state.sort==="verified") list.sort(function(a,b){return (b.verified||"").localeCompare(a.verified||"");});
+    else list.sort(function(a,b){return computeStatus(a).sort-computeStatus(b).sort;});
+    var grid=document.getElementById("grid");
+    if(!list.length){ grid.innerHTML='<div class="empty"><div style="font-size:19px;font-weight:700;margin-bottom:6px">'+esc(t.emptyTitle)+'</div>'+esc(t.emptyBody)+'</div>'; }
+    else if(state.sort==="month"){
+      var groups={},order=[];
+      list.forEach(function(e){var s=computeStatus(e);var key;
+        if(s.key==="rolling"||s.key==="tbd"||s.key==="past"){key="~";}
+        else{var d=new Date(s.sort);key=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2);}
+        if(!groups[key]){groups[key]=[];order.push(key);} groups[key].push(e);});
+      order.sort(function(a,b){if(a==="~")return 1;if(b==="~")return -1;return a<b?-1:1;});
+      var html="";
+      order.forEach(function(key){var lab;
+        if(key==="~"){lab=state.lang==="ko"?"상시 · 미정 · 과거":"Rolling · TBA · Past";}
+        else{var p=key.split("-");lab=MONTHS[state.lang][parseInt(p[1],10)-1]+" "+p[0];}
+        html+='<div class="monthhdr">'+esc(lab)+'<span class="mc">'+groups[key].length+'</span></div>'+groups[key].map(cardHTML).join("");});
+      grid.innerHTML=html;
+    } else { grid.innerHTML=list.map(cardHTML).join(""); }
+    document.getElementById("countline").innerHTML='<b>'+list.length+'</b>'+esc(t.results)+esc(t.of)+'<b>'+DATA.length+'</b>';
+  }
+  function chip(cls,n,l){return '<div class="schip '+cls+'"><span class="n">'+n+'</span><span class="l">'+esc(l)+'</span></div>';}
+  function buildStatic(){
+    var t=UI[state.lang];
+    document.getElementById("tagline").innerHTML=t.tagline;
+    document.getElementById("aboutlink").textContent=t.about;
+    document.documentElement.lang=state.lang;
+    document.getElementById("search").placeholder=t.searchPh;
+    var kr=DATA.filter(function(e){return e.scope==="korean";}).length;
+    var intln=DATA.length-kr;
+    var openN=DATA.filter(function(e){var s=computeStatus(e);return s.key==="open"||s.key==="soon";}).length;
+    var soonN=DATA.filter(function(e){return computeStatus(e).key==="soon";}).length;
+    document.getElementById("summary").innerHTML=chip("",DATA.length,t.sTotal)+chip("intl",intln,t.sIntl)+chip("kr",kr,t.sKr)+chip("open",openN,t.sOpen)+chip("soon",soonN,t.sSoon);
+    var sc=[["international",t.scopeIntl],["korean",t.scopeKr]];
+    document.getElementById("segScope").innerHTML=sc.map(function(x){return '<button data-scope="'+x[0]+'" class="'+(state.scope===x[0]?"active":"")+'">'+esc(x[1])+'</button>';}).join("");
+    var cats=[["all",t.catAll]].concat(CATS.map(function(c){return [c,t[c]];}));
+    document.getElementById("segCat").innerHTML=cats.map(function(x){return '<button data-cat="'+x[0]+'" class="'+(state.cat===x[0]?"active":"")+'">'+esc(x[1])+'</button>';}).join("");
+    var sorts=[["deadline",t.sortDeadline],["month",t.sortMonth],["name",t.sortName],["verified",t.sortVerified]];
+    document.getElementById("sortsel").innerHTML=sorts.map(function(x){return '<option value="'+x[0]+'" '+(state.sort===x[0]?"selected":"")+'>'+esc(x[1])+'</option>';}).join("");
+    var present={}; DATA.forEach(function(e){coarseOf(e).forEach(function(g){present[g]=1;});});
+    var gkeys=GROUP_ORDER.filter(function(g){return present[g];});
+    var fh='<span class="filterlabel">'+esc(t.fieldsLabel)+'</span>'+gkeys.map(function(g){return '<button class="chip fld '+(state.fields.indexOf(g)>=0?"on":"")+'" data-field="'+g+'">'+esc(GROUPS[g][state.lang])+'</button>';}).join("");
+    if(state.fields.length||state.q||state.openOnly||state.koreaOnly||state.cat!=="all") fh+='<button class="clearbtn" id="clearBtn">'+esc(t.clear)+'</button>';
+    document.getElementById("rowFields").innerHTML=fh;
+    document.getElementById("rowToggles").innerHTML=
+      '<button class="chip tog '+(state.openOnly?"on":"")+'" data-tog="openOnly">'+esc(t.togOpen)+'</button>'+
+      '<button class="chip tog '+(state.koreaOnly?"on":"")+'" data-tog="koreaOnly">'+esc(t.togKorea)+'</button>';
+    document.getElementById("aboutTitle").textContent=t.aboutTitle;
+    document.getElementById("aboutBody").textContent=t.aboutBody;
+    document.getElementById("roleAdvisor").textContent=t.roleAdvisor;
+    document.getElementById("affAdvisor").textContent=t.affAdvisor;
+    document.getElementById("roleMaker").textContent=t.roleMaker;
+    document.getElementById("affMaker").textContent=t.affMaker;
+    document.getElementById("contribNote").textContent=t.contribNote;
+    document.getElementById("foot").innerHTML=t.foot;
+    document.querySelectorAll(".lang button").forEach(function(b){b.classList.toggle("active",b.getAttribute("data-lang")===state.lang);});
+  }
+  document.addEventListener("click",function(ev){
+    var el=ev.target;
+    if(el.matches(".lang button")){state.lang=el.getAttribute("data-lang");buildStatic();render();}
+    else if(el.matches("#segScope button")){state.scope=el.getAttribute("data-scope");buildStatic();render();}
+    else if(el.matches("#segCat button")){state.cat=el.getAttribute("data-cat");buildStatic();render();}
+    else if(el.matches(".chip.fld")){var f=el.getAttribute("data-field");var i=state.fields.indexOf(f);if(i>=0)state.fields.splice(i,1);else state.fields.push(f);buildStatic();render();}
+    else if(el.matches(".chip.tog")){var k=el.getAttribute("data-tog");state[k]=!state[k];buildStatic();render();}
+    else if(el.matches("#clearBtn")){state.fields=[];state.q="";state.openOnly=false;state.koreaOnly=false;state.cat="all";document.getElementById("search").value="";buildStatic();render();}
+  });
+  document.getElementById("search").addEventListener("input",function(e){state.q=e.target.value;render();});
+  document.getElementById("sortsel").addEventListener("change",function(e){state.sort=e.target.value;render();});
+  buildStatic(); render();
+};
+</script>
+<script>fetch('./data.json').then(function(r){return r.json();}).then(function(d){window.DATA=d;window.__traceInit();}).catch(function(err){document.getElementById('grid').innerHTML='<div class=\'empty\'>Failed to load data.json: '+err+'</div>';});</script>
+</body>
+</html>

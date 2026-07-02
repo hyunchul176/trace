@@ -1,0 +1,3110 @@
+[
+  {
+    "id": "trb-fred-burggraf-award",
+    "title": "Fred Burggraf Award",
+    "org": "Transportation Research Board (TRB)",
+    "category": "award",
+    "subtype": "early-career-award",
+    "fields": [
+      "planning",
+      "traffic-flow",
+      "policy-economics"
+    ],
+    "career": [
+      "phd",
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "eligibilityNote": "Author must be 35 or younger; outstanding paper published in the Transportation Research Record. No separate application—Annual Meeting/TRR papers are considered automatically.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-01",
+    "prize": "Presented at the TRB Annual Meeting (est. 1966)",
+    "url": "https://www.trb.org/AboutTRB/BurggrafAward.aspx",
+    "source": "https://www.trb.org/AboutTRB/BurggrafAward.aspx",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "trb-pyke-johnson-award",
+    "title": "Pyke Johnson Award",
+    "org": "Transportation Research Board (TRB)",
+    "category": "award",
+    "subtype": "best-paper-award",
+    "fields": [
+      "planning",
+      "policy-economics"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "eligibilityNote": "Outstanding paper in planning and environment published in the TRR; open to any author. No separate nomination.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-01",
+    "prize": "Presented at the TRB Annual Meeting",
+    "url": "https://www.trb.org/AboutTRB/JohnsonAward.aspx",
+    "source": "https://www.trb.org/AboutTRB/JohnsonAward.aspx",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "trb-d-grant-mickle-award",
+    "title": "D. Grant Mickle Award",
+    "org": "Transportation Research Board (TRB)",
+    "category": "award",
+    "subtype": "best-paper-award",
+    "fields": [
+      "traffic-flow",
+      "road-safety"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "eligibilityNote": "Outstanding paper in operation, safety, and maintenance of transportation facilities published in the TRR (est. 1976); open to any author.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-01",
+    "prize": "Presented at the TRB Annual Meeting",
+    "url": "https://www.trb.org/AboutTRB/MickleAward.aspx",
+    "source": "https://www.trb.org/AboutTRB/PaperAwards.aspx",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "trb-charley-wootan-award",
+    "title": "Charley V. Wootan Award",
+    "org": "Transportation Research Board (TRB)",
+    "category": "award",
+    "subtype": "best-paper-award",
+    "fields": [
+      "policy-economics"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "eligibilityNote": "Outstanding paper in policy and organization published in the TRR (est. 2004); open to any author.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-01",
+    "prize": "Presented at the TRB Annual Meeting",
+    "url": "https://www.trb.org/AboutTRB/WootanAward.aspx",
+    "source": "https://www.trb.org/AboutTRB/WootanAward.aspx",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "trb-kb-woods-award",
+    "title": "K. B. Woods Award",
+    "org": "Transportation Research Board (TRB)",
+    "category": "award",
+    "subtype": "best-paper-award",
+    "fields": [
+      "planning"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "eligibilityNote": "Outstanding paper in design and construction of transportation facilities published in the TRR (est. 1971); open to any author.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-01",
+    "prize": "Presented at the TRB Annual Meeting",
+    "url": "https://www.trb.org/AboutTRB/WoodsAward.aspx",
+    "source": "https://www.trb.org/AboutTRB/WoodsAward.aspx",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "informs-tsl-dissertation-prize",
+    "title": "TSL Dissertation Prize",
+    "org": "INFORMS Transportation Science & Logistics Society",
+    "category": "award",
+    "subtype": "dissertation-award",
+    "fields": [
+      "logistics-freight",
+      "optimization-OR",
+      "traffic-flow"
+    ],
+    "career": [
+      "phd"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "PhD dissertation in transportation science and logistics completed/submitted between June 1 of the prior year and May 31 of the award year. Oldest such prize (since 1970).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "$500 honorarium + plaque (Honorable Mention also recognized)",
+    "url": "https://www.informs.org/Recognizing-Excellence/Community-Prizes/Transportation-Science-and-Logistics-Section/TSL-Dissertation-Prize",
+    "source": "https://connect.informs.org/tsl/awards",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "informs-tsl-best-paper-award",
+    "title": "TSL Best Paper Award",
+    "org": "INFORMS Transportation Science & Logistics Society",
+    "category": "award",
+    "subtype": "best-paper-award",
+    "fields": [
+      "logistics-freight",
+      "optimization-OR",
+      "traffic-flow"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Outstanding paper in a refereed journal presenting innovative OR/quantitative approaches to transportation/logistics; open to any author.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "$800 honorarium",
+    "url": "https://www.informs.org/Recognizing-Excellence/Community-Prizes/Transportation-Science-and-Logistics-Section/Best-Paper-Award",
+    "source": "https://connect.informs.org/tsl/awards",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "informs-tsl-best-student-paper-award",
+    "title": "TSL Best Student Paper Award",
+    "org": "INFORMS Transportation Science & Logistics Society",
+    "category": "award",
+    "subtype": "student-paper-award",
+    "fields": [
+      "logistics-freight",
+      "optimization-OR",
+      "traffic-flow"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Paper primarily authored by a student, broadly of interest to the TSL community.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "$500 honorarium + fast-track review at Transportation Science",
+    "url": "https://connect.informs.org/tsl/awards",
+    "source": "https://connect.informs.org/tsl/awards",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "informs-tsl-stella-dafermos-award",
+    "title": "Stella Dafermos Award (Mid-Career)",
+    "org": "INFORMS Transportation Science & Logistics Society",
+    "category": "award",
+    "subtype": "mid-career-award",
+    "fields": [
+      "logistics-freight",
+      "optimization-OR",
+      "traffic-flow"
+    ],
+    "career": [
+      "faculty"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Mid-career scholar 10-20 years past PhD (as of Dec 31 of nomination year) with fundamental contributions to TSL. At most one recipient/year (since 2022).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "$750 honorarium",
+    "url": "https://connect.informs.org/tsl/awards",
+    "source": "https://connect.informs.org/tsl/awards",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "informs-tsl-robert-herman-lifetime-award",
+    "title": "Robert Herman Lifetime Achievement Award",
+    "org": "INFORMS Transportation Science & Logistics Society",
+    "category": "award",
+    "subtype": "lifetime-achievement-award",
+    "fields": [
+      "logistics-freight",
+      "optimization-OR",
+      "traffic-flow"
+    ],
+    "career": [
+      "faculty"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Fundamental, sustained career-long contributions to TSL through writing, teaching, service, and mentoring.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "$750 honorarium + plaque",
+    "url": "https://connect.informs.org/tsl/awards",
+    "source": "https://connect.informs.org/tsl/awards",
+    "verified": "2026-07-02",
+    "flag": "Frequency reported inconsistently—some sources say at most every second year.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "asce-frank-m-masters-award",
+    "title": "Frank M. Masters Transportation Engineering Award",
+    "org": "ASCE Transportation & Development Institute (T&DI)",
+    "category": "award",
+    "subtype": "achievement-award",
+    "fields": [
+      "planning"
+    ],
+    "career": [
+      "open",
+      "faculty"
+    ],
+    "regions": [
+      "north-america",
+      "global"
+    ],
+    "eligibilityNote": "ASCE member in good standing; best example of innovative/noteworthy planning, design, or construction of transportation facilities. Cannot be won more than once.",
+    "membershipRequired": "ASCE (member in good standing)",
+    "deadline": "2026-11-01",
+    "recurrence": "annual-11",
+    "prize": "Medal + honorarium",
+    "url": "https://www.asce.org/career-growth/awards-and-honors/frank-m-masters-transportation-engineering-award",
+    "source": "https://www.asce.org/career-growth/awards-and-honors/frank-m-masters-transportation-engineering-award",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "asce-wilbur-s-smith-award",
+    "title": "Wilbur S. Smith Award",
+    "org": "ASCE Transportation & Development Institute (T&DI)",
+    "category": "award",
+    "subtype": "achievement-award",
+    "fields": [
+      "planning",
+      "traffic-flow"
+    ],
+    "career": [
+      "open",
+      "faculty"
+    ],
+    "regions": [
+      "north-america",
+      "global"
+    ],
+    "eligibilityNote": "ASCE Fellow or Member in good standing; special contributions enhancing the civil engineer's role in highway engineering.",
+    "membershipRequired": "ASCE (member/Fellow in good standing)",
+    "deadline": "2026-11-01",
+    "recurrence": "annual-11",
+    "prize": "Plaque + honorarium",
+    "url": "https://www.asce.org/career-growth/awards-and-honors/wilbur-s-smith-award",
+    "source": "https://www.asce.org/career-growth/awards-and-honors/wilbur-s-smith-award",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "asce-james-laurie-prize",
+    "title": "James Laurie Prize",
+    "org": "ASCE Transportation & Development Institute (T&DI)",
+    "category": "award",
+    "subtype": "achievement-award",
+    "fields": [
+      "planning",
+      "traffic-flow"
+    ],
+    "career": [
+      "open",
+      "faculty"
+    ],
+    "regions": [
+      "north-america",
+      "global"
+    ],
+    "eligibilityNote": "ASCE member in good standing; definitive contribution to the advancement of transportation engineering. Not awarded more than once to an individual.",
+    "membershipRequired": "ASCE (member in good standing)",
+    "deadline": "2026-11-01",
+    "recurrence": "annual-11",
+    "prize": "Plaque (lead recipient); certificate to co-recipients",
+    "url": "https://www.asce.org/career-growth/awards-and-honors/james-laurie-prize",
+    "source": "https://www.asce.org/career-growth/awards-and-honors/james-laurie-prize",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ieee-itss-best-dissertation-award",
+    "title": "IEEE ITSS Best PhD Dissertation Award",
+    "org": "IEEE Intelligent Transportation Systems Society (ITSS)",
+    "category": "award",
+    "subtype": "dissertation-award",
+    "fields": [
+      "ITS",
+      "traffic-flow",
+      "autonomous-driving",
+      "data-science-ML"
+    ],
+    "career": [
+      "phd",
+      "postdoc"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Best PhD dissertation in any ITS area; received PhD no more than 18 months before submission. No membership/nationality restriction. Presented at IEEE ITSC.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "1st $2,000, 2nd $1,000, 3rd $500",
+    "url": "https://ieee-itss.org/awards/best-dissertation/",
+    "source": "https://ieee-itss.org/awards/best-dissertation/",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ieee-itss-young-researcher-award",
+    "title": "IEEE ITSS Young Researcher/Engineer Award",
+    "org": "IEEE Intelligent Transportation Systems Society (ITSS)",
+    "category": "award",
+    "subtype": "young-researcher-award",
+    "fields": [
+      "ITS",
+      "traffic-flow"
+    ],
+    "career": [
+      "phd",
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Early-career researcher/engineer recognized for contributions and leadership in ITS research/applications.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Presented at IEEE ITSC",
+    "url": "https://ieee-itss.org/awards/",
+    "source": "https://ieee-itss.org/awards/",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ieee-itss-outstanding-application-award",
+    "title": "IEEE ITSS Outstanding Application Award",
+    "org": "IEEE Intelligent Transportation Systems Society (ITSS)",
+    "category": "award",
+    "subtype": "achievement-award",
+    "fields": [
+      "ITS",
+      "traffic-flow"
+    ],
+    "career": [
+      "open",
+      "faculty"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Significant contributions to applying ITS technologies in practical fields; open.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Presented at IEEE ITSC",
+    "url": "https://ieee-itss.org/awards/",
+    "source": "https://ieee-itss.org/awards/",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ieee-itss-lifetime-achievement-award",
+    "title": "IEEE ITSS Lifetime Achievement Award",
+    "org": "IEEE Intelligent Transportation Systems Society (ITSS)",
+    "category": "award",
+    "subtype": "lifetime-achievement-award",
+    "fields": [
+      "ITS",
+      "traffic-flow"
+    ],
+    "career": [
+      "faculty"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Exemplary contributions to Intelligent Transportation Systems over a career.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Presented at IEEE ITSC",
+    "url": "https://ieee-itss.org/awards/",
+    "source": "https://ieee-itss.org/awards/",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "wctrs-jules-dupuit-prize",
+    "title": "Jules Dupuit Prize",
+    "org": "World Conference on Transport Research Society (WCTRS)",
+    "category": "award",
+    "subtype": "lifetime-achievement-award",
+    "fields": [
+      "planning",
+      "policy-economics",
+      "travel-behavior"
+    ],
+    "career": [
+      "faculty"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Person whose scientific and professional career has been of distinguished benefit to the transportation community.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "triennial",
+    "prize": "Presented at the World Conference on Transport Research",
+    "url": "https://wctrs-society.com/world-conference/prizes/",
+    "source": "https://wctrs-society.com/world-conference/prizes/",
+    "verified": "2026-07-02",
+    "flag": "Triennial WCTR conference (next: 2026).",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "wctrs-young-researcher-paper-prize",
+    "title": "WCTRS Prize for Best Paper by Young Authors",
+    "org": "World Conference on Transport Research Society (WCTRS)",
+    "category": "award",
+    "subtype": "best-paper-award",
+    "fields": [
+      "planning",
+      "policy-economics",
+      "travel-behavior"
+    ],
+    "career": [
+      "student",
+      "phd",
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Best paper presented at the WCTR conference by a researcher under 35.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "triennial",
+    "prize": "Presented at the World Conference on Transport Research",
+    "url": "https://wctrs-society.com/world-conference/prizes/",
+    "source": "https://wctrs-society.com/world-conference/prizes/",
+    "verified": "2026-07-02",
+    "flag": "Tied to the triennial WCTR conference; requires conference paper.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "iatbr-eric-pas-dissertation-prize",
+    "title": "Eric Pas Dissertation Prize",
+    "org": "International Association for Travel Behaviour Research (IATBR)",
+    "category": "award",
+    "subtype": "dissertation-award",
+    "fields": [
+      "travel-behavior",
+      "planning"
+    ],
+    "career": [
+      "phd"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Best PhD dissertation in travel behaviour research, approved by a university within the competition year. Membership not required; only the supervisor may nominate.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "$500 + engraved plaque (Honorable Mention: certificate)",
+    "url": "https://iatbr.weebly.com/about-the-prize.html",
+    "source": "https://iatbr.weebly.com/about-the-prize.html",
+    "verified": "2026-07-02",
+    "flag": "Call for nominations distributed each January for the prior year's dissertations.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "easts-best-paper-yasoshima-prize",
+    "title": "EASTS Best Paper Award / Yasoshima Prize",
+    "org": "Eastern Asia Society for Transportation Studies (EASTS)",
+    "category": "award",
+    "subtype": "best-paper-award",
+    "fields": [
+      "planning",
+      "policy-economics",
+      "public-transit"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "asia"
+    ],
+    "eligibilityNote": "Best papers submitted to the biennial EASTS Conference; the Yasoshima Prize is the top honor among Best Paper recipients. Asia-focused society.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "biennial",
+    "prize": "Award certificate at the EASTS Conference",
+    "url": "https://easts.info/awarding/best-paper-award/",
+    "source": "https://easts.info/awarding/best-paper-award/",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ite-theodore-matson-memorial-award",
+    "title": "Theodore M. Matson Memorial Award",
+    "org": "Institute of Transportation Engineers (ITE)",
+    "category": "award",
+    "subtype": "achievement-award",
+    "fields": [
+      "traffic-flow",
+      "road-safety",
+      "ITS"
+    ],
+    "career": [
+      "open",
+      "faculty"
+    ],
+    "regions": [
+      "north-america",
+      "global"
+    ],
+    "eligibilityNote": "Outstanding contribution to traffic engineering through practical application, research, or advancement of the profession (est. 1957).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Presented at the ITE Annual Meeting",
+    "url": "https://www.ite.org/professional-and-career-development/awards/theodore-m-matson-memorial-award/",
+    "source": "https://www.ite.org/professional-and-career-development/awards/theodore-m-matson-memorial-award/",
+    "verified": "2026-07-02",
+    "flag": "Nomination period opens January 1; deadlines vary by award.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ite-young-member-of-the-year-award",
+    "title": "ITE Young Member of the Year Award",
+    "org": "Institute of Transportation Engineers (ITE)",
+    "category": "award",
+    "subtype": "early-career-award",
+    "fields": [
+      "traffic-flow",
+      "planning"
+    ],
+    "career": [
+      "early-faculty",
+      "open"
+    ],
+    "regions": [
+      "north-america",
+      "global"
+    ],
+    "eligibilityNote": "Active ITE member aged 35 or younger on January 1 of the award year; from ITE's Young Leaders to Follow. Open to practitioners and academics.",
+    "membershipRequired": "ITE (active member)",
+    "deadline": null,
+    "recurrence": "annual-03",
+    "prize": "Recognition as ITE Young Member of the Year",
+    "url": "https://www.ite.org/professional-and-career-development/awards/young-member-of-the-year-award1/",
+    "source": "https://www.ite.org/professional-and-career-development/awards/young-member-of-the-year-award1/",
+    "verified": "2026-07-02",
+    "flag": "Young Leaders to Follow nominations close ~March 15 each year.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "kst-academic-award-paper",
+    "title": "KST Academic Award (Paper Category)",
+    "titleKo": "대한교통학회 학술상 (논문부문)",
+    "org": "Korean Society of Transportation (대한교통학회, KST)",
+    "category": "award",
+    "subtype": "journal-best-paper",
+    "fields": [
+      "planning",
+      "traffic-flow",
+      "travel-behavior",
+      "public-transit",
+      "policy-economics"
+    ],
+    "career": [
+      "phd",
+      "postdoc",
+      "early-faculty",
+      "open"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Best-paper award for articles published in the KST journal (대한교통학회지). Announced at the annual general meeting in February. Since 1992. Separate 저술부문 also exists.",
+    "membershipRequired": "대한교통학회 회원(저자)",
+    "deadline": null,
+    "recurrence": "annual-02",
+    "prize": "학술상 (상장/표창)",
+    "url": "https://kst.or.kr/bbs/page.php?hid=prize",
+    "source": "https://kst.or.kr/bbs/page.php?hid=prize",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "ieee-iv-best-paper-award",
+    "title": "IEEE Intelligent Vehicles Symposium (IV) Best Paper Award",
+    "org": "IEEE Intelligent Transportation Systems Society (ITSS)",
+    "category": "award",
+    "subtype": "best-paper",
+    "fields": [
+      "autonomous-driving",
+      "ITS"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "All papers accepted and presented at IEEE IV are eligible; a Best Student Paper Award requires a student first author enrolled at submission.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-06",
+    "prize": null,
+    "url": "https://ieee-iv.org/2026/contributions/paper-award-nomination/",
+    "source": "https://ieee-iv.org/2026/contributions/paper-award-nomination/",
+    "verified": "2026-07-02",
+    "flag": "Committee-selected. Held annually ~June (2026: Jun 22-25, Detroit).",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ieee-itsc-best-paper-award",
+    "title": "IEEE ITSC Best Paper Award",
+    "org": "IEEE Intelligent Transportation Systems Society (ITSS)",
+    "category": "award",
+    "subtype": "best-paper",
+    "fields": [
+      "ITS",
+      "traffic-flow",
+      "autonomous-driving"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "All papers accepted and presented at ITSC are eligible; a Best Student Paper Award requires a student first author.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-09",
+    "prize": null,
+    "url": "https://ieee-itsc.org/2026/contributions/paper-award-nomination/",
+    "source": "https://ieee-itsc.org/2026/contributions/paper-award-nomination/",
+    "verified": "2026-07-02",
+    "flag": "Committee-selected. Held annually Sept/Oct (2026: Sept 15-18, Naples).",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ieee-tits-saridis-best-paper-award",
+    "title": "George N. Saridis Best Transactions Paper Award (IEEE T-ITS)",
+    "org": "IEEE Intelligent Transportation Systems Society (ITSS)",
+    "category": "award",
+    "subtype": "best-paper",
+    "fields": [
+      "ITS",
+      "traffic-flow",
+      "autonomous-driving"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Best regular and survey papers published in IEEE Transactions on ITS in preceding years; committee-selected (no self-nomination).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": null,
+    "url": "https://ieee-itss.org/pub/t-its/t-its-paper-award-history/",
+    "source": "https://ieee-itss.org/pub/t-its/t-its-paper-award-history/",
+    "verified": "2026-07-02",
+    "flag": "Society-level journal paper award.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "icra-best-conference-paper-award",
+    "title": "IEEE ICRA Best Conference Paper Award",
+    "org": "IEEE Robotics and Automation Society (RAS)",
+    "category": "award",
+    "subtype": "best-paper",
+    "fields": [
+      "autonomous-driving",
+      "planning"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Best paper accepted and presented at ICRA. Parallel Best Student Paper and category awards exist. Authors must submit/present; IEEE membership not required.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-05",
+    "prize": "Certificate and recognition at the ICRA awards ceremony",
+    "url": "https://www.ieee-ras.org/awards-recognition/conference-awards/",
+    "source": "https://2025.ieee-icra.org/program/awards-and-finalists/",
+    "verified": "2026-07-02",
+    "flag": "Selected across ALL robotics topics, not AV-specific.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "iros-best-paper-award",
+    "title": "IEEE/RSJ IROS Best Conference Paper Award",
+    "org": "IEEE/RSJ IROS",
+    "category": "award",
+    "subtype": "best-paper",
+    "fields": [
+      "autonomous-driving",
+      "planning"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Best overall paper presented at IROS, with parallel Best Student Paper and sponsored category awards. Authors must submit/present.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-10",
+    "prize": "Certificate and recognition at the IROS awards ceremony",
+    "url": "https://2023.ieee-iros.org/iros-2023-award-winners/",
+    "source": "https://2023.ieee-iros.org/iros-2023-award-winners/",
+    "verified": "2026-07-02",
+    "flag": "Selected across ALL robotics topics, not AV-specific. Landing page varies by year.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "waymo-open-motion-prediction-challenge",
+    "title": "Waymo Open Dataset Motion Prediction Challenge",
+    "org": "Waymo (Alphabet)",
+    "category": "challenge",
+    "subtype": "motion-prediction",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "WOMD (100k+ segments, HD maps + agent tracks). Predict multi-modal 8s trajectories for up to 8 agents; scored by minADE, minFDE, miss rate, mAP. Public leaderboard.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": null,
+    "url": "https://waymo.com/open/challenges/",
+    "source": "https://waymo.com/open/challenges/",
+    "verified": "2026-07-02",
+    "flag": "Run annually 2020-2025, ~May close, winners at CVPR WAD. No formal 2026 Challenge, but leaderboards active.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "waymo-open-sim-agents-challenge",
+    "title": "Waymo Open Sim Agents Challenge (WOSAC)",
+    "org": "Waymo (Alphabet)",
+    "category": "challenge",
+    "subtype": "sim-agents",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "WOMD. Generate realistic closed-loop behavior for ALL agents in a scene (optionally via Waymax); scored by a composite realism metric plus map/collision and kinematic metrics. Public leaderboard.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": null,
+    "url": "https://waymo.com/open/challenges/",
+    "source": "https://waymo.com/blog/2025/03/2025-waymo-open-dataset-challenges/",
+    "verified": "2026-07-02",
+    "flag": "Since 2023, winners at CVPR WAD; 2025 edition closed May 22, 2025. Leaderboard remains open.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "nuscenes-prediction-challenge",
+    "title": "nuScenes Prediction Challenge",
+    "org": "Motional (nuTonomy)",
+    "category": "challenge",
+    "subtype": "motion-prediction",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "nuScenes (1000 urban scenes, full sensor suite + HD maps). Predict future vehicle trajectories; scored by minADE_k, minFDE_1, miss-rate. Submit via EvalAI (591); server open year-round. Also detection/tracking/segmentation/panoptic challenges.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": null,
+    "url": "https://www.nuscenes.org/prediction",
+    "source": "https://eval.ai/web/challenges/challenge-page/591/leaderboard/1659",
+    "verified": "2026-07-02",
+    "flag": "Rolling year-round server; winner rounds historically at CVPR/ICRA AD workshops.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "nuplan-planning-challenge",
+    "title": "nuPlan Planning Challenge",
+    "org": "Motional (nuTonomy)",
+    "category": "challenge",
+    "subtype": "planning",
+    "fields": [
+      "autonomous-driving",
+      "planning",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "nuPlan (1500+ hours; largest planning benchmark). Motion planning in open-loop, non-reactive and reactive closed-loop modes; submit Docker to EvalAI (1856) against a hidden test set; 10Hz, 15s rollouts.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "tbd",
+    "prize": "2023 edition: $5,000-10,000 across modes + Innovation Award + possible internships",
+    "url": "https://www.nuplan.org/nuplan",
+    "source": "https://nuplan-devkit.readthedocs.io/en/latest/competition.html",
+    "verified": "2026-07-02",
+    "flag": "Flagship competition at CVPR 2023 (Jan 30-May 26, 2023). Dataset/devkit/leaderboard remain; no confirmed later formal edition.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "argoverse-1-motion-forecasting-challenge",
+    "title": "Argoverse 1 Motion Forecasting Competition",
+    "org": "Argoverse (Argo AI; CVPR WAD)",
+    "category": "challenge",
+    "subtype": "motion-prediction",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Argoverse 1 (~324k scenarios, 5s obs). Forecast focal-agent future given past tracks and HD-map lane graph; scored by minADE, minFDE, miss rate. EvalAI (454).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": null,
+    "url": "https://eval.ai/web/challenges/challenge-page/454/overview",
+    "source": "https://www.argoverse.org/tasks.html",
+    "verified": "2026-07-02",
+    "flag": "First run 2019, annually at CVPR WAD. Largely superseded by Argoverse 2.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "argoverse-2-motion-forecasting-challenge",
+    "title": "Argoverse 2 Motion Forecasting Competition",
+    "org": "Argoverse (Argo AI; CVPR WAD)",
+    "category": "challenge",
+    "subtype": "motion-prediction",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Argoverse 2 (250k scenarios, six cities; 5s obs + 6s prediction, HD vector maps). Multi-agent forecasting; scored by minADE, minFDE, miss rate (2.0 m). EvalAI (1719).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": null,
+    "url": "https://eval.ai/web/challenges/challenge-page/1719/leaderboard/4098",
+    "source": "https://www.argoverse.org/tasks.html",
+    "verified": "2026-07-02",
+    "flag": "Annually at CVPR WAD; leaderboard open year-round.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "argoverse-2-scenario-mining-challenge",
+    "title": "Argoverse 2 Scenario Mining Challenge",
+    "org": "Argoverse (CVPR Workshop on Autonomous Driving)",
+    "category": "challenge",
+    "subtype": "scenario-mining",
+    "fields": [
+      "autonomous-driving",
+      "road-safety",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Argoverse 2 Sensor Dataset with 10,000 natural-language queries. Retrieve safety-critical scenarios from queries, then localize/detect/track; scored by HOTA-Temporal. Two tracks. EvalAI (2662).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-06",
+    "prize": "$2,500 for 1st in each of two tracks + $2,500 Innovation Award (2026)",
+    "url": "https://www.argoverse.org/ScenarioMining.html",
+    "source": "https://www.argoverse.org/ScenarioMining.html",
+    "verified": "2026-07-02",
+    "flag": "2026 edition at CVPR WAD; opened Feb 18, 2026, closed ~May 31, 2026. Recurs annually.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "carla-autonomous-driving-challenge",
+    "title": "CARLA Autonomous Driving Challenge",
+    "org": "CARLA Simulator (Embodied AI Foundation)",
+    "category": "challenge",
+    "subtype": "closed-loop-driving",
+    "fields": [
+      "autonomous-driving",
+      "planning",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "CARLA AD Leaderboard (v2.1 since Mar 2025). Drive routes under varied weather/dense traffic without privileged info; scored by Driving Score (route completion x infraction penalty). Tracks: SENSORS, MAP.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "tbd",
+    "prize": null,
+    "url": "https://leaderboard.carla.org/challenge/",
+    "source": "https://leaderboard.carla.org/",
+    "verified": "2026-07-02",
+    "flag": "Formal competition did NOT run in 2025; no 2026 edition announced, but leaderboard v2.1 usable. Historically tied to NeurIPS/CVPR.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "opendrivelab-autonomous-grand-challenge-e2e",
+    "title": "Autonomous Grand Challenge - NAVSIM v2 End-to-End Driving",
+    "org": "OpenDriveLab (Shanghai AI Laboratory)",
+    "category": "challenge",
+    "subtype": "end-to-end",
+    "fields": [
+      "autonomous-driving",
+      "planning",
+      "prediction-forecasting"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "NAVSIM v2 (built on nuPlan/OpenScene). Benchmark end-to-end driving policies in data-driven non-reactive sim with reactive background traffic + synthetic novel views; scored by EPDMS. Must keep results public + submit a technical report.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-06",
+    "prize": "AGC 2025 pool $100,000. NAVSIM v2 E2E: $3,000 Champion at CVPR 2025; $5,000 Innovation + $3,000 Champion at ICCV 2025",
+    "url": "https://huggingface.co/spaces/AGC2025/e2e-driving-2025",
+    "source": "https://opendrivelab.com/challenge2025/",
+    "verified": "2026-07-02",
+    "flag": "2025 edition. CVPR phase closed May 10, 2025; ICCV phase Sept 27, 2025. Recurs annually (~CVPR June + ICCV/ECCV phase); 2026 not confirmed.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "cvpr-wad-challenges",
+    "title": "CVPR Workshop on Autonomous Driving (WAD) - Benchmark Challenges",
+    "org": "CVPR Workshop on Autonomous Driving",
+    "category": "challenge",
+    "subtype": "multi-track",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "planning",
+      "road-safety",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Annual umbrella workshop hosting multiple AV benchmark tracks. WAD 2026 (Jun 3, 2026, Denver): Argoverse 2 Scenario Mining, Argoverse 2 LiDAR Scene Flow, KITScenes Long-Tail E2E. Prior years also Waymo, Argoverse, nuPlan, Nexar crash-prediction.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-06",
+    "prize": "Varies by track (some carry sponsor cash awards)",
+    "url": "https://cvpr2026.wad.vision/",
+    "source": "https://cvpr2026.wad.vision/",
+    "verified": "2026-07-02",
+    "flag": "Tracks change yearly. Use as the annual hub; individual tracks listed separately.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "traffic4cast-neurips",
+    "title": "Traffic4cast (NeurIPS Traffic Prediction Competition)",
+    "org": "IARAI / HERE Technologies",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Predict short-term city traffic; 2019-2021 as GPS-probe raster 'movies', 2022 congestion class + travel time on the road graph from sparse loop-counter data. >10^12 GPS points across up to 10 cities. Results at NeurIPS.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "tbd",
+    "prize": "Per-edition cash (2022: EUR 5k/3k/2k per track; 2019: up to $10,000 + IARAI fellowships)",
+    "url": "https://github.com/iarai/NeurIPS2022-traffic4cast",
+    "source": "https://github.com/iarai/NeurIPS2022-traffic4cast",
+    "verified": "2026-07-02",
+    "flag": "Past series (NeurIPS 2019-2022); no edition since 2022, IARAI site offline. Reference/benchmark only.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "amazon-last-mile-routing-challenge",
+    "title": "Amazon Last-Mile Routing Research Challenge",
+    "org": "Amazon + MIT Center for Transportation & Logistics",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "logistics-freight",
+      "optimization-OR",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Build data-driven models sequencing last-mile delivery stops to match experienced-driver route quality. 6,000+ historical Amazon routes.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "one-time",
+    "prize": "$175,000 total (1st $100,000)",
+    "url": "https://routingchallenge.mit.edu/",
+    "source": "https://routingchallenge.mit.edu/about-the-challenge/",
+    "verified": "2026-07-02",
+    "flag": "Past edition (2021). Reference/benchmark only; dataset still used.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ite-collegiate-traffic-bowl",
+    "title": "ITE Collegiate Traffic Bowl",
+    "org": "Institute of Transportation Engineers (ITE)",
+    "category": "challenge",
+    "subtype": "student-competition",
+    "fields": [
+      "planning",
+      "traffic-flow",
+      "ITS"
+    ],
+    "career": [
+      "student"
+    ],
+    "regions": [
+      "north-america"
+    ],
+    "eligibilityNote": "Jeopardy-style quiz on transportation planning, engineering and ITE history; section/district tournaments feed a Grand Championship. Teams of up to 3 student ITE members (US & Canada).",
+    "membershipRequired": "ITE student chapter membership",
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Voigt/Davis Cup trophy (no cash)",
+    "url": "https://www.ite.org/events-meetings/traffic-bowl/",
+    "source": "https://www.ite.org/events-meetings/traffic-bowl/",
+    "verified": "2026-07-02",
+    "flag": "Annual since 2009; 2026 Grand Championship Jul 20, 2026, Detroit.",
+    "scope": "international",
+    "restricted": true
+  },
+  {
+    "id": "zindi-barbados-traffic-analysis",
+    "title": "Barbados Traffic Analysis Challenge",
+    "org": "GovTech Barbados & Keleya Labs (Zindi)",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "student",
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Predict roundabout congestion ~5 min ahead from four traffic-camera video streams (Macro-F1 70% + Accuracy 30%). Open globally (teams up to 4); special prize for top Barbadian participant.",
+    "membershipRequired": null,
+    "deadline": "2026-01-25",
+    "recurrence": "one-time",
+    "prize": "$11,000 (1st $4,500; plus best-factors and top-Barbadian prizes)",
+    "url": "https://zindi.africa/competitions/barbados-traffic-analysis-challenge",
+    "source": "https://zindi.africa/competitions/barbados-traffic-analysis-challenge",
+    "verified": "2026-07-02",
+    "flag": "Closed Jan 25, 2026. Reference only.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "kaggle-nyc-taxi-trip-duration",
+    "title": "NYC Taxi Trip Duration (Kaggle)",
+    "org": "Kaggle (NYC TLC data)",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "prediction-forecasting",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Predict total taxi trip duration in NYC (RMSLE). 2016 NYC TLC yellow-cab records. Playground competition, free Kaggle account.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "one-time",
+    "prize": "Playground — 4 x $3,000 for top supporting datasets",
+    "url": "https://www.kaggle.com/c/nyc-taxi-trip-duration",
+    "source": "https://www.kaggle.com/c/nyc-taxi-trip-duration",
+    "verified": "2026-07-02",
+    "flag": "Past Playground competition (2017). Reference/benchmark only.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "kaggle-bike-sharing-demand",
+    "title": "Bike Sharing Demand (Kaggle)",
+    "org": "Kaggle (Capital Bikeshare)",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "travel-behavior",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Forecast hourly bike-rental demand from usage + weather (RMSLE). Capital Bikeshare (DC) 2011-2012 with weather/calendar features.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "one-time",
+    "prize": "Knowledge competition — no cash",
+    "url": "https://www.kaggle.com/c/bike-sharing-demand",
+    "source": "https://www.kaggle.com/c/bike-sharing-demand",
+    "verified": "2026-07-02",
+    "flag": "Past Knowledge/Playground competition (2014-15). Reference/benchmark only.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "kdd-cup-2017-tollgate-traffic",
+    "title": "KDD Cup 2017 - Highway Tollgates Traffic Flow Prediction",
+    "org": "ACM SIGKDD / Alibaba Cloud Tianchi",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Two sub-tasks: predict average travel time and predict traffic volume through highway tollgates. China highway tollgate records (Alibaba Tianchi). 3,547 teams.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "one-time",
+    "prize": "Cash + KDD 2017 Cup workshop presentation",
+    "url": "https://www.kdd.org/kdd2017/News/view/announcing-kdd-cup-2017-highway-tollgates-traffic-flow-prediction",
+    "source": "https://www.kdd.org/kdd2017/News/view/announcing-kdd-cup-2017-highway-tollgates-traffic-flow-prediction",
+    "verified": "2026-07-02",
+    "flag": "KDD Cup recurs annually but themes change; traffic-flow edition was 2017 only. Reference/benchmark only.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "kdd-cup-2019-transportation-recommendation",
+    "title": "KDD Cup 2019 - Context-Aware Multi-Modal Transportation Recommendation",
+    "org": "ACM SIGKDD / Baidu",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "travel-behavior",
+      "public-transit",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Recommend/rank multimodal travel plans (walk, bike, drive, transit) given preferences and spatiotemporal context. Real Baidu Maps trip/query data. Ran Apr-Jul 2019.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "one-time",
+    "prize": "$45,000 for the transportation track (>$100k across all tracks)",
+    "url": "https://www.kdd.org/kdd2019/kdd-cup",
+    "source": "https://www.kdd.org/kdd2019/kdd-cup",
+    "verified": "2026-07-02",
+    "flag": "KDD Cup recurs annually but themes change; transportation edition was 2019 only. Reference/benchmark only.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "transfor-transportation-forecasting-competition",
+    "title": "TRANSFOR - Transportation Forecasting Competition",
+    "org": "TRB Committee AED50 with IEEE ITSS",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "prediction-forecasting",
+      "traffic-flow",
+      "road-safety",
+      "data-science-ML"
+    ],
+    "career": [
+      "student",
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Task varies by edition: 2019 short-term traffic-speed forecasting on DiDi GAIA data (Xi'an/Chengdu); 2022 detecting/forecasting VRU crossings from LiDAR (Chattanooga). Present at the TRB Annual Meeting.",
+    "membershipRequired": "TRB Annual Meeting registration",
+    "deadline": null,
+    "recurrence": "tbd",
+    "prize": "2022: $3,000 / $2,000 / $1,000",
+    "url": "https://sites.google.com/view/trbaed50/activities/competitions",
+    "source": "https://sites.google.com/view/trbaed50/activities/competitions",
+    "verified": "2026-07-02",
+    "flag": "Held irregularly (2013, 2019, 2022) at TRB Annual Meeting. Next edition unannounced.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "trb-transit-data-challenge",
+    "title": "TRB Transit Data Challenge",
+    "org": "TRB Committee AP010 (Transit Management & Performance)",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "public-transit",
+      "planning",
+      "data-science-ML"
+    ],
+    "career": [
+      "student",
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Showcase innovative use of transit data (dashboards, performance measures, novel data collection) to improve public-transit decisions. Open to professionals, academics, students.",
+    "membershipRequired": "TRB Annual Meeting registration",
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Recognition + present at the TRB Annual Meeting (no cash)",
+    "url": "https://www.trb-transit-mgmt-perf.org/annual-meetings/transit-data-challenge",
+    "source": "https://www.trb-transit-mgmt-perf.org/annual-meetings/transit-data-challenge",
+    "verified": "2026-07-02",
+    "flag": "Annual at the January TRB Annual Meeting; organizers note the 2026 edition is on hold.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "grab-ai-for-sea-traffic-management",
+    "title": "Grab AI for S.E.A. Challenge - Traffic Management",
+    "org": "Grab",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "student",
+      "open"
+    ],
+    "regions": [
+      "asia"
+    ],
+    "eligibilityNote": "Forecast ride-booking demand T+1 to T+5 (15-min steps) on geohash-aggregated normalised historical demand for a SE Asian city. Grab booking-demand dataset.",
+    "membershipRequired": null,
+    "deadline": "2019-07-04",
+    "recurrence": "one-time",
+    "prize": "SGD 20,000 pool + full-time Grab offers to top ~50",
+    "url": "https://www.grab.com/sg/aiforsea/aiforseachallenges/",
+    "source": "https://www.grab.com/sg/aiforsea/aiforseachallenges/",
+    "verified": "2026-07-02",
+    "flag": "Past edition (2019). Reference only; also had CV and Safety tracks.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "zindi-accra-mobility-prediction-2025",
+    "title": "2025 Accra Mobility Prediction Hackathon (Yango x Zindi)",
+    "org": "Yango Group & Zindi",
+    "category": "challenge",
+    "subtype": "hackathon",
+    "fields": [
+      "prediction-forecasting",
+      "travel-behavior",
+      "data-science-ML"
+    ],
+    "career": [
+      "student",
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Predict taxi ride time in Accra from trip and weather features (RMSE). Jan-2025 Yango trips. Ghanaian residents only (teams up to 4); separate university-student prize track.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "tbd",
+    "prize": "$2,000 total (includes student track)",
+    "url": "https://zindi.africa/competitions/2025-accra-mobility-prediction-hackathon-powered",
+    "source": "https://zindi.africa/competitions/2025-accra-mobility-prediction-hackathon-powered",
+    "verified": "2026-07-02",
+    "flag": "2025 edition closed (Jul 5, 2025); a 2024 Accra edition also ran. Reference only. Region-restricted (Ghana).",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "zindi-lusaka-mobility-prediction-2023",
+    "title": "Lusaka Mobility Prediction Hackathon (Yango x Zindi)",
+    "org": "Yango & Zindi (with UNILUS, ZAIC)",
+    "category": "challenge",
+    "subtype": "hackathon",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "student",
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Predict average road speed in Lusaka every 15 minutes across the day (RMSE). Sep-2023 Yango traffic data. Participants based in Zambia (teams up to 4).",
+    "membershipRequired": null,
+    "deadline": "2023-11-04",
+    "recurrence": "one-time",
+    "prize": "$1,000 (1st $500 / 2nd $300 / 3rd $200)",
+    "url": "https://zindi.africa/competitions/lusaka-mobility-prediction-hackathon",
+    "source": "https://zindi.africa/competitions/lusaka-mobility-prediction-hackathon",
+    "verified": "2026-07-02",
+    "flag": "One-day hackathon (Nov 4, 2023). Reference only. Region-restricted (Zambia).",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "kaggle-nyc-taxi-fare-prediction",
+    "title": "NYC Taxi Fare Prediction (Kaggle)",
+    "org": "Kaggle / Google Cloud & Coursera",
+    "category": "challenge",
+    "subtype": "data-challenge",
+    "fields": [
+      "prediction-forecasting",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Predict NYC taxi fare (incl. tolls) from pickup/dropoff coords, time and passenger count (RMSE). 55M+ trip rows. Playground competition, free Kaggle account.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "one-time",
+    "prize": "Playground competition — knowledge/kudos",
+    "url": "https://www.kaggle.com/c/new-york-city-taxi-fare-prediction",
+    "source": "https://www.kaggle.com/c/new-york-city-taxi-fare-prediction",
+    "verified": "2026-07-02",
+    "flag": "Past Playground competition (2018). Reference/benchmark only.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "usdot-eisenhower-ddetfp",
+    "title": "Dwight David Eisenhower Transportation Fellowship (DDETFP)",
+    "org": "US DOT Federal Highway Administration (FHWA)",
+    "category": "fellowship",
+    "subtype": "scholarship",
+    "fields": [
+      "planning",
+      "traffic-flow",
+      "road-safety",
+      "public-transit",
+      "ITS",
+      "policy-economics"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "north-america"
+    ],
+    "eligibilityNote": "Enrolled full-time at a US institution in a transportation-related graduate program. Open to US citizens, PRs, and non-citizens enrolled at a US school with a valid visa. Binding constraint: US-institution enrollment.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Up to $10,000/yr tuition + monthly stipend + up to $1,500 TRB travel",
+    "url": "https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program",
+    "source": "https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program",
+    "verified": "2026-07-02",
+    "flag": "Requires enrollment at a US institution — not accessible from a Korean university. Annual NOFO on Grants.gov.",
+    "scope": "international",
+    "restricted": true
+  },
+  {
+    "id": "eno-future-leaders-development-conference",
+    "title": "Eno Future Leaders Development Conference (LDC) Fellowship",
+    "org": "Eno Center for Transportation",
+    "category": "fellowship",
+    "subtype": "scholarship",
+    "fields": [
+      "planning",
+      "policy-economics",
+      "public-transit",
+      "ITS"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "north-america"
+    ],
+    "eligibilityNote": "Current master's/doctoral students in transportation fields. Must be NOMINATED by a US college/university (up to 2 per university); self-nominations not accepted. International students eligible only if nominated by a US institution. Attend the full DC program.",
+    "membershipRequired": null,
+    "deadline": "2026-01-23",
+    "recurrence": "annual-01",
+    "prize": "~$4,000 program cost covered ($100 materials fee); one week in DC (20 fellows)",
+    "url": "https://enotrans.org/course/ldc/",
+    "source": "https://enotrans.org/course/ldc/",
+    "verified": "2026-07-02",
+    "flag": "Requires nomination by a US institution — generally not accessible from a Korean university. Conference Jun 1-4, 2026.",
+    "scope": "international",
+    "restricted": true
+  },
+  {
+    "id": "vref-lee-schipper-memorial-scholarship",
+    "title": "Lee Schipper Memorial Scholarship",
+    "org": "VREF, WRI Ross Center & Kuehne Climate Center",
+    "category": "fellowship",
+    "subtype": "scholarship",
+    "fields": [
+      "planning",
+      "public-transit",
+      "electrification",
+      "policy-economics",
+      "travel-behavior",
+      "logistics-freight"
+    ],
+    "career": [
+      "student",
+      "phd",
+      "early-faculty"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Early-career/young scholars worldwide in efficient and sustainable transport and energy. 2026: 5 awards across categories incl. a sustainable-freight track.",
+    "membershipRequired": null,
+    "deadline": "2026-04-17",
+    "recurrence": "annual-04",
+    "prize": "US$12,500 (2026: up to 5 scholars)",
+    "url": "https://vref.se/opportunities/lee-schipper-memorial-scholarship/",
+    "source": "https://vref.se/future-urban-transport/2026/lee-schipper-2026-applications-are-open/",
+    "verified": "2026-07-02",
+    "flag": "2026 award structure should be confirmed in the official guidelines PDF; deadline is for the expression of interest.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "wts-helene-overly-graduate-scholarship",
+    "title": "WTS Foundation Helene M. Overly Memorial Graduate Scholarship",
+    "org": "WTS International Foundation",
+    "category": "fellowship",
+    "subtype": "scholarship",
+    "fields": [
+      "planning",
+      "public-transit",
+      "policy-economics",
+      "logistics-freight",
+      "traffic-flow"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "north-america",
+      "global"
+    ],
+    "eligibilityNote": "Women only, enrolled in a transportation-related graduate program. International students eligible. Membership NOT required (free for students). Apply through a WTS chapter (mostly US/Canada). National award $10,000.",
+    "membershipRequired": "Not required (free for students)",
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "US$10,000",
+    "url": "https://www.wtsinternational.org/wts-foundation/scholarships",
+    "source": "https://www.wtsinternational.org/wts-foundation/scholarships",
+    "verified": "2026-07-02",
+    "flag": "Women only; must route the application through a WTS chapter (mostly US/Canada). Chapter deadlines typically fall; winners in May.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "nvidia-graduate-fellowship",
+    "title": "NVIDIA Graduate Fellowship Program",
+    "org": "NVIDIA",
+    "category": "fellowship",
+    "subtype": "phd-fellowship",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "ITS",
+      "prediction-forecasting",
+      "optimization-OR"
+    ],
+    "career": [
+      "phd"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "PhD students past their first year in CS/CE/EE/system architecture or related; full-time during the fellowship year. International students eligible. Requires an in-person summer internship at an NVIDIA research office. Invites AV, robotics, AI work.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-09",
+    "prize": "Up to US$60,000 per award + paid summer internship",
+    "url": "https://research.nvidia.com/graduate-fellowships",
+    "source": "https://research.nvidia.com/graduate-fellowships",
+    "verified": "2026-07-02",
+    "flag": "Mandatory internship at a listed NVIDIA office (none in Korea). 2026-27 cycle closed Sep 15, 2025 — reopens ~Aug/Sep.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "qualcomm-innovation-fellowship-korea",
+    "title": "Qualcomm Innovation Fellowship (QIF) - South Korea",
+    "org": "Qualcomm Technologies",
+    "category": "fellowship",
+    "subtype": "phd-fellowship",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "ITS",
+      "prediction-forecasting",
+      "human-factors"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "korea",
+      "asia"
+    ],
+    "eligibilityNote": "Full-time MS/PhD students at Korean universities, enrolled for the full 2026-2027 year; applicant must be first author of the submitted paper. Areas incl. Autonomous Driving & Physical AI. Directly relevant to a KAIST AV/ITS researcher.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "KRW 4,000,000 per selected paper (to the student's university) + Qualcomm mentorship",
+    "url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-south-korea",
+    "source": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-south-korea",
+    "verified": "2026-07-02",
+    "flag": "Korea edition award is smaller than US/Europe QIF; confirm the current-year deadline (apply via Google Form).",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "google-phd-fellowship-east-asia",
+    "title": "Google PhD Fellowship Program (East Asia)",
+    "org": "Google Research",
+    "category": "fellowship",
+    "subtype": "phd-fellowship",
+    "fields": [
+      "data-science-ML",
+      "autonomous-driving",
+      "prediction-forecasting",
+      "optimization-OR",
+      "human-factors"
+    ],
+    "career": [
+      "phd"
+    ],
+    "regions": [
+      "asia",
+      "global"
+    ],
+    "eligibilityNote": "PhD students must be NOMINATED by an eligible university (no direct applications). East Asia eligible; most coursework completed at nomination. Areas incl. ML and Machine Perception relevant to AV.",
+    "membershipRequired": null,
+    "deadline": "2026-04-30",
+    "recurrence": "annual",
+    "prize": "East Asia: US$10,000 for a 1-year fellowship + a Google Research mentor",
+    "url": "https://research.google/programs-and-events/phd-fellowship/",
+    "source": "https://research.google/programs-and-events/phd-fellowship/",
+    "verified": "2026-07-02",
+    "flag": "General CS/ML fellowship (not transportation-specific); university nomination required; East Asia award smaller than other regions.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "trb-acrp-graduate-research-award",
+    "title": "ACRP Graduate Research Award Program (Aviation)",
+    "org": "TRB Airport Cooperative Research Program (ACRP)",
+    "category": "fellowship",
+    "subtype": "grant",
+    "fields": [
+      "aviation",
+      "planning",
+      "policy-economics"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "north-america"
+    ],
+    "eligibilityNote": "Full-time graduate students at accredited US/Canada institutions, faculty-supervised. Eligible: US/Canada citizens/PRs, or holders of an active US/Canada student visa throughout the award. Research paper on a public-sector aviation topic.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "US$12,000 stipend (up to ~12 awards)",
+    "url": "https://www.trb.org/ACRP/GraduateResearchAwards.aspx",
+    "source": "https://www.trb.org/ACRP/GraduateResearchAwards.aspx",
+    "verified": "2026-07-02",
+    "flag": "Requires enrollment at a US or Canadian institution — not accessible from a Korean university; aviation-focused.",
+    "scope": "international",
+    "restricted": true
+  },
+  {
+    "id": "msca-postdoctoral-fellowships",
+    "title": "Marie Sklodowska-Curie Actions (MSCA) Postdoctoral Fellowships",
+    "org": "European Commission (Horizon Europe)",
+    "category": "fellowship",
+    "subtype": "postdoc",
+    "fields": [
+      "ITS",
+      "autonomous-driving",
+      "traffic-flow",
+      "optimization-OR",
+      "data-science-ML",
+      "policy-economics"
+    ],
+    "career": [
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "europe",
+      "global"
+    ],
+    "eligibilityNote": "PhD holders with <=8 years research experience post-PhD, any nationality. European PF: move to an EU/Associated host. Global PF: 1-2 years at a non-European country then a 1-year EU return. Mobility rule: not >12 months in the host country in the prior 36. Submitted with a host.",
+    "membershipRequired": null,
+    "deadline": "2026-09-09",
+    "recurrence": "annual-09",
+    "prize": "Living, mobility and family allowances + research/training costs for 1-3 years",
+    "url": "https://marie-sklodowska-curie-actions.ec.europa.eu/actions/postdoctoral-fellowships",
+    "source": "https://marie-sklodowska-curie-actions.ec.europa.eu/funding/msca-postdoctoral-fellowships-2026",
+    "verified": "2026-07-02",
+    "flag": "Field-agnostic; requires a European host. A KAIST researcher would apply to move to an EU host (or via Global PF).",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "humboldt-research-fellowship",
+    "title": "Humboldt Research Fellowship (Postdoc / Experienced)",
+    "org": "Alexander von Humboldt Foundation",
+    "category": "fellowship",
+    "subtype": "postdoc",
+    "fields": [
+      "ITS",
+      "autonomous-driving",
+      "optimization-OR",
+      "data-science-ML",
+      "road-safety",
+      "human-factors"
+    ],
+    "career": [
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "europe",
+      "global"
+    ],
+    "eligibilityNote": "Non-German researchers of any nationality. Postdoc track: PhD <=4 years before application (Experienced: <=12 years). Requires a host in Germany and a strong publication record.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "EUR 3,000/month for a 6-24 month stay in Germany + allowances",
+    "url": "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship",
+    "source": "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship",
+    "verified": "2026-07-02",
+    "flag": "Field-agnostic; requires a German host. Applications anytime; committees meet Mar, Jul, Nov.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "easts-icra-research-grant",
+    "title": "EASTS International Cooperative Research Activity (ICRA) Grant",
+    "org": "Eastern Asia Society for Transportation Studies (EASTS)",
+    "category": "fellowship",
+    "subtype": "grant",
+    "fields": [
+      "planning",
+      "public-transit",
+      "traffic-flow",
+      "logistics-freight",
+      "road-safety",
+      "travel-behavior"
+    ],
+    "career": [
+      "phd",
+      "postdoc",
+      "early-faculty",
+      "open"
+    ],
+    "regions": [
+      "asia"
+    ],
+    "eligibilityNote": "For International Research Groups registered with EASTS. Two types: ICRA-A (incubating) and ICRA-B (dissemination). Grantees hold a special session at the EASTS conference. Group-based, not an individual fellowship.",
+    "membershipRequired": "EASTS International Research Group registration",
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Research grant; limited awards per cycle",
+    "url": "https://easts.info/icra/",
+    "source": "https://easts.info/icra/",
+    "verified": "2026-07-02",
+    "flag": "Group-based grant requiring an established EASTS group — not directly targetable by an individual newcomer.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "nrf-sejong-science-fellowship",
+    "title": "Sejong Science Fellowship (NRF)",
+    "titleKo": "세종과학펠로우십",
+    "org": "National Research Foundation of Korea (한국연구재단, NRF) / 과기정통부",
+    "category": "fellowship",
+    "subtype": "early-career-research-grant",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "optimization-OR",
+      "prediction-forecasting"
+    ],
+    "career": [
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "All-field basic research grant for early-career researchers (transportation/AI eligible). Domestic track generally within ~7 years of PhD; also 국외연수/복귀·유치 tracks. 2026 domestic-track application was Dec 3-16, 2025 via IRIS.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-12",
+    "prize": "연 1.3억원 내외 (직접비 1억 이내), 최대 5년",
+    "url": "https://www.nrf.re.kr",
+    "source": "https://biosci.snu.ac.kr/board/notice",
+    "verified": "2026-07-02",
+    "flag": "Apply through your institution's 산학협력단 and IRIS. Confirm current-year call dates on NRF/IRIS.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "zonta-amelia-earhart-fellowship",
+    "title": "Amelia Earhart Fellowship",
+    "org": "Zonta International",
+    "category": "fellowship",
+    "subtype": "phd-fellowship",
+    "fields": [
+      "aviation"
+    ],
+    "career": [
+      "phd"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Women of any nationality in a full-time PhD in aerospace engineering or space sciences, past 1 year of the PhD. Postdocs ineligible. Usable at any accredited university worldwide.",
+    "membershipRequired": null,
+    "deadline": "2025-11-15",
+    "recurrence": "annual-11",
+    "prize": "US$10,000 (up to ~30 fellowships/year)",
+    "url": "https://www.zonta.org/Web/Web/Programs/Education/Amelia_Earhart_Fellowship.aspx",
+    "source": "https://www.zonta.org/Web/Web/Programs/Education/Amelia_Earhart_Fellowship.aspx",
+    "verified": "2026-07-02",
+    "flag": "Women only and strictly aerospace/space — ground-transportation AV work out of scope. Next deadline ~Nov 15, 2026.",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "usdot-utc-outstanding-student-of-year",
+    "title": "USDOT UTC Outstanding Student of the Year Award",
+    "org": "US DOT / Council of University Transportation Centers (CUTC)",
+    "category": "award",
+    "subtype": "student-award",
+    "fields": [
+      "planning",
+      "ITS",
+      "traffic-flow",
+      "road-safety",
+      "public-transit"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "north-america"
+    ],
+    "eligibilityNote": "One student nominated by each participating US University Transportation Center (UTC), on research merit, academics, professionalism, leadership. Requires affiliation with a US UTC. Honored at the CUTC banquet during the TRB Annual Meeting.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-01",
+    "prize": "US$1,000 + certificate + travel to the TRB Annual Meeting",
+    "url": "https://www.transportation.gov/utc/university-transportation-centers-annual-outstanding-student-year-awards",
+    "source": "https://www.transportation.gov/utc/university-transportation-centers-annual-outstanding-student-year-awards",
+    "verified": "2026-07-02",
+    "flag": "Nomination by a US UTC only — not accessible from Korean institutions; a recognition award, not an open application.",
+    "scope": "international",
+    "restricted": true
+  },
+  {
+    "id": "waymo-open-dataset",
+    "title": "Waymo Open Dataset",
+    "org": "Waymo LLC",
+    "category": "dataset",
+    "subtype": "av-perception",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "3D detection, tracking, motion forecasting, sim agents & vision-based end-to-end driving; multi-LiDAR + multi-camera",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "Waymo Open Dataset Challenges",
+    "url": "https://waymo.com/open/",
+    "source": "https://waymo.com/open/",
+    "verified": "2026-07-02",
+    "flag": "Google sign-in required; non-commercial Waymo Dataset License",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "nuscenes",
+    "title": "nuScenes",
+    "org": "Motional (nuTonomy)",
+    "category": "dataset",
+    "subtype": "av-perception",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "3D detection, tracking, LiDAR & panoptic segmentation, prediction; 360-degree LiDAR + camera + radar",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "nuScenes Challenges (EvalAI)",
+    "url": "https://www.nuscenes.org/nuscenes",
+    "source": "https://github.com/nutonomy/nuscenes-devkit",
+    "verified": "2026-07-02",
+    "flag": "Free registration; non-commercial CC BY-NC-SA 4.0",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "nuplan",
+    "title": "nuPlan",
+    "org": "Motional",
+    "category": "dataset",
+    "subtype": "motion-planning",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "optimization-OR",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Closed-loop & open-loop motion planning benchmark; 1200h ego + agent trajectories with HD maps",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "nuPlan Planning Challenge",
+    "url": "https://www.nuscenes.org/nuplan",
+    "source": "https://www.nuscenes.org/nuplan",
+    "verified": "2026-07-02",
+    "flag": "Free registration; non-commercial license",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "argoverse-1",
+    "title": "Argoverse 1",
+    "org": "Argo AI",
+    "category": "dataset",
+    "subtype": "motion-forecasting",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "3D tracking & motion forecasting (324k scenarios); LiDAR + ring/stereo camera + HD maps",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "Argoverse Competitions",
+    "url": "https://www.argoverse.org/av1.html",
+    "source": "https://www.argoverse.org/",
+    "verified": "2026-07-02",
+    "flag": "Non-commercial CC BY-NC-SA 4.0",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "argoverse-2",
+    "title": "Argoverse 2",
+    "org": "Argo AI",
+    "category": "dataset",
+    "subtype": "av-perception",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Sensor 3D detection/tracking, motion forecasting (250k), LiDAR self-supervision, map change; LiDAR + camera + HD maps",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "Argoverse 2 Challenges (CVPR workshops)",
+    "url": "https://www.argoverse.org/av2.html",
+    "source": "https://www.argoverse.org/",
+    "verified": "2026-07-02",
+    "flag": "Non-commercial CC BY-NC-SA 4.0",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "kitti",
+    "title": "KITTI Vision Benchmark Suite",
+    "org": "KIT & Toyota Technological Institute at Chicago",
+    "category": "dataset",
+    "subtype": "av-perception",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "road-safety"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Stereo, optical/scene flow, depth, visual odometry, 2D/3D detection, tracking & segmentation; stereo camera + Velodyne LiDAR + GPS/IMU",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "KITTI Vision Benchmark leaderboards",
+    "url": "https://www.cvlibs.net/datasets/kitti/",
+    "source": "https://www.cvlibs.net/datasets/kitti/",
+    "verified": "2026-07-02",
+    "flag": "Non-commercial CC BY-NC-SA 3.0",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "once-dataset",
+    "title": "ONCE (One millioN sCenEs)",
+    "org": "Huawei",
+    "category": "dataset",
+    "subtype": "av-perception",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "3D object detection with semi-/self-supervised learning (1M LiDAR scenes, 7M images); LiDAR + camera",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "ONCE 3D Detection Challenge (ICCV 2021 SSLAD)",
+    "url": "https://once-for-auto-driving.github.io/",
+    "source": "https://once-for-auto-driving.github.io/",
+    "verified": "2026-07-02",
+    "flag": "Registration; Huawei terms of use (non-commercial)",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "cityscapes",
+    "title": "Cityscapes",
+    "org": "Cityscapes Consortium",
+    "category": "dataset",
+    "subtype": "av-perception",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Pixel/instance/panoptic semantic segmentation & 3D vehicle detection of urban street scenes; stereo video (camera)",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "Cityscapes Benchmark Suite",
+    "url": "https://www.cityscapes-dataset.com/",
+    "source": "https://www.cityscapes-dataset.com/",
+    "verified": "2026-07-02",
+    "flag": "Registration; free for non-commercial use",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "bdd100k",
+    "title": "BDD100K",
+    "org": "UC Berkeley (Berkeley DeepDrive)",
+    "category": "dataset",
+    "subtype": "av-perception",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "road-safety"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "10 driving tasks: detection, semantic/instance segmentation, drivable area, lane, MOT/MOTS, tagging; 100k driving videos (camera)",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "BDD100K Challenges (CVPR workshops)",
+    "url": "https://github.com/bdd100k/bdd100k",
+    "source": "https://bdd-data.berkeley.edu/",
+    "verified": "2026-07-02",
+    "flag": "Registration to download; project homepage currently unreachable",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "metr-la-pems-bay",
+    "title": "METR-LA & PEMS-BAY Traffic Speed Datasets",
+    "org": "Li et al. / USC (DCRNN)",
+    "category": "dataset",
+    "subtype": "traffic-forecasting",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Spatiotemporal traffic speed forecasting on road-sensor graphs (207 LA + 325 Bay Area sensors); multivariate time series",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://github.com/liyaguang/DCRNN",
+    "source": "https://github.com/liyaguang/DCRNN",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "caltrans-pems",
+    "title": "Caltrans PeMS (Performance Measurement System)",
+    "org": "California Department of Transportation (Caltrans)",
+    "category": "dataset",
+    "subtype": "traffic-forecasting",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "ITS",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Real-time & historical freeway loop-detector flow/speed/occupancy (~40k detectors); source of PEMS03/04/07/08 benchmarks; time series",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://pems.dot.ca.gov/",
+    "source": "https://dot.ca.gov/programs/traffic-operations/mpr/pems-source",
+    "verified": "2026-07-02",
+    "flag": "Free account registration required",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "largest",
+    "title": "LargeST",
+    "org": "Liu et al. (NeurIPS 2023 Datasets & Benchmarks)",
+    "category": "dataset",
+    "subtype": "traffic-forecasting",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Large-scale traffic flow forecasting (8,600 California sensors, 5 years; CA/GLA/GBA/SD subsets); time series",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://github.com/liuxu77/LargeST",
+    "source": "https://neurips.cc/virtual/2023/poster/73480",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "traffic4cast-data",
+    "title": "Traffic4cast Datasets",
+    "org": "IARAI / HERE Technologies",
+    "category": "dataset",
+    "subtype": "traffic-forecasting",
+    "fields": [
+      "traffic-flow",
+      "prediction-forecasting",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "City-wide traffic map-movie forecasting & graph ETA from sparse probe/loop data; spatiotemporal raster + road graph",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "Traffic4cast (NeurIPS 2019-2022)",
+    "url": "https://github.com/iarai/NeurIPS2022-traffic4cast",
+    "source": "https://github.com/iarai/NeurIPS2022-traffic4cast",
+    "verified": "2026-07-02",
+    "flag": "IARAI closed; data via HERE / GitHub; mixed open licenses",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "nyc-tlc-trip-records",
+    "title": "NYC TLC Trip Record Data",
+    "org": "NYC Taxi & Limousine Commission",
+    "category": "dataset",
+    "subtype": "traffic-forecasting",
+    "fields": [
+      "travel-behavior",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Yellow/green taxi & FHV trip records (pickup/dropoff time, zone, distance, fare); tabular mobility-demand time series",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+    "source": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "highd",
+    "title": "highD",
+    "org": "leveLXData / RWTH Aachen (ika)",
+    "category": "dataset",
+    "subtype": "naturalistic-trajectory",
+    "fields": [
+      "autonomous-driving",
+      "road-safety",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Naturalistic highway vehicle trajectories from drone (110,500 vehicles, 6 German locations); trajectories + maps",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://levelxdata.com/highd-dataset/",
+    "source": "https://levelxdata.com/highd-dataset/",
+    "verified": "2026-07-02",
+    "flag": "Registration; free non-commercial only, commercial license available",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ind",
+    "title": "inD",
+    "org": "leveLXData / RWTH Aachen (ika)",
+    "category": "dataset",
+    "subtype": "naturalistic-trajectory",
+    "fields": [
+      "autonomous-driving",
+      "road-safety",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Naturalistic road-user (vehicle + VRU) trajectories at German urban intersections from drone; trajectories + OpenDRIVE/Lanelet2 maps",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://levelxdata.com/ind-dataset/",
+    "source": "https://levelxdata.com/ind-dataset/",
+    "verified": "2026-07-02",
+    "flag": "Registration; free non-commercial only, commercial license available",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "round",
+    "title": "rounD",
+    "org": "leveLXData / RWTH Aachen (ika)",
+    "category": "dataset",
+    "subtype": "naturalistic-trajectory",
+    "fields": [
+      "autonomous-driving",
+      "road-safety",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Naturalistic road-user trajectories at German roundabouts from drone (~13,740 users); trajectories + OpenDRIVE/Lanelet2 maps",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://levelxdata.com/round-dataset/",
+    "source": "https://levelxdata.com/round-dataset/",
+    "verified": "2026-07-02",
+    "flag": "Registration; free non-commercial only, commercial license available",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "exid",
+    "title": "exiD",
+    "org": "leveLXData / RWTH Aachen (ika)",
+    "category": "dataset",
+    "subtype": "naturalistic-trajectory",
+    "fields": [
+      "autonomous-driving",
+      "road-safety",
+      "prediction-forecasting",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Naturalistic trajectories at German highway entries/exits & merging from drone (~69,430 users); trajectories + OpenDRIVE/Lanelet2 maps",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://levelxdata.com/exid-dataset/",
+    "source": "https://levelxdata.com/exid-dataset/",
+    "verified": "2026-07-02",
+    "flag": "Registration; free non-commercial only, commercial license available",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "ngsim",
+    "title": "NGSIM (Next Generation Simulation)",
+    "org": "US FHWA / ITS DataHub",
+    "category": "dataset",
+    "subtype": "naturalistic-trajectory",
+    "fields": [
+      "traffic-flow",
+      "road-safety",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Detailed vehicle trajectories at 10 Hz (US-101, I-80, Lankershim, Peachtree); car-following & lane-change modeling",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": null,
+    "url": "https://data.transportation.gov/stories/s/Next-Generation-Simulation-NGSIM-Open-Data/i5zb-xe34/",
+    "source": "https://catalog.data.gov/dataset/next-generation-simulation-ngsim-vehicle-trajectories-and-supporting-data",
+    "verified": "2026-07-02",
+    "flag": "US Government open data (public domain)",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "interaction-dataset",
+    "title": "INTERACTION Dataset",
+    "org": "UC Berkeley MSC Lab",
+    "category": "dataset",
+    "subtype": "naturalistic-trajectory",
+    "fields": [
+      "autonomous-driving",
+      "prediction-forecasting",
+      "road-safety",
+      "data-science-ML"
+    ],
+    "career": [
+      "open"
+    ],
+    "regions": [
+      "global"
+    ],
+    "eligibilityNote": "Interactive multi-agent motion/trajectory prediction (roundabouts, intersections, merging; multiple countries) with HD semantic maps",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "INTERPRET Challenge (NeurIPS 2020)",
+    "url": "https://interaction-dataset.com/",
+    "source": "https://arxiv.org/abs/1910.03088",
+    "verified": "2026-07-02",
+    "flag": "Registration; non-commercial research license",
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "kst-conference-best-paper-award",
+    "title": "KST Conference Best Paper Award",
+    "titleKo": "대한교통학회 학술발표회 우수논문상",
+    "org": "Korean Society of Transportation (대한교통학회, KST)",
+    "category": "award",
+    "subtype": "conference-best-paper",
+    "fields": [
+      "planning",
+      "traffic-flow",
+      "public-transit",
+      "road-safety",
+      "policy-economics"
+    ],
+    "career": [
+      "student",
+      "phd",
+      "postdoc",
+      "open"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Awarded to outstanding papers presented at KST academic conferences. Given at the conference closing ceremony; grad students who present are eligible. Since 1999.",
+    "membershipRequired": "대한교통학회 회원(발표자) 권장",
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "상장/표창; awarded at Feb and Sep conferences",
+    "url": "https://kst.or.kr/bbs/page.php?hid=prize",
+    "source": "https://kst.or.kr/bbs/page.php?hid=prize",
+    "verified": "2026-07-02",
+    "flag": "Paper submission follows each conference call (spring ~Feb, autumn ~Sep); verify on KST notice.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "kst-park-changho-scholarship",
+    "title": "KST Park Chang-ho Scholarship",
+    "titleKo": "대한교통학회 박창호 장학생",
+    "org": "Korean Society of Transportation (대한교통학회, KST)",
+    "category": "fellowship",
+    "subtype": "student-scholarship",
+    "fields": [
+      "planning",
+      "traffic-flow",
+      "public-transit",
+      "policy-economics"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Scholarship for transportation/urban-planning undergraduates and transport-focused graduate students. Awarded at the autumn conference (September). Since 2013.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-09",
+    "prize": "장학금",
+    "url": "https://kst.or.kr/bbs/page.php?hid=prize",
+    "source": "https://kst.or.kr/bbs/page.php?hid=prize",
+    "verified": "2026-07-02",
+    "flag": "Application/nomination process not detailed publicly; verify with KST secretariat.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "kits-undergraduate-paper-competition",
+    "title": "Korea ITS Society Undergraduate Paper Competition",
+    "titleKo": "한국ITS학회 학부논문경진대회",
+    "org": "Korea Institute of Intelligent Transport Systems (한국ITS학회)",
+    "category": "challenge",
+    "subtype": "student-paper-competition",
+    "fields": [
+      "ITS",
+      "autonomous-driving",
+      "traffic-flow",
+      "data-science-ML"
+    ],
+    "career": [
+      "student"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Held at the KITS fall conference. First author must be an undergraduate; must register as a student member. Selection by written review + presentation video. 2025 deadline was Sep 19, 2025.",
+    "membershipRequired": "한국ITS학회 학생회원 등록 필요",
+    "deadline": null,
+    "recurrence": "annual-09",
+    "prize": "대상 100만원 / 최우수 각 50만원 / 우수 각 30만원 / 장려 각 20만원",
+    "url": "https://kits.or.kr/conference/studentConfInfo.html",
+    "source": "https://kits.or.kr/conference/studentConfInfo.html",
+    "verified": "2026-07-02",
+    "flag": "2026 dates not yet posted; inferred from 2025 (Sep 19).",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "nrf-young-researcher-program",
+    "title": "NRF Young Researcher Program (Basic Research)",
+    "titleKo": "한국연구재단 신진연구 (개인기초연구)",
+    "org": "National Research Foundation of Korea (한국연구재단, NRF) / 과기정통부",
+    "category": "fellowship",
+    "subtype": "young-researcher-grant",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "optimization-OR",
+      "prediction-forecasting"
+    ],
+    "career": [
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Individual basic-research grant for new/young researchers (newly appointed faculty / early-career PhD holders). Part of 개인기초연구사업; 2026 selections included ~1,770 신진연구 projects. All fields incl. transportation/AI.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "연구비 (유형별 차등)",
+    "url": "https://www.nrf.re.kr",
+    "source": "https://research.severance.healthcare/research/project/news.do",
+    "verified": "2026-07-02",
+    "flag": "Two calls per year (~Jan, mid-year); eligibility limits and dates change annually — verify on NRF/IRIS.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "nrf-postdoc-overseas-fellowship",
+    "title": "NRF Postdoctoral Overseas Training Fellowship",
+    "titleKo": "한국연구재단 박사후국외연수",
+    "org": "National Research Foundation of Korea (한국연구재단, NRF)",
+    "category": "fellowship",
+    "subtype": "postdoc-fellowship",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "postdoc"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "For Korean-national PhD holders (PhD from a domestic university within ~5 years) to conduct research at an overseas institution. Applied via IRIS. 2026 call: Feb 11-24, 2026.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-02",
+    "prize": "국외 연수 연구비 (연차별 지원)",
+    "url": "https://www.nrf.re.kr",
+    "source": "https://dhc.severance.healthcare/dhc/publicnotice.do",
+    "verified": "2026-07-02",
+    "flag": "Part of the annual 이공분야 학술연구지원사업 cycle (~February); confirm current-year dates on NRF/IRIS.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "nrf-postdoc-domestic-fellowship",
+    "title": "NRF Postdoctoral Domestic Training Fellowship",
+    "titleKo": "한국연구재단 박사후국내연수",
+    "org": "National Research Foundation of Korea (한국연구재단, NRF)",
+    "category": "fellowship",
+    "subtype": "postdoc-fellowship",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "ITS"
+    ],
+    "career": [
+      "postdoc"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Supports postdoctoral research (1-3 years, min 3 months) at a domestic university/national research institute across all S&E fields incl. transportation/AI. ~150 projects. Applied via IRIS.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-02",
+    "prize": "연 6천만원 (간접비 포함)",
+    "url": "https://www.nrf.re.kr",
+    "source": "https://ie.snu.ac.kr/notice/",
+    "verified": "2026-07-02",
+    "flag": "Part of the annual 학문후속세대지원 cycle (~February); confirm current-year dates on NRF/IRIS.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "hmg-autonomous-driving-challenge",
+    "title": "Hyundai Motor Group Autonomous Driving Challenge",
+    "titleKo": "현대자동차그룹 자율주행 챌린지",
+    "org": "Hyundai Motor Group (현대자동차그룹)",
+    "category": "challenge",
+    "subtype": "autonomous-driving-competition",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Korea's largest autonomous-driving competition for university-student teams (since 2010). 2025: two rounds (Round 1 March, finals Sep 30) in a virtual simulator mirroring K-City, focused on AI End-to-End driving. 2025 winner UNIST (finalists incl. KAIST).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-03",
+    "prize": "1위 3,000만원 / 2위 2,000만원 / 3위 1,000만원 / 4위 500만원; 상위 2팀 현대·기아·42dot 서류전형 면제",
+    "url": "http://hmgautonomousdrivingchallenge.com/",
+    "source": "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000188051",
+    "verified": "2026-07-02",
+    "flag": "2026 registration schedule not yet announced.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "msit-autonomous-driving-ai-challenge",
+    "title": "Autonomous Driving AI Challenge (MSIT)",
+    "titleKo": "자율주행 AI 챌린지 (과기정통부)",
+    "org": "Ministry of Science and ICT (과기정통부) / KADIF",
+    "category": "challenge",
+    "subtype": "ai-algorithm-competition",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML",
+      "prediction-forecasting"
+    ],
+    "career": [
+      "student",
+      "phd",
+      "postdoc",
+      "open"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "AI competition on 3D object detection, camera semantic segmentation, and surrounding-vehicle trajectory prediction. 2025 (2nd): applications Aug 11-Sep 12, competition Sep 15-Oct 17, awards Nov 14. Apply via KADIF (kadif.kr).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-08",
+    "prize": "상금 (부문별)",
+    "url": "https://www.kasa.kr/boards/notice/38353/detail/board/notice/",
+    "source": "https://www.kasa.kr/boards/notice/38353/detail/board/notice/",
+    "verified": "2026-07-02",
+    "flag": "Prize amounts not stated in the notice; verify the current call at kadif.kr.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "intl-univ-ev-autonomous-driving-competition",
+    "title": "International University Student EV Autonomous Driving Competition",
+    "titleKo": "국제 대학생 EV 자율주행 경진대회",
+    "org": "International e-Mobility Expo (국제e-모빌리티엑스포)",
+    "category": "challenge",
+    "subtype": "autonomous-driving-competition",
+    "fields": [
+      "autonomous-driving",
+      "electrification",
+      "data-science-ML"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "University-student competition combining hands-on autonomous-driving/AI training with a race. 4th edition held Jul 9-12, 2025 at Jeju Shinhwa World with the International e-Mobility Expo.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-07",
+    "prize": "부문별 시상",
+    "url": "https://ievexpo.org/",
+    "source": "https://ievexpo.org/",
+    "verified": "2026-07-02",
+    "flag": "Registration opens months ahead of the July event; confirm 2026 (5th) dates on the expo site.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "a1-autonomous-driving-challenge",
+    "title": "A1 Autonomous Driving Challenge",
+    "titleKo": "A1 자율주행 챌린지",
+    "org": "Ministry of Trade, Industry and Energy (산업통상자원부) / KIMAC",
+    "category": "challenge",
+    "subtype": "autonomous-driving-competition",
+    "fields": [
+      "autonomous-driving",
+      "data-science-ML"
+    ],
+    "career": [
+      "student",
+      "open"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Team-based autonomous-driving challenge organized by MOTIE and managed by KIMAC. 2026 edition announced with team recruitment and schedule. Contact KIMAC 053-670-7848.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "미확인",
+    "url": "https://autonomouscar.or.kr/",
+    "source": "https://autonomouscar.or.kr/",
+    "verified": "2026-07-02",
+    "flag": "Eligibility/prize/2026 dates not on the landing page; verify via KIMAC recruitment notice.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "land-transport-data-utilization-competition",
+    "title": "Land & Transportation Data Utilization Competition",
+    "titleKo": "국토·교통 데이터활용 경진대회",
+    "org": "Korea Transport Institute (한국교통연구원, KOTI)",
+    "category": "challenge",
+    "subtype": "data-competition",
+    "fields": [
+      "data-science-ML",
+      "traffic-flow",
+      "policy-economics",
+      "planning"
+    ],
+    "career": [
+      "student",
+      "open"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Big-data competition using national transportation data. Two tracks: (1) policy ideas and (2) product/service development. 2024 ran Apr 19-Jun 26, 2024. Register via the National Transportation Data Open Market.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-04",
+    "prize": "부문별 시상",
+    "url": "https://www.bigdata-transportation.kr/",
+    "source": "https://www.koti.re.kr/user/bbs/noticeView.do",
+    "verified": "2026-07-02",
+    "flag": "Prize amounts not detailed; KOTI also runs a rolling '교통연구' journal paper call.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "ex-highway-idea-paper-competition",
+    "title": "Korea Expressway 'Future Highway' Idea & Paper Competition",
+    "titleKo": "한국도로공사 미래고속도로 아이디어·논문 공모전",
+    "org": "Korea Expressway Corporation (한국도로공사, EX)",
+    "category": "challenge",
+    "subtype": "idea-paper-competition",
+    "fields": [
+      "planning",
+      "policy-economics",
+      "road-safety",
+      "ITS"
+    ],
+    "career": [
+      "student",
+      "phd"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "For domestic university/graduate students (individual or team up to 5). Submit an idea (PPT <=20 pages) or paper on the future of highways. 3rd edition awarded May 2025. Submit via ex.co.kr (exvision@ex.co.kr).",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-04",
+    "prize": "총 ~500만원 (에디션별 상이); 학회지 게재·인턴 가점",
+    "url": "https://www.ex.co.kr/",
+    "source": "https://www.g-enews.com/article/Real-Estate/2025/05/202505211048072267a9fc143920_1",
+    "verified": "2026-07-02",
+    "flag": "Prize structure varies by edition/track; confirm current-year call on ex.co.kr.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "kaia-land-transport-tech-fair-contest",
+    "title": "KAIA Land, Infrastructure & Transport Technology Fair Contests",
+    "titleKo": "국토교통기술대전 공모전",
+    "org": "Ministry of Land, Infrastructure and Transport (국토교통부) / KAIA",
+    "category": "challenge",
+    "subtype": "public-contest",
+    "fields": [
+      "ITS",
+      "policy-economics",
+      "planning"
+    ],
+    "career": [
+      "open",
+      "student"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "The national land/infrastructure/transport R&D fair (MOLIT, hosted by KAIA) runs public contests such as an AI Video Competition. 2026 fair: Jun 24-26, 2026 at COEX, Seoul.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual-06",
+    "prize": "공모전 시상",
+    "url": "https://littfair.kr/",
+    "source": "https://littfair.kr/",
+    "verified": "2026-07-02",
+    "flag": "General AI-video/drawing contests (limited fit for research papers); KAIA's researcher channel is 국토교통 R&D 과제공고 at kaia.re.kr.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "dacon-mobility-ai-competitions",
+    "title": "DACON Mobility & Autonomous-Driving AI Competitions",
+    "titleKo": "데이콘 교통·자율주행 AI 경진대회",
+    "org": "DACON (데이콘)",
+    "category": "challenge",
+    "subtype": "data-competition-platform",
+    "fields": [
+      "data-science-ML",
+      "autonomous-driving",
+      "prediction-forecasting",
+      "traffic-flow"
+    ],
+    "career": [
+      "student",
+      "phd",
+      "postdoc",
+      "open"
+    ],
+    "regions": [
+      "korea"
+    ],
+    "eligibilityNote": "Korea's main data-science competition platform; regularly hosts mobility-relevant ML challenges (autonomous-driving sensor prediction, traffic-accident risk prediction, transport data analysis). Open registration; cash prizes vary.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "rolling",
+    "prize": "대회별 상금 상이",
+    "url": "https://dacon.io/competitions",
+    "source": "https://dacon.io/competitions",
+    "verified": "2026-07-02",
+    "flag": "Platform aggregator — individual competitions open/close throughout the year; check the live list.",
+    "scope": "korean",
+    "restricted": false
+  },
+  {
+    "id": "mit-cee-rising-stars",
+    "title": "MIT CEE Rising Stars",
+    "org": "MIT Civil & Environmental Engineering",
+    "category": "workshop",
+    "subtype": "rising-star",
+    "fields": [
+      "planning",
+      "policy-economics",
+      "road-safety"
+    ],
+    "career": [
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "eligibilityNote": "Within ~1yr of PhD (or PhD from 2025+), non-faculty preferred. Research presentations + faculty-career panels at MIT.",
+    "membershipRequired": null,
+    "deadline": "2026-07-05",
+    "recurrence": "annual-07",
+    "prize": "Workshop (Oct 22-23, 2026, MIT)",
+    "url": "https://ceerisingstars.mit.edu",
+    "source": "https://ceerisingstars.mit.edu",
+    "verified": "2026-07-02",
+    "flag": null,
+    "scope": "international",
+    "restricted": false
+  },
+  {
+    "id": "cps-rising-stars",
+    "title": "CPS Rising Stars",
+    "org": "NSF / University of Virginia",
+    "category": "workshop",
+    "subtype": "rising-star",
+    "fields": [
+      "ITS",
+      "autonomous-driving",
+      "data-science-ML"
+    ],
+    "career": [
+      "phd",
+      "postdoc"
+    ],
+    "regions": [
+      "global",
+      "north-america"
+    ],
+    "eligibilityNote": "Outstanding PhD students & postdocs in Cyber-Physical Systems (incl. AV/ITS) pursuing academic careers.",
+    "membershipRequired": null,
+    "deadline": null,
+    "recurrence": "annual",
+    "prize": "Workshop (latest: 2025, Vanderbilt)",
+    "url": "https://cps-vo.org/group/CPSRisingStarsWorkshop25",
+    "source": "https://cps-vo.org/group/CPSRisingStarsWorkshop25",
+    "verified": "2026-07-02",
+    "flag": "2026 cycle not yet announced; announced via cps-vo.org.",
+    "scope": "international",
+    "restricted": false
+  }
+]
