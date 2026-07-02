@@ -190,6 +190,10 @@
   .sec-name{font-size:22px;font-weight:800;letter-spacing:-.02em;color:var(--cc);}
   .sec-count{font-family:var(--mono);font-size:12px;font-weight:700;color:#fff;background:var(--cc);border-radius:999px;padding:2px 10px;}
   .sec-desc{font-size:13px;color:var(--slate);margin-top:6px;}
+  .subhdr{font-size:13px;font-weight:800;color:var(--slate);margin:16px 0 9px;display:flex;align-items:center;gap:8px;letter-spacing:-.01em;}
+  .subhdr span{font-size:11px;font-weight:700;color:#fff;border-radius:999px;padding:1px 8px;background:var(--slate-soft);}
+  .subhdr.am-auto{color:#9A5A10;} .subhdr.am-auto span{background:#9A5A10;}
+  .subhdr.am-apply{color:#12795A;} .subhdr.am-apply span{background:#12795A;}
   /* toolbar: recommender card + filters */
   .svgi{display:block;width:16px;height:16px;flex:none;}
   .toolbar{display:flex;gap:16px;align-items:stretch;margin-top:14px;flex-wrap:wrap;}
@@ -407,7 +411,7 @@ window.__traceInit = function(){
       heroEyebrow:"TRACE · Transportation Research: Awards, Challenges & Events",
       heroH:'연구의 가치를 인정받고,<br><span class="acc">더 큰 기회를 연결하세요.</span>',
       heroP:'교통 분야의 어워드·워크샵·챌린지·펠로우십을 한눈에 확인하고<br>연구 성과를 더 넓은 무대로 연결하세요.',
-      tabHome:"홈", recTitle:"맞춤 추천", recMore:"더보기", dueTitle:"다가오는 마감일", dueAll:"전체 보기", korScope:"국내(한국) 기회만", recWhy:"추천 이유",
+      tabHome:"홈", recTitle:"맞춤 추천", recMore:"더보기", dueTitle:"다가오는 마감일", dueAll:"전체 보기", hideKor:"국내(한국) 전용 제외", optLabel:"옵션", recWhy:"추천 이유",
       amAuto:"발표 논문 중 선정", amApply:"지원·추천", amEntry:"참가 신청", amLabel:"신청 방식", viewCard:"카드", viewList:"리스트",
       navDeadlines:"마감 일정", ctaTitle:"마감 임박 공고를 놓치지 마세요", ctaSub:"관심 분야를 골라 나에게 맞는 기회를 바로 찾아보세요.", ctaBtn:"나에게 맞는 기회 찾기",
       about:"About", sKr:"Korean", sIntl:"International", sTotal:"전체", sOpen:"진행 중", sSoon:"임박",
@@ -447,7 +451,7 @@ window.__traceInit = function(){
       heroEyebrow:"TRACE · Transportation Research: Awards, Challenges & Events",
       heroH:'Get your work recognized,<br><span class="acc">and reach a bigger stage.</span>',
       heroP:'Awards, workshops, challenges and fellowships in transportation — all in one place,<br>connecting your research to a wider stage.',
-      tabHome:"Home", recTitle:"For you", recMore:"More", dueTitle:"Upcoming deadlines", dueAll:"View all", korScope:"Korean (domestic) only", recWhy:"Why",
+      tabHome:"Home", recTitle:"For you", recMore:"More", dueTitle:"Upcoming deadlines", dueAll:"View all", hideKor:"Exclude Korea-only", optLabel:"Options", recWhy:"Why",
       amAuto:"Selected from papers", amApply:"Apply / nominate", amEntry:"Open to entries", amLabel:"How to get it", viewCard:"Cards", viewList:"List",
       navDeadlines:"Deadlines", ctaTitle:"Don\'t miss upcoming deadlines", ctaSub:"Pick your fields and find opportunities that fit — right now.", ctaBtn:"Find opportunities for me",
       about:"About", sKr:"Korean", sIntl:"International", sTotal:"Total", sOpen:"Open", sSoon:"Soon",
@@ -570,7 +574,7 @@ window.__traceInit = function(){
     return f?sub+" in "+f+".":sub+".";
   }
 
-  var state = {lang:"ko",cat:"all",fields:[],careers:[],month:"",q:"",sort:"deadline",view:"card",openOnly:false,korScope:false,funded:false,membFree:false};
+  var state = {lang:"ko",cat:"all",fields:[],careers:[],month:"",q:"",sort:"deadline",view:"card",openOnly:false,hideKor:false,funded:false,membFree:false};
   var today = new Date(); today.setHours(0,0,0,0);
 
   function parseMonth(rec){ if(!rec) return null; var m=/^annual-(\d{2})$/.exec(rec); return m?parseInt(m[1],10):null; }
@@ -594,7 +598,7 @@ window.__traceInit = function(){
   }
   function careerMatch(e,list){ if(!list.length) return true; if((e.career||[]).indexOf("open")>=0) return true; var g=careerGroupsOf(e); return list.some(function(x){return g.indexOf(x)>=0;}); }
   function matches(e){
-    if(state.korScope && e.scope!=="korean") return false;
+    if(state.hideKor && e.scope==="korean") return false;
     if(state.cat!=="all" && e.category!==state.cat) return false;
     if(state.fields.length){var cg=coarseOf(e);if(!state.fields.some(function(g){return cg.indexOf(g)>=0;})) return false;}
     if(!careerMatch(e,state.careers)) return false;
@@ -648,6 +652,10 @@ window.__traceInit = function(){
     else list.sort(function(a,b){return computeStatus(a).sort-computeStatus(b).sort;});
     var box=document.getElementById("results"); var html="";
     var itemFn=state.view==="list"?listRowHTML:cardHTML; var gc=state.view==="list"?"list":"grid";
+    function groupBody(c,items){
+      if(c==="award"){var out="";[["auto",t.amAuto],["apply",t.amApply]].forEach(function(g){var sub=items.filter(function(e){return (e.applyMode||"apply")===g[0];});if(!sub.length)return;out+='<div class="subhdr am-'+g[0]+'">'+esc(g[1])+' <span>'+sub.length+'</span></div><div class="'+gc+'">'+sub.map(itemFn).join("")+'</div>';});return out;}
+      return '<div class="'+gc+'">'+items.map(itemFn).join("")+'</div>';
+    }
     if(!list.length){ html='<div class="empty"><div style="font-size:19px;font-weight:700;margin-bottom:6px">'+esc(t.emptyTitle)+'</div>'+esc(t.emptyBody)+'</div>'; }
     else if(state.sort==="month"){
       var groups={},order=[];
@@ -657,9 +665,9 @@ window.__traceInit = function(){
       html='<div class="'+gc+'">'+inner+'</div>';
     }
     else if(state.cat==="all"){
-      CATS.forEach(function(c){var items=list.filter(function(e){return e.category===c;});if(!items.length)return;html+='<div class="secband cat-'+c+'"><div class="sec-h"><span class="sec-name">'+esc(t[c])+'</span><span class="sec-count">'+items.length+'</span></div><div class="sec-desc">'+esc(CATDESC[c][state.lang])+'</div></div><div class="grid">'+items.map(itemFn).join("")+'</div>';});
+      CATS.forEach(function(c){var items=list.filter(function(e){return e.category===c;});if(!items.length)return;html+='<div class="secband cat-'+c+'"><div class="sec-h"><span class="sec-name">'+esc(t[c])+'</span><span class="sec-count">'+items.length+'</span></div><div class="sec-desc">'+esc(CATDESC[c][state.lang])+'</div></div>'+groupBody(c,items);});
     }
-    else { html='<div class="'+gc+'">'+list.map(itemFn).join("")+'</div>'; }
+    else { html=groupBody(state.cat,list); }
     box.innerHTML=html;
     var cl=esc(t.countPre)+'<b>'+list.length+'</b>'+esc(t.countUnit);
     if(list.length<DATA.length) cl+=' <span class="muted">('+esc(t.countOf)+' '+DATA.length+')</span>';
@@ -813,13 +821,14 @@ window.__traceInit = function(){
     var present={}; DATA.forEach(function(e){coarseOf(e).forEach(function(g){present[g]=1;});});
     var gkeys=GROUP_ORDER.filter(function(g){return present[g];});
     var fh='<span class="filterlabel">'+esc(t.fieldsLabel)+'</span>'+gkeys.map(function(g){return '<button class="chip fld '+(state.fields.indexOf(g)>=0?"on":"")+'" data-field="'+g+'">'+esc(GROUPS[g][state.lang])+'</button>';}).join("");
-    var anyFilter=state.fields.length||state.careers.length||state.month||state.q||state.openOnly||state.koreaOnly||state.funded||state.membFree||state.cat!=="all";
+    var anyFilter=state.fields.length||state.careers.length||state.month||state.q||state.openOnly||state.hideKor||state.funded||state.membFree||state.cat!=="all";
     if(anyFilter) fh+='<button class="clearbtn" id="clearBtn">'+esc(t.clear)+'</button>';
     document.getElementById("rowFields").innerHTML=fh;
     document.getElementById("rowCareer").innerHTML='<span class="filterlabel">'+esc(t.careerLabel)+'</span>'+CGROUP_ORDER.map(function(g){return '<button class="chip cr '+(state.careers.indexOf(g)>=0?"on":"")+'" data-career="'+g+'">'+esc(CGROUPS[g][state.lang])+'</button>';}).join("");
     document.getElementById("rowToggles").innerHTML=
+      '<span class="filterlabel">'+esc(t.optLabel)+'</span>'+
       '<button class="chip tog '+(state.openOnly?"on":"")+'" data-tog="openOnly">'+esc(t.togOpen)+'</button>'+
-      '<button class="chip tog '+(state.korScope?"on":"")+'" data-tog="korScope">'+esc(t.korScope)+'</button>';
+      '<button class="chip tog '+(state.hideKor?"on":"")+'" data-tog="hideKor">'+esc(t.hideKor)+'</button>';
     document.getElementById("aboutTitle").textContent=t.aboutTitle;
     document.getElementById("aboutBody").textContent=t.aboutBody;
     document.getElementById("roleAdvisor").textContent=t.roleAdvisor;
@@ -859,7 +868,7 @@ window.__traceInit = function(){
     if(el.matches(".chip.fld")){var f=el.getAttribute("data-field");var i=state.fields.indexOf(f);if(i>=0)state.fields.splice(i,1);else state.fields.push(f);buildStatic();render();return;}
     if(el.matches(".chip.cr")){var c=el.getAttribute("data-career");var ic=state.careers.indexOf(c);if(ic>=0)state.careers.splice(ic,1);else state.careers.push(c);buildStatic();render();return;}
     if(el.matches(".chip.tog")){var k2=el.getAttribute("data-tog");state[k2]=!state[k2];buildStatic();render();return;}
-    if(el.matches("#clearBtn")){state.fields=[];state.careers=[];state.month="";state.q="";state.openOnly=false;state.korScope=false;state.funded=false;state.membFree=false;state.cat="all";document.getElementById("search").value="";buildStatic();render();return;}
+    if(el.matches("#clearBtn")){state.fields=[];state.careers=[];state.month="";state.q="";state.openOnly=false;state.hideKor=false;state.funded=false;state.membFree=false;state.cat="all";document.getElementById("search").value="";buildStatic();render();return;}
     var vbtn=el.closest&&el.closest("#viewToggle button"); if(vbtn){state.view=vbtn.getAttribute("data-view");buildStatic();render();return;}
     var card=el.closest && el.closest(".card, .lrow"); if(card && !(el.closest&&el.closest("a"))){nav("#/o/"+card.getAttribute("data-id"));return;}
   });

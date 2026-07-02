@@ -449,7 +449,7 @@
     "flag": null,
     "descKo": "지능형 교통체계(ITS) 전 분야에서 가장 뛰어난 박사학위 논문을 선정해 수여하는 상입니다.",
     "descEn": "An award for the best PhD dissertation in any area of intelligent transportation systems.",
-    "applyMode": "apply",
+    "applyMode": "auto",
     "scope": "international",
     "restricted": false
   },
@@ -612,7 +612,7 @@
     "flag": "Tied to the triennial WCTR conference; requires conference paper.",
     "descKo": "WCTR 학술대회에서 35세 미만 연구자가 발표한 최우수 논문에 수여하는 상입니다.",
     "descEn": "A prize for the best paper presented at the WCTR conference by a researcher under 35.",
-    "applyMode": "apply",
+    "applyMode": "auto",
     "scope": "international",
     "restricted": false
   },
@@ -675,7 +675,7 @@
     "flag": null,
     "descKo": "격년 EASTS 학술대회의 우수 논문을 선정하며, 야소시마상은 그중 최고 영예에 해당하는 상입니다.",
     "descEn": "An award for the best papers at the biennial EASTS Conference, with the Yasoshima Prize as the top honor among them.",
-    "applyMode": "apply",
+    "applyMode": "auto",
     "scope": "international",
     "restricted": false
   },
@@ -937,7 +937,7 @@
     "flag": "Selected across ALL robotics topics, not AV-specific. Landing page varies by year.",
     "descKo": "로보틱스 주요 학회인 IEEE/RSJ IROS에서 발표된 최우수 논문에 수여하는 상입니다.",
     "descEn": "An award for the best overall paper presented at the IEEE/RSJ IROS robotics conference.",
-    "applyMode": "apply",
+    "applyMode": "auto",
     "scope": "international",
     "restricted": false
   },
@@ -2834,6 +2834,42 @@
     "restricted": false
   },
   {
+    "id": "ftte-transportation-rising-stars",
+    "title": "FTTE Transportation Rising Stars (Pyramid Program)",
+    "org": "Intl. Conference on Frontiers of Traffic and Transportation Engineering (FTTE)",
+    "category": "workshop",
+    "subtype": "rising-star",
+    "fields": [
+      "planning",
+      "traffic-flow",
+      "ITS"
+    ],
+    "career": [
+      "student",
+      "phd",
+      "postdoc",
+      "early-faculty"
+    ],
+    "regions": [
+      "asia",
+      "global"
+    ],
+    "eligibilityNote": "Tiered talent program: Future Stars (MS/PhD students), Transportation Rising Stars (under-35 faculty/postdocs), Leading Talents; mentorship + presentation in transportation engineering.",
+    "membershipRequired": null,
+    "deadline": "2026-07-31",
+    "recurrence": "annual-07",
+    "prize": "Mentorship + presentation at FTTE 2026 (proceedings via SPIE)",
+    "url": "https://www.icftte.org/fgknnkny",
+    "source": "https://www.icftte.org/fgknnkny",
+    "verified": "2026-07-03",
+    "flag": "Confirm details on official page.",
+    "descKo": "교통공학 분야의 대학원생·신진연구자·중견학자를 멘토링과 발표로 잇는 3단계 인재 육성 프로그램입니다.",
+    "descEn": "A tiered talent program connecting graduate students, early-career researchers and senior scholars in transportation engineering via mentorship and presentation.",
+    "applyMode": "apply",
+    "scope": "international",
+    "restricted": false
+  },
+  {
     "id": "kst-conference-best-paper-award",
     "title": "KST Conference Best Paper Award",
     "titleKo": "대한교통학회 학술발표회 우수논문상",
@@ -2867,7 +2903,7 @@
     "flag": "Paper submission follows each conference call (spring ~Feb, autumn ~Sep); verify on KST notice.",
     "descKo": "대한교통학회 학술대회에서 발표된 우수 논문에 폐회식에서 수여하는 최우수 논문상입니다.",
     "descEn": "An award presented at the closing ceremony of Korean Society of Transportation conferences to recognize outstanding papers presented there.",
-    "applyMode": "apply",
+    "applyMode": "auto",
     "scope": "korean",
     "restricted": false
   },
