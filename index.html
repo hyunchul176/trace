@@ -15,6 +15,7 @@
     --open:#12795A; --open-bg:#E4F3EC; --soon:#A45B0C; --soon-bg:#FAECD9;
     --recur:#3357C4; --recur-bg:#E9EEFC; --roll:#5B6478; --roll-bg:#EEF0F5;
     --tbd:#6C5FB0; --tbd-bg:#EFEBFA; --past:#9298A8; --past-bg:#F0F1F5;
+    --c-award:#A6741C; --c-challenge:#C24A2C; --c-fellowship:#0E7C66; --c-dataset:#3552BE; --c-workshop:#6A4FB0;
     --sans:'Pretendard','Pretendard Variable',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
     --mono:ui-monospace,'SFMono-Regular','Cascadia Mono',Consolas,monospace;
   }
@@ -103,6 +104,28 @@
   .cfoot a{font-size:13px;font-weight:700;text-decoration:none;display:inline-flex;gap:5px;align-items:center;}
   .cfoot a.src{color:var(--slate-soft);font-weight:600;font-size:12px;}
   .cfoot a:hover{text-decoration:underline;}
+  /* category identity */
+  .cat-award{--cc:var(--c-award);} .cat-challenge{--cc:var(--c-challenge);} .cat-fellowship{--cc:var(--c-fellowship);} .cat-dataset{--cc:var(--c-dataset);} .cat-workshop{--cc:var(--c-workshop);}
+  .secband{margin:30px 0 14px;}
+  .secband:first-child{margin-top:8px;}
+  .sec-h{display:flex;align-items:center;gap:11px;border-bottom:2.5px solid var(--cc);padding-bottom:8px;}
+  .sec-name{font-size:22px;font-weight:800;letter-spacing:-.02em;color:var(--cc);}
+  .sec-count{font-family:var(--mono);font-size:12px;font-weight:700;color:#fff;background:var(--cc);border-radius:999px;padding:2px 10px;}
+  .sec-desc{font-size:13px;color:var(--slate);margin-top:6px;}
+  /* redesigned card */
+  .card{border-left:5px solid var(--cc,var(--line-strong));padding-left:16px;}
+  .ceyebrow{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--cc,var(--slate));}
+  .ceyebrow .sc{color:var(--slate-soft);font-weight:600;}
+  .card h3{font-size:19.5px;margin:5px 0 4px;}
+  .whatis{font-size:14.5px;font-weight:600;color:var(--ink);margin:0 0 14px;line-height:1.4;}
+  .facts{display:flex;flex-direction:column;gap:7px;margin-bottom:14px;}
+  .fact{font-size:14px;display:flex;gap:10px;line-height:1.35;align-items:baseline;}
+  .fact .fl{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--slate-soft);flex:none;width:52px;}
+  .fact .fv{font-weight:600;color:var(--ink);}
+  .fact.tgt .fv{color:var(--accent-ink);font-weight:700;}
+  .card .cfoot{justify-content:space-between;border-top:1px solid var(--line);padding-top:11px;}
+  .cfoot .org{margin:0;}
+  .detail .whatis{font-size:16px;margin:8px 0 4px;}
   .empty{grid-column:1/-1;text-align:center;padding:50px 20px;color:var(--slate);}
   /* detail */
   .detail{max-width:840px;margin:8px auto 0;}
@@ -197,7 +220,7 @@
       <div class="rowfilters" id="rowToggles"></div>
     </div>
     <div class="countline" id="countline"></div>
-    <div class="grid" id="grid"></div>
+    <div id="results"></div>
   </div>
   <div class="detail" id="detail" style="display:none"></div>
   <section class="about" id="about">
@@ -244,7 +267,7 @@ window.__traceInit = function(){
       results:"건 표시", of:" / 전체 ",
       pOpen:"D-", pSoon:"임박 D-", pToday:"오늘 마감", pRecur:"연례", pNext:"다음 ~", pRolling:"상시", pTbd:"미정", pPast:"종료",
       dNext:"다음 예상", dRolling:"상시·연중", dTbd:"공고 예정", dPastEd:"과거 회차 (참고용)", daysLeft:"일 남음",
-      prizeK:"혜택", restricted:"⚠ 해외 소속 필요 가능", official:"공식 페이지", sourceL:"출처",
+      prizeK:"혜택", kDeadline:"마감", restricted:"⚠ 해외 소속 필요 가능", official:"공식 페이지", sourceL:"출처",
       emptyTitle:"조건에 맞는 항목이 없습니다", emptyBody:"필터를 줄이거나 초기화해 보세요.",
       dback:"← 목록으로", share:"링크 복사", shared:"복사됨 ✓",
       kElig:"자격", kFor:"대상", kRegions:"지역", kMemb:"회원 요건", kRecur:"주기", kVerified:"최종 확인", kFields:"분야", kNone:"—",
@@ -278,7 +301,7 @@ window.__traceInit = function(){
       results:" shown", of:" of ",
       pOpen:"D-", pSoon:"Soon D-", pToday:"Due today", pRecur:"Annual", pNext:"next ~", pRolling:"Rolling", pTbd:"TBA", pPast:"Closed",
       dNext:"Next expected", dRolling:"Year-round", dTbd:"To be announced", dPastEd:"Past edition (reference)", daysLeft:"days left",
-      prizeK:"Prize", restricted:"⚠ May require non-Korea affiliation", official:"Official page", sourceL:"source",
+      prizeK:"Prize", kDeadline:"Deadline", restricted:"⚠ May require non-Korea affiliation", official:"Official page", sourceL:"source",
       emptyTitle:"No matching entries", emptyBody:"Try removing or clearing some filters.",
       dback:"← Back to list", share:"Copy link", shared:"Copied ✓",
       kElig:"Eligibility", kFor:"For", kRegions:"Regions", kMemb:"Membership", kRecur:"Recurrence", kVerified:"Last verified", kFields:"Fields", kNone:"—",
@@ -313,6 +336,23 @@ window.__traceInit = function(){
   function careerShort(e){var cs=e.career||[];if(!cs.length||cs.indexOf("open")>=0)return UI[state.lang].cAnyone;return cs.filter(function(c){return c!=="open";}).map(function(c){return careerLabel(c,state.lang);}).join(" · ");}
   function coarseOf(e){var s={};(e.fields||[]).forEach(function(f){var g=F2G[f];if(g)s[g]=1;});return GROUP_ORDER.filter(function(g){return s[g];});}
   var CATS = ["award","challenge","fellowship","dataset","workshop"];
+  var CATDESC = {
+    award:{ko:"박사논문·베스트페이퍼·커리어 시상",en:"Dissertation, best-paper & career prizes"},
+    challenge:{ko:"데이터·자율주행 챌린지와 공모전",en:"Data & autonomous-driving challenges"},
+    fellowship:{ko:"펠로우십·연구비·장학",en:"Fellowships, grants & scholarships"},
+    dataset:{ko:"벤치마크 데이터셋",en:"Benchmark datasets"},
+    workshop:{ko:"라이징스타·커리어 워크샵",en:"Rising-star & career workshops"}
+  };
+  var SUBTYPE = {
+    "dissertation-award":{ko:"박사학위 논문 시상",en:"Dissertation prize"},"best-paper-award":{ko:"우수논문상",en:"Best paper award"},"best-paper":{ko:"우수논문상",en:"Best paper award"},"journal-best-paper":{ko:"저널 우수논문상",en:"Journal best paper"},"conference-best-paper":{ko:"학회 우수논문상",en:"Conference best paper"},"student-paper-award":{ko:"학생 논문상",en:"Student paper award"},"student-award":{ko:"우수학생상",en:"Outstanding student award"},"early-career-award":{ko:"신진연구자상",en:"Early-career award"},"young-researcher-award":{ko:"젊은연구자상",en:"Young researcher award"},"mid-career-award":{ko:"중견연구자상",en:"Mid-career award"},"lifetime-achievement-award":{ko:"공로상",en:"Lifetime achievement award"},"achievement-award":{ko:"업적상",en:"Achievement award"},"institutional-award":{ko:"기관 시상",en:"Institutional award"},
+    "motion-prediction":{ko:"궤적 예측 챌린지",en:"Motion prediction challenge"},"sim-agents":{ko:"시뮬레이션 에이전트 챌린지",en:"Sim-agents challenge"},"planning":{ko:"자율주행 계획 챌린지",en:"Planning challenge"},"closed-loop-driving":{ko:"폐루프 주행 챌린지",en:"Closed-loop driving challenge"},"end-to-end":{ko:"E2E 자율주행 챌린지",en:"End-to-end driving challenge"},"scenario-mining":{ko:"시나리오 마이닝 챌린지",en:"Scenario mining challenge"},"multi-track":{ko:"종합 벤치마크 워크샵",en:"Multi-track benchmark"},"data-challenge":{ko:"데이터 챌린지",en:"Data challenge"},"data-competition":{ko:"데이터 경진대회",en:"Data competition"},"data-competition-platform":{ko:"데이터 대회 플랫폼",en:"Data competition platform"},"hackathon":{ko:"해커톤",en:"Hackathon"},"student-competition":{ko:"학생 경진대회",en:"Student competition"},"student-paper-competition":{ko:"학생 논문 경진대회",en:"Student paper competition"},"autonomous-driving-competition":{ko:"자율주행 경진대회",en:"Autonomous driving competition"},"ai-algorithm-competition":{ko:"AI 알고리즘 대회",en:"AI algorithm competition"},"idea-paper-competition":{ko:"아이디어·논문 공모전",en:"Idea & paper contest"},"public-contest":{ko:"공모전",en:"Public contest"},
+    "scholarship":{ko:"장학금",en:"Scholarship"},"student-scholarship":{ko:"학생 장학금",en:"Student scholarship"},"phd-fellowship":{ko:"박사 펠로우십",en:"PhD fellowship"},"postdoc":{ko:"박사후 펠로우십",en:"Postdoc fellowship"},"postdoc-fellowship":{ko:"박사후 펠로우십",en:"Postdoc fellowship"},"grant":{ko:"연구비",en:"Research grant"},"early-career-research-grant":{ko:"신진 연구비",en:"Early-career grant"},"young-researcher-grant":{ko:"신진 연구비",en:"Young researcher grant"},
+    "av-perception":{ko:"자율주행 인식 데이터셋",en:"AV perception dataset"},"motion-forecasting":{ko:"궤적 예측 데이터셋",en:"Motion forecasting dataset"},"motion-planning":{ko:"계획 벤치마크",en:"Planning benchmark"},"traffic-forecasting":{ko:"교통 예측 데이터셋",en:"Traffic forecasting dataset"},"naturalistic-trajectory":{ko:"실주행 궤적 데이터셋",en:"Naturalistic trajectory dataset"},
+    "rising-star":{ko:"라이징스타 워크샵",en:"Rising-star workshop"}
+  };
+  function subtypeLabel(e){var m=SUBTYPE[e.subtype];return m?m[state.lang]:UI[state.lang][e.category];}
+  function oneLiner(e){var s=subtypeLabel(e);if(e.category==="award"||e.category==="fellowship"){var g=coarseOf(e)[0];if(g)s+=" · "+GROUPS[g][state.lang];}return s;}
+  function shortWhen(e,s){var t=UI[state.lang];if(s.dl)return s.dl;if(s.key==="recurring"){var m=parseMonth(e.recurrence);return m?(t.pRecur+" ~"+MONTHS[state.lang][m-1]):t.pRecur;}if(s.key==="rolling")return t.pRolling;if(s.key==="tbd")return t.pTbd;if(s.key==="past")return t.pPast;return "";}
 
   var state = {lang:"ko",scope:"international",cat:"all",fields:[],careers:[],month:"",q:"",sort:"deadline",openOnly:false,koreaOnly:false,funded:false,membFree:false};
   var today = new Date(); today.setHours(0,0,0,0);
@@ -361,22 +401,19 @@ window.__traceInit = function(){
 
   function cardHTML(e){
     var t=UI[state.lang]; var s=computeStatus(e);
-    var fields=coarseOf(e).map(function(g){return '<span class="ftag">'+esc(GROUPS[g][state.lang])+'</span>';}).join("");
-    var titleko=(state.lang==="ko"&&e.titleKo)?'<div class="titleko">'+esc(e.titleKo)+'</div>':'';
-    var forwho='<div class="forwho"><span class="fw-l">'+esc(t.forWho)+'</span>'+esc(careerShort(e))+'</div>';
-    var dsub=s.sub?'<span class="dsub">'+esc(s.sub)+'</span>':'';
-    var restricted=(e.restricted&&!state.koreaOnly)?' · <span class="restricted">'+esc(t.restricted)+'</span>':'';
-    var prize=e.prize?'<div class="prize"><span class="k">'+esc(t.prizeK)+':</span> '+esc(e.prize)+'</div>':'';
-    var flag=e.flag?'<div class="flag">'+esc(e.flag)+'</div>':'';
-    var src=(e.source&&e.source!==e.url)?'<a class="src" href="'+esc(e.source)+'" target="_blank" rel="noopener">'+esc(t.sourceL)+' ↗</a>':'';
-    return '<div class="card '+(s.key==="past"?"past":"")+'" data-id="'+esc(e.id)+'">'+
-      '<div class="ctop"><div class="badges"><span class="cat" data-cat="'+e.category+'">'+esc(t[e.category])+'</span>'+
-      '<span class="scopetag '+e.scope+'">'+(e.scope==="korean"?esc(t.sKr):esc(t.sIntl))+'</span></div><span class="pill '+s.key+'">'+esc(s.pill)+'</span></div>'+
-      '<div class="org">'+esc(e.org)+'</div><h3>'+esc(e.title)+'</h3>'+titleko+forwho+
-      '<div class="dline"><span class="dl">'+(s.dl?esc(s.dl):(s.key==="rolling"?esc(t.pRolling):s.key==="tbd"?esc(t.pTbd):esc(t.pRecur)))+'</span>'+dsub+restricted+'</div>'+
-      '<div class="frow">'+fields+'</div>'+
-      (e.eligibilityNote?'<div class="note">'+esc(e.eligibilityNote)+'</div>':'')+prize+flag+
-      '<div class="cfoot"><a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(t.official)+' →</a>'+src+'</div></div>';
+    var scopeLab=e.scope==="korean"?t.sKr:t.sIntl;
+    var restricted=(e.restricted&&!state.koreaOnly)?' <span class="restricted">'+esc(t.restricted)+'</span>':'';
+    var prizeFact=hasFunding(e)?'<div class="fact"><span class="fl">'+esc(t.prizeK)+'</span><span class="fv">'+esc(e.prize)+'</span></div>':'';
+    return '<div class="card cat-'+e.category+(s.key==="past"?" past":"")+'" data-id="'+esc(e.id)+'">'+
+      '<div class="ctop"><span class="ceyebrow">'+esc(t[e.category])+' <span class="sc">· '+esc(scopeLab)+'</span></span><span class="pill '+s.key+'">'+esc(s.pill)+'</span></div>'+
+      '<h3>'+esc(e.title)+'</h3>'+
+      '<div class="whatis">'+esc(oneLiner(e))+'</div>'+
+      '<div class="facts">'+
+        '<div class="fact tgt"><span class="fl">'+esc(t.forWho)+'</span><span class="fv">'+esc(careerShort(e))+restricted+'</span></div>'+
+        '<div class="fact"><span class="fl">'+esc(t.kDeadline)+'</span><span class="fv">'+esc(shortWhen(e,s))+'</span></div>'+
+        prizeFact+
+      '</div>'+
+      '<div class="cfoot"><span class="org">'+esc(e.org)+'</span><a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(t.official)+' →</a></div></div>';
   }
 
   function render(){
@@ -384,15 +421,20 @@ window.__traceInit = function(){
     if(state.sort==="name") list.sort(function(a,b){return a.title.localeCompare(b.title);});
     else if(state.sort==="verified") list.sort(function(a,b){return (b.verified||"").localeCompare(a.verified||"");});
     else list.sort(function(a,b){return computeStatus(a).sort-computeStatus(b).sort;});
-    var grid=document.getElementById("grid");
-    if(!list.length){grid.innerHTML='<div class="empty"><div style="font-size:19px;font-weight:700;margin-bottom:6px">'+esc(t.emptyTitle)+'</div>'+esc(t.emptyBody)+'</div>';}
+    var box=document.getElementById("results"); var html="";
+    if(!list.length){ html='<div class="empty"><div style="font-size:19px;font-weight:700;margin-bottom:6px">'+esc(t.emptyTitle)+'</div>'+esc(t.emptyBody)+'</div>'; }
     else if(state.sort==="month"){
       var groups={},order=[];
       list.forEach(function(e){var s=computeStatus(e);var key;if(s.key==="rolling"||s.key==="tbd"||s.key==="past"){key="~";}else{var d=new Date(s.sort);key=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2);}if(!groups[key]){groups[key]=[];order.push(key);}groups[key].push(e);});
       order.sort(function(a,b){if(a==="~")return 1;if(b==="~")return -1;return a<b?-1:1;});
-      var html="";order.forEach(function(key){var lab;if(key==="~"){lab=state.lang==="ko"?"상시 · 미정 · 과거":"Rolling · TBA · Past";}else{var p=key.split("-");lab=MONTHS[state.lang][parseInt(p[1],10)-1]+" "+p[0];}html+='<div class="monthhdr">'+esc(lab)+'<span class="mc">'+groups[key].length+'</span></div>'+groups[key].map(cardHTML).join("");});
-      grid.innerHTML=html;
-    } else { grid.innerHTML=list.map(cardHTML).join(""); }
+      var inner="";order.forEach(function(key){var lab;if(key==="~"){lab=state.lang==="ko"?"상시 · 미정 · 과거":"Rolling · TBA · Past";}else{var p=key.split("-");lab=MONTHS[state.lang][parseInt(p[1],10)-1]+" "+p[0];}inner+='<div class="monthhdr">'+esc(lab)+'<span class="mc">'+groups[key].length+'</span></div>'+groups[key].map(cardHTML).join("");});
+      html='<div class="grid">'+inner+'</div>';
+    }
+    else if(state.cat==="all"){
+      CATS.forEach(function(c){var items=list.filter(function(e){return e.category===c;});if(!items.length)return;html+='<div class="secband cat-'+c+'"><div class="sec-h"><span class="sec-name">'+esc(t[c])+'</span><span class="sec-count">'+items.length+'</span></div><div class="sec-desc">'+esc(CATDESC[c][state.lang])+'</div></div><div class="grid">'+items.map(cardHTML).join("")+'</div>';});
+    }
+    else { html='<div class="grid">'+list.map(cardHTML).join("")+'</div>'; }
+    box.innerHTML=html;
     document.getElementById("countline").innerHTML='<b>'+list.length+'</b>'+esc(t.results)+esc(t.of)+'<b>'+DATA.length+'</b>';
   }
 
@@ -432,6 +474,7 @@ window.__traceInit = function(){
       '<div class="dhead">'+badges+'</div>'+
       '<div class="dorg">'+esc(e.org)+'</div>'+
       '<h2>'+esc(e.title)+'</h2>'+((e.titleKo&&state.lang==="ko")?'<div class="dko">'+esc(e.titleKo)+'</div>':'')+
+      '<div class="whatis">'+esc(oneLiner(e))+'</div>'+
       '<div class="forwho"><span class="fw-l">'+esc(t.forWho)+'</span>'+esc(careerShort(e))+'</div>'+
       '<div class="dbig">'+big+'</div>'+flag+meta+
       '<div class="dactions"><a class="dbtn primary" href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(t.official)+' →</a>'+
@@ -587,6 +630,6 @@ window.__traceInit = function(){
   route();
 };
 </script>
-<script>fetch('./data.json').then(function(r){return r.json();}).then(function(d){window.DATA=d;window.__traceInit();}).catch(function(err){document.getElementById('grid').innerHTML='<div class=\'empty\'>Failed to load data.json: '+err+'</div>';});</script>
+<script>fetch('./data.json').then(function(r){return r.json();}).then(function(d){window.DATA=d;window.__traceInit();}).catch(function(err){document.getElementById('results').innerHTML='<div class=\'empty\'>Failed to load data.json: '+err+'</div>';});</script>
 </body>
 </html>
