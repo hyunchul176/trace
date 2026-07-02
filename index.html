@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TRACE — Transportation Research: Awards, Challenges & Events</title>
 <meta name="description" content="A curated hub of awards, challenges, fellowships and datasets for transportation and mobility research — autonomous driving included, Korean and international.">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
   :root{
     --ground:#F7F8FB; --panel:#FFFFFF; --ink:#161A24; --slate:#464C5E;
@@ -17,10 +17,10 @@
     --tbd:#6C5FB0; --tbd-bg:#EFEBFA; --past:#9298A8; --past-bg:#F0F1F5;
     --c-award:#A6741C; --c-challenge:#C24A2C; --c-fellowship:#0E7C66; --c-dataset:#3552BE; --c-workshop:#6A4FB0;
     --sans:'Pretendard','Pretendard Variable',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
-    --mono:ui-monospace,'SFMono-Regular','Cascadia Mono',Consolas,monospace;
+    --mono:'Pretendard','Pretendard Variable',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   }
   *{box-sizing:border-box;}
-  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;font-weight:430;line-height:1.58;-webkit-font-smoothing:antialiased;}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:17px;font-weight:450;line-height:1.58;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word;font-variant-numeric:tabular-nums;}
   .wrap{max-width:1160px;margin:0 auto;padding:30px 22px 90px;}
   a{color:var(--accent);}
   header.top{border-bottom:2px solid var(--ink);padding-bottom:20px;}
@@ -120,7 +120,7 @@
   .whatis{font-size:14.5px;font-weight:600;color:var(--ink);margin:0 0 14px;line-height:1.4;}
   .facts{display:flex;flex-direction:column;gap:7px;margin-bottom:14px;}
   .fact{font-size:14px;display:flex;gap:10px;line-height:1.35;align-items:baseline;}
-  .fact .fl{font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--slate-soft);flex:none;width:52px;}
+  .fact .fl{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.02em;color:var(--slate-soft);flex:none;width:64px;white-space:nowrap;}
   .fact .fv{font-weight:600;color:var(--ink);}
   .fact.tgt .fv{color:var(--accent-ink);font-weight:700;}
   .card .cfoot{justify-content:space-between;border-top:1px solid var(--line);padding-top:11px;}
@@ -331,9 +331,11 @@ window.__traceInit = function(){
   var GROUP_ORDER = ["av","traffic-its","planning","transit-freight","safety","data-ai","modes"];
   var F2G = {"autonomous-driving":"av","traffic-flow":"traffic-its","ITS":"traffic-its","road-safety":"safety","human-factors":"safety","planning":"planning","travel-behavior":"planning","policy-economics":"planning","public-transit":"transit-freight","logistics-freight":"transit-freight","data-science-ML":"data-ai","prediction-forecasting":"data-ai","optimization-OR":"data-ai","aviation":"modes","rail":"modes","maritime":"modes","electrification":"modes"};
   var REGIONS = {global:{ko:"전세계",en:"Global"},"north-america":{ko:"북미",en:"North America"},europe:{ko:"유럽",en:"Europe"},asia:{ko:"아시아",en:"Asia"},korea:{ko:"한국",en:"Korea"}};
-  var CAREER_KEYS=["student","phd","postdoc","early-faculty","faculty"];
-  function careerLabel(c,lang){var m={student:"cStudent",phd:"cPhd",postdoc:"cPostdoc","early-faculty":"cEarly",faculty:"cFaculty",open:"cOpen"};return UI[lang][m[c]]||c;}
-  function careerShort(e){var cs=e.career||[];if(!cs.length||cs.indexOf("open")>=0)return UI[state.lang].cAnyone;return cs.filter(function(c){return c!=="open";}).map(function(c){return careerLabel(c,state.lang);}).join(" · ");}
+  var CGROUPS={grad:{ko:"대학원생",en:"Grad student"},postdoc:{ko:"포닥",en:"Postdoc"},faculty:{ko:"교원",en:"Faculty"}};
+  var CGROUP_ORDER=["grad","postdoc","faculty"];
+  var C2G={student:"grad",phd:"grad",postdoc:"postdoc","early-faculty":"faculty",faculty:"faculty"};
+  function careerGroupsOf(e){var s={};(e.career||[]).forEach(function(c){var g=C2G[c];if(g)s[g]=1;});return CGROUP_ORDER.filter(function(g){return s[g];});}
+  function careerShort(e){var cs=e.career||[];if(!cs.length||cs.indexOf("open")>=0)return UI[state.lang].cAnyone;var g=careerGroupsOf(e);if(!g.length)return UI[state.lang].cAnyone;return g.map(function(x){return CGROUPS[x][state.lang];}).join(" · ");}
   function coarseOf(e){var s={};(e.fields||[]).forEach(function(f){var g=F2G[f];if(g)s[g]=1;});return GROUP_ORDER.filter(function(g){return s[g];});}
   var CATS = ["award","challenge","fellowship","dataset","workshop"];
   var CATDESC = {
@@ -376,7 +378,7 @@ window.__traceInit = function(){
     var recurLab=rec==="biennial"?(state.lang==="ko"?"격년":"Biennial"):rec==="triennial"?(state.lang==="ko"?"3년마다":"Triennial"):t.pRecur;
     return {key:"recurring",pill:recurLab,sort:6e15,sub:"",dl:null};
   }
-  function careerMatch(e,list){ if(!list.length) return true; if((e.career||[]).indexOf("open")>=0) return true; return list.some(function(c){return (e.career||[]).indexOf(c)>=0;}); }
+  function careerMatch(e,list){ if(!list.length) return true; if((e.career||[]).indexOf("open")>=0) return true; var g=careerGroupsOf(e); return list.some(function(x){return g.indexOf(x)>=0;}); }
   function matches(e){
     if(e.scope!==state.scope) return false;
     if(state.cat!=="all" && e.category!==state.cat) return false;
@@ -444,7 +446,7 @@ window.__traceInit = function(){
     var badges='<span class="cat" data-cat="'+e.category+'">'+esc(t[e.category])+'</span><span class="scopetag '+e.scope+'">'+(e.scope==="korean"?esc(t.sKr):esc(t.sIntl))+'</span><span class="pill '+s.key+'">'+esc(s.pill)+'</span>';
     var big='<span class="dl">'+(s.dl?esc(s.dl):(s.key==="rolling"?esc(t.pRolling):s.key==="tbd"?esc(t.pTbd):esc(t.pRecur)))+'</span>'+(s.sub?'<span class="dsub">'+esc(s.sub)+'</span>':'');
     var fields=coarseOf(e).map(function(g){return esc(GROUPS[g][state.lang]);}).join(", ");
-    var careers=(e.career||[]).map(function(c){return esc(careerLabel(c,state.lang));}).join(", ");
+    var careers=esc(careerShort(e));
     var regions=(e.regions||[]).map(function(r){return REGIONS[r]?esc(REGIONS[r][state.lang]):esc(r);}).join(", ");
     var meta='<dl class="dmeta">';
     if(e.eligibilityNote) meta+='<dt>'+esc(t.kElig)+'</dt><dd>'+esc(e.eligibilityNote)+'</dd>';
@@ -508,7 +510,7 @@ window.__traceInit = function(){
     reco={scope:state.scope||"",careers:[],fields:[],cat:"",openOnly:false,koreaOnly:false};
     var m=document.getElementById("recoModal");
     var scopeChips=[["","recoAny"],["international","scopeIntl"],["korean","scopeKr"]].map(function(x){return '<button class="chip rsc" data-v="'+x[0]+'">'+esc(t[x[1]])+'</button>';}).join("");
-    var carChips=CAREER_KEYS.map(function(c){return '<button class="chip rcar" data-v="'+c+'">'+esc(careerLabel(c,state.lang))+'</button>';}).join("");
+    var carChips=CGROUP_ORDER.map(function(g){return '<button class="chip rcar" data-v="'+g+'">'+esc(CGROUPS[g][state.lang])+'</button>';}).join("");
     var fldChips=GROUP_ORDER.map(function(g){return '<button class="chip rfld" data-v="'+g+'">'+esc(GROUPS[g][state.lang])+'</button>';}).join("");
     var catChips=[["","recoAny"]].concat(CATS.map(function(c){return [c,c];})).map(function(x){return '<button class="chip rcat" data-v="'+x[0]+'">'+esc(x[1]?t[x[1]]:t.recoAny)+'</button>';}).join("");
     m.innerHTML='<div class="modal-card"><h2>'+esc(t.recoTitle)+'</h2><div class="sub">'+esc(t.recoSub)+'</div>'+
@@ -516,7 +518,7 @@ window.__traceInit = function(){
       '<div class="rstep"><div class="rl">'+esc(t.recoCareer)+'</div><div class="rchips" id="rCar">'+carChips+'</div></div>'+
       '<div class="rstep"><div class="rl">'+esc(t.recoFields)+'</div><div class="rchips" id="rFld">'+fldChips+'</div></div>'+
       '<div class="rstep"><div class="rl">'+esc(t.recoCat)+'</div><div class="rchips" id="rCat">'+catChips+'</div></div>'+
-      '<div class="rstep"><div class="rchips"><button class="chip tog rtog" data-k="openOnly">'+esc(t.recoOpenTog)+'</button><button class="chip tog rtog" data-k="koreaOnly">'+esc(t.recoKrTog)+'</button></div></div>'+
+      '<div class="rstep"><div class="rchips"><button class="chip tog rtog" data-k="openOnly">'+esc(t.recoOpenTog)+'</button></div></div>'+
       '<div class="rresults" id="rResults"></div>'+
       '<div class="modal-actions"><button class="dbtn" id="rClose">'+esc(t.recoClose)+'</button><button class="dbtn primary" id="rRun">'+esc(t.recoRun)+'</button></div></div>';
     m.style.display="flex";
@@ -561,8 +563,7 @@ window.__traceInit = function(){
     document.getElementById("summary").innerHTML=chip("",DATA.length,t.sTotal)+chip("intl",intln,t.sIntl)+chip("kr",kr,t.sKr)+chip("open",openN,t.sOpen)+chip("soon",soonN,t.sSoon);
     var sc=[["international",t.scopeIntl],["korean",t.scopeKr]];
     document.getElementById("segScope").innerHTML=sc.map(function(x){return '<button data-scope="'+x[0]+'" class="'+(state.scope===x[0]?"active":"")+'">'+esc(x[1])+'</button>';}).join("");
-    var cats=[["all",t.catAll]].concat(CATS.map(function(c){return [c,t[c]];}));
-    document.getElementById("segCat").innerHTML=cats.map(function(x){return '<button data-cat="'+x[0]+'" class="'+(state.cat===x[0]?"active":"")+'">'+esc(x[1])+'</button>';}).join("");
+    document.getElementById("segCat").innerHTML=CATS.map(function(c){return '<button data-cat="'+c+'" class="'+(state.cat===c?"active":"")+'">'+esc(t[c])+'</button>';}).join("");
     var sorts=[["deadline",t.sortDeadline],["month",t.sortMonth],["name",t.sortName],["verified",t.sortVerified]];
     document.getElementById("sortsel").innerHTML=sorts.map(function(x){return '<option value="'+x[0]+'" '+(state.sort===x[0]?"selected":"")+'>'+esc(x[1])+'</option>';}).join("");
     var mopts='<option value="">'+esc(t.monthAny)+'</option>';
@@ -575,12 +576,10 @@ window.__traceInit = function(){
     var anyFilter=state.fields.length||state.careers.length||state.month||state.q||state.openOnly||state.koreaOnly||state.funded||state.membFree||state.cat!=="all";
     if(anyFilter) fh+='<button class="clearbtn" id="clearBtn">'+esc(t.clear)+'</button>';
     document.getElementById("rowFields").innerHTML=fh;
-    document.getElementById("rowCareer").innerHTML='<span class="filterlabel">'+esc(t.careerLabel)+'</span>'+CAREER_KEYS.map(function(c){return '<button class="chip cr '+(state.careers.indexOf(c)>=0?"on":"")+'" data-career="'+c+'">'+esc(careerLabel(c,state.lang))+'</button>';}).join("");
+    document.getElementById("rowCareer").innerHTML='<span class="filterlabel">'+esc(t.careerLabel)+'</span>'+CGROUP_ORDER.map(function(g){return '<button class="chip cr '+(state.careers.indexOf(g)>=0?"on":"")+'" data-career="'+g+'">'+esc(CGROUPS[g][state.lang])+'</button>';}).join("");
     document.getElementById("rowToggles").innerHTML=
       '<button class="chip tog '+(state.openOnly?"on":"")+'" data-tog="openOnly">'+esc(t.togOpen)+'</button>'+
-      '<button class="chip tog '+(state.koreaOnly?"on":"")+'" data-tog="koreaOnly">'+esc(t.togKorea)+'</button>'+
-      '<button class="chip tog '+(state.funded?"on":"")+'" data-tog="funded">'+esc(t.togFunded)+'</button>'+
-      '<button class="chip tog '+(state.membFree?"on":"")+'" data-tog="membFree">'+esc(t.togMemb)+'</button>';
+      '<button class="chip tog '+(state.funded?"on":"")+'" data-tog="funded">'+esc(t.togFunded)+'</button>';
     document.getElementById("aboutTitle").textContent=t.aboutTitle;
     document.getElementById("aboutBody").textContent=t.aboutBody;
     document.getElementById("roleAdvisor").textContent=t.roleAdvisor;
@@ -614,7 +613,7 @@ window.__traceInit = function(){
     var rc=el.closest && el.closest(".relcard"); if(rc){nav("#/o/"+rc.getAttribute("data-id"));return;}
     if(el.matches("#brand")||(el.closest&&el.closest("#brand"))){nav("");return;}
     if(el.matches("#segScope button")){state.scope=el.getAttribute("data-scope");buildStatic();render();return;}
-    if(el.matches("#segCat button")){state.cat=el.getAttribute("data-cat");buildStatic();render();return;}
+    if(el.matches("#segCat button")){var cc=el.getAttribute("data-cat");state.cat=(state.cat===cc?"all":cc);buildStatic();render();return;}
     if(el.matches(".chip.fld")){var f=el.getAttribute("data-field");var i=state.fields.indexOf(f);if(i>=0)state.fields.splice(i,1);else state.fields.push(f);buildStatic();render();return;}
     if(el.matches(".chip.cr")){var c=el.getAttribute("data-career");var ic=state.careers.indexOf(c);if(ic>=0)state.careers.splice(ic,1);else state.careers.push(c);buildStatic();render();return;}
     if(el.matches(".chip.tog")){var k2=el.getAttribute("data-tog");state[k2]=!state[k2];buildStatic();render();return;}
