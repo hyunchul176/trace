@@ -2150,36 +2150,6 @@
     "restricted": false
   },
   {
-    "id": "zonta-amelia-earhart-fellowship",
-    "title": "Amelia Earhart Fellowship",
-    "org": "Zonta International",
-    "category": "fellowship",
-    "subtype": "phd-fellowship",
-    "fields": [
-      "aviation"
-    ],
-    "career": [
-      "phd"
-    ],
-    "regions": [
-      "global"
-    ],
-    "eligibilityNote": "Women of any nationality in a full-time PhD in aerospace engineering or space sciences, past 1 year of the PhD. Postdocs ineligible. Usable at any accredited university worldwide.",
-    "membershipRequired": null,
-    "deadline": "2025-11-15",
-    "recurrence": "annual-11",
-    "prize": "US$10,000 (up to ~30 fellowships/year)",
-    "url": "https://www.zonta.org/Web/Web/Programs/Education/Amelia_Earhart_Fellowship.aspx",
-    "source": "https://www.zonta.org/Web/Web/Programs/Education/Amelia_Earhart_Fellowship.aspx",
-    "verified": "2026-07-02",
-    "flag": "Women only and strictly aerospace/space — ground-transportation AV work out of scope. Next deadline ~Nov 15, 2026.",
-    "descKo": "항공우주공학·우주과학 분야 여성 박사과정생을 후원하는 존타 인터내셔널의 펠로우십입니다.",
-    "descEn": "A Zonta International fellowship supporting women PhD students in aerospace engineering and space sciences.",
-    "applyMode": "apply",
-    "scope": "international",
-    "restricted": false
-  },
-  {
     "id": "usdot-utc-outstanding-student-of-year",
     "title": "USDOT UTC Outstanding Student of the Year Award",
     "org": "US DOT / Council of University Transportation Centers (CUTC)",

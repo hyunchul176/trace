@@ -70,7 +70,7 @@
   .panel-t{font-size:15px;font-weight:800;color:var(--ink);}
   .panel-more{background:none;border:0;cursor:pointer;font:inherit;font-size:12.5px;font-weight:700;color:var(--slate);}
   .panel-more:hover{color:var(--accent);}
-  .rec-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .rec-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
   .rec-card{border:1px solid var(--line);border-radius:12px;padding:13px 14px;cursor:pointer;border-left:4px solid var(--cc,var(--line-strong));transition:border-color .15s,transform .15s,box-shadow .15s;}
   .rec-card:hover{transform:translateY(-1px);border-color:var(--accent);box-shadow:0 8px 20px -14px rgba(22,26,36,.4);}
   .rc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
@@ -87,7 +87,20 @@
   .due-info{min-width:0;}
   .due-date{font-size:11px;color:var(--slate-soft);font-weight:600;}
   .due-name{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.3;}
-  @media(max-width:860px){.spotlight{grid-template-columns:1fr;}.rec-cards{grid-template-columns:1fr;}}
+  @media(max-width:860px){.spotlight{grid-template-columns:1fr;}}
+  @media(max-width:520px){.rec-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}}
+  @media(max-width:760px){
+    .navbar{flex-wrap:wrap;gap:10px 12px;}
+    .navright{margin-left:auto;}
+    .tabs{order:3;flex:0 0 100%;width:100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;gap:0;border-top:1px solid var(--line);padding-top:2px;}
+    .navtab{padding:11px 0;margin-right:18px;white-space:nowrap;}
+    .brand .bs{max-width:none;}
+    .searchwrap{flex:1 1 100%;order:-1;}
+    select.sortsel,select.monthsel{flex:1 1 40%;}
+    .countbar{flex-wrap:wrap;gap:8px;}
+    .cta-banner{padding:18px 18px;}
+    .cta-tt{font-size:15.5px;}
+  }
   header.top{border-bottom:2px solid var(--ink);padding-bottom:20px;}
   .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
   .brand{display:flex;flex-direction:column;gap:6px;cursor:pointer;}
@@ -775,7 +788,7 @@ window.__traceInit = function(){
     document.getElementById("dueTitle").textContent=t.dueTitle;
     document.getElementById("dueAll").textContent=t.dueAll+" ›";
     var catKo={award:"어워드",challenge:"챌린지",fellowship:"펠로우십",dataset:"데이터셋",workshop:"워크샵"};
-    document.getElementById("recCards").innerHTML=withD.slice(0,3).map(function(x){var e=x.e,s=x.s;var days=Math.max(0,Math.round((s.sort-today)/MS_DAY));var reason=(s.key==="open"||s.key==="soon")?(state.lang==="ko"?("마감 D-"+days+" · 지금 지원 가능"):("Open now · D-"+days)):(state.lang==="ko"?("매년 열리는 "+(catKo[e.category]||"기회")):("A recurring "+t[e.category].toLowerCase()));return '<div class="rec-card cat-'+e.category+'" data-id="'+esc(e.id)+'"><div class="rc-top">'+tileHTML(e)+'<span class="pill '+s.key+'">'+esc(s.pill)+'</span></div><h4>'+esc(e.title)+'</h4><div class="rc-reason"><span class="rc-rl">'+esc(t.recWhy)+'</span>'+esc(reason)+'</div></div>';}).join("");
+    document.getElementById("recCards").innerHTML=withD.slice(0,6).map(function(x){var e=x.e,s=x.s;var days=Math.max(0,Math.round((s.sort-today)/MS_DAY));var reason=(s.key==="open"||s.key==="soon")?(state.lang==="ko"?("마감 D-"+days+" · 지금 지원 가능"):("Open now · D-"+days)):(state.lang==="ko"?("매년 열리는 "+(catKo[e.category]||"기회")):("A recurring "+t[e.category].toLowerCase()));return '<div class="rec-card cat-'+e.category+'" data-id="'+esc(e.id)+'"><div class="rc-top">'+tileHTML(e)+'<span class="pill '+s.key+'">'+esc(s.pill)+'</span></div><h4>'+esc(e.title)+'</h4><div class="rc-reason"><span class="rc-rl">'+esc(t.recWhy)+'</span>'+esc(reason)+'</div></div>';}).join("");
     document.getElementById("dueList").innerHTML=withD.slice(0,5).map(function(x){var e=x.e,s=x.s;var days=Math.max(0,Math.round((s.sort-today)/MS_DAY));return '<div class="due-row" data-id="'+esc(e.id)+'"><span class="due-d">D-'+days+'</span><div class="due-info"><div class="due-date">'+esc(shortWhen(e,s))+'</div><div class="due-name">'+esc(e.title)+'</div></div></div>';}).join("");
   }
   function buildStatic(){
