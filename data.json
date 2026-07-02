@@ -28,6 +28,8 @@
     "source": "https://www.trb.org/AboutTRB/BurggrafAward.aspx",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "Transportation Research Record에 발표된 논문 중 35세 이하 저자의 뛰어난 연구를 기리는 상입니다.",
+    "descEn": "An award recognizing an outstanding Transportation Research Record paper authored by a researcher aged 35 or younger.",
     "scope": "international",
     "restricted": false
   },
@@ -57,6 +59,8 @@
     "source": "https://www.trb.org/AboutTRB/JohnsonAward.aspx",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통 계획·환경 분야에서 학술지 TRR에 발표된 가장 우수한 논문에 수여하는 상입니다.",
+    "descEn": "An award for the outstanding paper on planning and environment published in the Transportation Research Record.",
     "scope": "international",
     "restricted": false
   },
@@ -86,6 +90,8 @@
     "source": "https://www.trb.org/AboutTRB/PaperAwards.aspx",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통시설의 운영·안전·유지관리 분야에서 TRR에 실린 우수 논문을 기리는 상입니다.",
+    "descEn": "An award for the outstanding paper on operation, safety, and maintenance of transportation facilities in the TRR.",
     "scope": "international",
     "restricted": false
   },
@@ -114,6 +120,8 @@
     "source": "https://www.trb.org/AboutTRB/WootanAward.aspx",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통 정책·조직 분야에서 학술지 TRR에 발표된 우수 논문에 수여하는 상입니다.",
+    "descEn": "An award for the outstanding paper on policy and organization published in the Transportation Research Record.",
     "scope": "international",
     "restricted": false
   },
@@ -142,6 +150,8 @@
     "source": "https://www.trb.org/AboutTRB/WoodsAward.aspx",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통시설의 설계·시공 분야에서 TRR에 실린 우수 논문을 기리는 상입니다.",
+    "descEn": "An award for the outstanding paper on design and construction of transportation facilities in the TRR.",
     "scope": "international",
     "restricted": false
   },
@@ -171,6 +181,8 @@
     "source": "https://connect.informs.org/tsl/awards",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통과학·물류 분야의 뛰어난 박사학위 논문에 수여하는, 1970년부터 이어진 가장 오래된 상입니다.",
+    "descEn": "The oldest such prize (since 1970), honoring an outstanding PhD dissertation in transportation science and logistics.",
     "scope": "international",
     "restricted": false
   },
@@ -200,6 +212,8 @@
     "source": "https://connect.informs.org/tsl/awards",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통·물류에 혁신적인 OR·계량 분석을 제시한 학술지 논문을 기리는 상입니다.",
+    "descEn": "An award recognizing a refereed-journal paper that presents innovative OR and quantitative approaches to transportation and logistics.",
     "scope": "international",
     "restricted": false
   },
@@ -230,6 +244,8 @@
     "source": "https://connect.informs.org/tsl/awards",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통과학·물류 분야에서 학생이 주도적으로 저술한 우수 논문에 수여하는 상입니다.",
+    "descEn": "An award for an outstanding paper primarily authored by a student in transportation science and logistics.",
     "scope": "international",
     "restricted": false
   },
@@ -259,6 +275,8 @@
     "source": "https://connect.informs.org/tsl/awards",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "박사 취득 후 10~20년의 중견 학자가 교통·물류에 이룬 근본적 기여를 기리는 상입니다.",
+    "descEn": "An award honoring a mid-career scholar (10-20 years past PhD) for fundamental contributions to transportation science and logistics.",
     "scope": "international",
     "restricted": false
   },
@@ -288,6 +306,8 @@
     "source": "https://connect.informs.org/tsl/awards",
     "verified": "2026-07-02",
     "flag": "Frequency reported inconsistently—some sources say at most every second year.",
+    "descKo": "저술·교육·봉사·멘토링으로 교통·물류에 평생 기여한 학자를 기리는 공로상입니다.",
+    "descEn": "A lifetime achievement award for sustained career-long contributions to transportation science and logistics through writing, teaching, service, and mentoring.",
     "scope": "international",
     "restricted": false
   },
@@ -317,6 +337,8 @@
     "source": "https://www.asce.org/career-growth/awards-and-honors/frank-m-masters-transportation-engineering-award",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통시설의 혁신적이고 주목할 만한 계획·설계·시공 성과를 기리는 상입니다.",
+    "descEn": "An award recognizing the best example of innovative or noteworthy planning, design, or construction of transportation facilities.",
     "scope": "international",
     "restricted": false
   },
@@ -347,6 +369,8 @@
     "source": "https://www.asce.org/career-growth/awards-and-honors/wilbur-s-smith-award",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "고속도로 공학에서 토목기술자의 역할을 높이는 데 특별히 기여한 이에게 수여하는 상입니다.",
+    "descEn": "An award for special contributions that enhance the civil engineer's role in highway engineering.",
     "scope": "international",
     "restricted": false
   },
@@ -377,6 +401,8 @@
     "source": "https://www.asce.org/career-growth/awards-and-honors/james-laurie-prize",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "교통공학의 발전에 결정적으로 기여한 인물에게 수여하는 상입니다.",
+    "descEn": "A prize recognizing a definitive contribution to the advancement of transportation engineering.",
     "scope": "international",
     "restricted": false
   },
@@ -408,6 +434,8 @@
     "source": "https://ieee-itss.org/awards/best-dissertation/",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "지능형 교통체계(ITS) 전 분야에서 가장 뛰어난 박사학위 논문을 선정해 수여하는 상입니다.",
+    "descEn": "An award for the best PhD dissertation in any area of intelligent transportation systems.",
     "scope": "international",
     "restricted": false
   },
@@ -438,6 +466,8 @@
     "source": "https://ieee-itss.org/awards/",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "ITS 연구·응용에서 기여와 리더십을 보인 신진 연구자·기술자를 기리는 상입니다.",
+    "descEn": "An award recognizing an early-career researcher or engineer for contributions and leadership in ITS research and applications.",
     "scope": "international",
     "restricted": false
   },
@@ -467,6 +497,8 @@
     "source": "https://ieee-itss.org/awards/",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "ITS 기술을 실무 현장에 적용하는 데 크게 기여한 성과를 기리는 상입니다.",
+    "descEn": "An award recognizing significant contributions to applying ITS technologies in practical fields.",
     "scope": "international",
     "restricted": false
   },
@@ -495,6 +527,8 @@
     "source": "https://ieee-itss.org/awards/",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "지능형 교통체계 발전에 평생에 걸쳐 모범적으로 기여한 인물을 기리는 공로상입니다.",
+    "descEn": "A lifetime achievement award honoring exemplary career-long contributions to intelligent transportation systems.",
     "scope": "international",
     "restricted": false
   },
@@ -524,6 +558,8 @@
     "source": "https://wctrs-society.com/world-conference/prizes/",
     "verified": "2026-07-02",
     "flag": "Triennial WCTR conference (next: 2026).",
+    "descKo": "학문적·전문적 경력으로 교통 학계에 두드러진 공헌을 한 인물에게 수여하는 상입니다.",
+    "descEn": "A prize honoring a person whose scientific and professional career has been of distinguished benefit to the transportation community.",
     "scope": "international",
     "restricted": false
   },
@@ -556,6 +592,8 @@
     "source": "https://wctrs-society.com/world-conference/prizes/",
     "verified": "2026-07-02",
     "flag": "Tied to the triennial WCTR conference; requires conference paper.",
+    "descKo": "WCTR 학술대회에서 35세 미만 연구자가 발표한 최우수 논문에 수여하는 상입니다.",
+    "descEn": "A prize for the best paper presented at the WCTR conference by a researcher under 35.",
     "scope": "international",
     "restricted": false
   },
@@ -584,6 +622,8 @@
     "source": "https://iatbr.weebly.com/about-the-prize.html",
     "verified": "2026-07-02",
     "flag": "Call for nominations distributed each January for the prior year's dissertations.",
+    "descKo": "통행행태 연구 분야에서 가장 우수한 박사학위 논문을 선정해 수여하는 상입니다.",
+    "descEn": "A prize for the best PhD dissertation in travel behaviour research.",
     "scope": "international",
     "restricted": false
   },
@@ -613,6 +653,8 @@
     "source": "https://easts.info/awarding/best-paper-award/",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "격년 EASTS 학술대회의 우수 논문을 선정하며, 야소시마상은 그중 최고 영예에 해당하는 상입니다.",
+    "descEn": "An award for the best papers at the biennial EASTS Conference, with the Yasoshima Prize as the top honor among them.",
     "scope": "international",
     "restricted": false
   },
@@ -644,6 +686,8 @@
     "source": "https://www.ite.org/professional-and-career-development/awards/theodore-m-matson-memorial-award/",
     "verified": "2026-07-02",
     "flag": "Nomination period opens January 1; deadlines vary by award.",
+    "descKo": "실무 적용·연구·전문성 향상을 통해 교통공학에 크게 기여한 성과를 기리는 상입니다.",
+    "descEn": "An award recognizing outstanding contributions to traffic engineering through practical application, research, or advancement of the profession.",
     "scope": "international",
     "restricted": false
   },
@@ -674,6 +718,8 @@
     "source": "https://www.ite.org/professional-and-career-development/awards/young-member-of-the-year-award1/",
     "verified": "2026-07-02",
     "flag": "Young Leaders to Follow nominations close ~March 15 each year.",
+    "descKo": "ITE의 젊은 리더 가운데 그해 가장 활약한 35세 이하 회원을 기리는 상입니다.",
+    "descEn": "An award recognizing an outstanding ITE member aged 35 or younger, selected from the society's Young Leaders to Follow.",
     "scope": "international",
     "restricted": false
   },
@@ -709,6 +755,8 @@
     "source": "https://kst.or.kr/bbs/page.php?hid=prize",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "대한교통학회지에 발표된 논문 중 최우수작을 선정해 수여하는 학술상입니다.",
+    "descEn": "An academic award for the best paper published in the journal of the Korean Society of Transportation.",
     "scope": "korean",
     "restricted": false
   },
@@ -737,6 +785,8 @@
     "source": "https://ieee-iv.org/2026/contributions/paper-award-nomination/",
     "verified": "2026-07-02",
     "flag": "Committee-selected. Held annually ~June (2026: Jun 22-25, Detroit).",
+    "descKo": "IEEE 지능형자동차 심포지엄(IV)에서 발표된 논문 중 최우수작에 수여하는 상입니다.",
+    "descEn": "An award for the best paper presented at the IEEE Intelligent Vehicles Symposium (IV).",
     "scope": "international",
     "restricted": false
   },
@@ -766,6 +816,8 @@
     "source": "https://ieee-itsc.org/2026/contributions/paper-award-nomination/",
     "verified": "2026-07-02",
     "flag": "Committee-selected. Held annually Sept/Oct (2026: Sept 15-18, Naples).",
+    "descKo": "IEEE 지능형교통체계 학술대회(ITSC)에서 발표된 최우수 논문에 수여하는 상입니다.",
+    "descEn": "An award for the best paper presented at the IEEE Intelligent Transportation Systems Conference (ITSC).",
     "scope": "international",
     "restricted": false
   },
@@ -795,6 +847,8 @@
     "source": "https://ieee-itss.org/pub/t-its/t-its-paper-award-history/",
     "verified": "2026-07-02",
     "flag": "Society-level journal paper award.",
+    "descKo": "IEEE Transactions on ITS에 게재된 정규·리뷰 논문 중 최우수작을 기리는 상입니다.",
+    "descEn": "An award honoring the best regular and survey papers published in IEEE Transactions on Intelligent Transportation Systems.",
     "scope": "international",
     "restricted": false
   },
@@ -823,6 +877,8 @@
     "source": "https://2025.ieee-icra.org/program/awards-and-finalists/",
     "verified": "2026-07-02",
     "flag": "Selected across ALL robotics topics, not AV-specific.",
+    "descKo": "로보틱스 대표 학회인 IEEE ICRA에서 발표된 최우수 논문에 수여하는 상입니다.",
+    "descEn": "An award for the best paper presented at IEEE ICRA, a leading robotics conference.",
     "scope": "international",
     "restricted": false
   },
@@ -851,6 +907,8 @@
     "source": "https://2023.ieee-iros.org/iros-2023-award-winners/",
     "verified": "2026-07-02",
     "flag": "Selected across ALL robotics topics, not AV-specific. Landing page varies by year.",
+    "descKo": "로보틱스 주요 학회인 IEEE/RSJ IROS에서 발표된 최우수 논문에 수여하는 상입니다.",
+    "descEn": "An award for the best overall paper presented at the IEEE/RSJ IROS robotics conference.",
     "scope": "international",
     "restricted": false
   },
@@ -880,6 +938,8 @@
     "source": "https://waymo.com/open/challenges/",
     "verified": "2026-07-02",
     "flag": "Run annually 2020-2025, ~May close, winners at CVPR WAD. No formal 2026 Challenge, but leaderboards active.",
+    "descKo": "Waymo Open Motion Dataset로 최대 8개 에이전트의 8초 다중 궤적 예측을 겨루는 챌린지입니다.",
+    "descEn": "A challenge on the Waymo Open Motion Dataset to predict multi-modal 8-second trajectories for up to eight agents.",
     "scope": "international",
     "restricted": false
   },
@@ -909,6 +969,8 @@
     "source": "https://waymo.com/blog/2025/03/2025-waymo-open-dataset-challenges/",
     "verified": "2026-07-02",
     "flag": "Since 2023, winners at CVPR WAD; 2025 edition closed May 22, 2025. Leaderboard remains open.",
+    "descKo": "장면 속 모든 에이전트의 사실적인 폐루프 주행 행동 생성을 겨루는 챌린지입니다.",
+    "descEn": "A challenge to generate realistic closed-loop behavior for all agents in a scene, scored by a composite realism metric.",
     "scope": "international",
     "restricted": false
   },
@@ -938,6 +1000,8 @@
     "source": "https://eval.ai/web/challenges/challenge-page/591/leaderboard/1659",
     "verified": "2026-07-02",
     "flag": "Rolling year-round server; winner rounds historically at CVPR/ICRA AD workshops.",
+    "descKo": "nuScenes 도심 주행 데이터로 차량의 미래 궤적 예측 성능을 겨루는 챌린지입니다.",
+    "descEn": "A challenge on the nuScenes urban-driving dataset to predict future vehicle trajectories.",
     "scope": "international",
     "restricted": false
   },
@@ -967,6 +1031,8 @@
     "source": "https://nuplan-devkit.readthedocs.io/en/latest/competition.html",
     "verified": "2026-07-02",
     "flag": "Flagship competition at CVPR 2023 (Jan 30-May 26, 2023). Dataset/devkit/leaderboard remain; no confirmed later formal edition.",
+    "descKo": "최대 규모 계획 벤치마크 nuPlan에서 개방·폐루프 모션 플래닝을 겨루는 챌린지입니다.",
+    "descEn": "A challenge on nuPlan, the largest planning benchmark, evaluating open-loop and closed-loop motion planning.",
     "scope": "international",
     "restricted": false
   },
@@ -996,6 +1062,8 @@
     "source": "https://www.argoverse.org/tasks.html",
     "verified": "2026-07-02",
     "flag": "First run 2019, annually at CVPR WAD. Largely superseded by Argoverse 2.",
+    "descKo": "Argoverse 1 데이터와 HD 지도 차선정보로 대상 에이전트의 미래 궤적 예측을 겨루는 대회입니다.",
+    "descEn": "A competition on Argoverse 1 to forecast a focal agent's future trajectory using past tracks and an HD-map lane graph.",
     "scope": "international",
     "restricted": false
   },
@@ -1025,6 +1093,8 @@
     "source": "https://www.argoverse.org/tasks.html",
     "verified": "2026-07-02",
     "flag": "Annually at CVPR WAD; leaderboard open year-round.",
+    "descKo": "자율주행 다중 에이전트의 궤적 예측 성능을 minADE·minFDE 등으로 겨루는 벤치마크 챌린지입니다.",
+    "descEn": "A benchmark challenge that pits multi-agent trajectory forecasting for self-driving against metrics like minADE and minFDE.",
     "scope": "international",
     "restricted": false
   },
@@ -1054,6 +1124,8 @@
     "source": "https://www.argoverse.org/ScenarioMining.html",
     "verified": "2026-07-02",
     "flag": "2026 edition at CVPR WAD; opened Feb 18, 2026, closed ~May 31, 2026. Recurs annually.",
+    "descKo": "자연어 질의로 안전에 중요한 주행 시나리오를 검색하고 탐지·추적하는 능력을 겨루는 챌린지입니다.",
+    "descEn": "A challenge to retrieve safety-critical driving scenarios from natural-language queries and then localize, detect, and track them.",
     "scope": "international",
     "restricted": false
   },
@@ -1083,6 +1155,8 @@
     "source": "https://leaderboard.carla.org/",
     "verified": "2026-07-02",
     "flag": "Formal competition did NOT run in 2025; no 2026 edition announced, but leaderboard v2.1 usable. Historically tied to NeurIPS/CVPR.",
+    "descKo": "CARLA 시뮬레이터에서 다양한 날씨·혼잡 교통 속 폐루프 주행 능력을 주행 점수로 겨루는 챌린지입니다.",
+    "descEn": "A closed-loop challenge to drive routes through varied weather and dense traffic in the CARLA simulator, scored by Driving Score.",
     "scope": "international",
     "restricted": false
   },
@@ -1112,6 +1186,8 @@
     "source": "https://opendrivelab.com/challenge2025/",
     "verified": "2026-07-02",
     "flag": "2025 edition. CVPR phase closed May 10, 2025; ICCV phase Sept 27, 2025. Recurs annually (~CVPR June + ICCV/ECCV phase); 2026 not confirmed.",
+    "descKo": "NAVSIM v2 시뮬레이션에서 종단간(end-to-end) 자율주행 정책의 성능을 평가하는 벤치마크 챌린지입니다.",
+    "descEn": "A benchmark challenge that evaluates end-to-end autonomous driving policies in the NAVSIM v2 simulator.",
     "scope": "international",
     "restricted": false
   },
@@ -1143,6 +1219,8 @@
     "source": "https://cvpr2026.wad.vision/",
     "verified": "2026-07-02",
     "flag": "Tracks change yearly. Use as the annual hub; individual tracks listed separately.",
+    "descKo": "여러 자율주행 벤치마크 트랙을 아우르는 CVPR 자율주행 워크숍(WAD)의 연례 챌린지 허브입니다.",
+    "descEn": "The annual hub of the CVPR Workshop on Autonomous Driving, hosting multiple AV benchmark challenge tracks.",
     "scope": "international",
     "restricted": false
   },
@@ -1173,6 +1251,8 @@
     "source": "https://github.com/iarai/NeurIPS2022-traffic4cast",
     "verified": "2026-07-02",
     "flag": "Past series (NeurIPS 2019-2022); no edition since 2022, IARAI site offline. Reference/benchmark only.",
+    "descKo": "대규모 GPS 데이터로 도시의 단기 교통 상황을 예측하는 NeurIPS 교통 예측 경진대회입니다.",
+    "descEn": "A NeurIPS traffic-prediction competition to forecast short-term city traffic from massive GPS-probe data.",
     "scope": "international",
     "restricted": false
   },
@@ -1202,6 +1282,8 @@
     "source": "https://routingchallenge.mit.edu/about-the-challenge/",
     "verified": "2026-07-02",
     "flag": "Past edition (2021). Reference/benchmark only; dataset still used.",
+    "descKo": "숙련 기사 수준의 경로 품질을 재현하도록 라스트마일 배송 순서를 학습하는 데이터 챌린지입니다.",
+    "descEn": "A data challenge to build models that sequence last-mile delivery stops to match experienced-driver route quality.",
     "scope": "international",
     "restricted": false
   },
@@ -1231,6 +1313,8 @@
     "source": "https://www.ite.org/events-meetings/traffic-bowl/",
     "verified": "2026-07-02",
     "flag": "Annual since 2009; 2026 Grand Championship Jul 20, 2026, Detroit.",
+    "descKo": "교통 계획·공학과 ITE 역사 지식을 겨루는 대학생 대상 퀴즈 형식의 경연 대회입니다.",
+    "descEn": "A Jeopardy-style quiz competition for college students on transportation planning, engineering, and ITE history.",
     "scope": "international",
     "restricted": true
   },
@@ -1262,6 +1346,8 @@
     "source": "https://zindi.africa/competitions/barbados-traffic-analysis-challenge",
     "verified": "2026-07-02",
     "flag": "Closed Jan 25, 2026. Reference only.",
+    "descKo": "교통 카메라 영상으로 로터리 혼잡을 약 5분 앞서 예측하는 데이터 챌린지입니다.",
+    "descEn": "A data challenge to predict roundabout congestion about five minutes ahead from traffic-camera video streams.",
     "scope": "international",
     "restricted": false
   },
@@ -1291,6 +1377,8 @@
     "source": "https://www.kaggle.com/c/nyc-taxi-trip-duration",
     "verified": "2026-07-02",
     "flag": "Past Playground competition (2017). Reference/benchmark only.",
+    "descKo": "뉴욕시 택시 운행 데이터로 총 이동 소요 시간을 예측하는 캐글 데이터 챌린지입니다.",
+    "descEn": "A Kaggle data challenge to predict total taxi trip duration from NYC taxi records.",
     "scope": "international",
     "restricted": false
   },
@@ -1320,6 +1408,8 @@
     "source": "https://www.kaggle.com/c/bike-sharing-demand",
     "verified": "2026-07-02",
     "flag": "Past Knowledge/Playground competition (2014-15). Reference/benchmark only.",
+    "descKo": "이용 이력과 날씨 데이터로 시간별 공유 자전거 대여 수요를 예측하는 캐글 데이터 챌린지입니다.",
+    "descEn": "A Kaggle data challenge to forecast hourly bike-sharing rental demand from usage and weather data.",
     "scope": "international",
     "restricted": false
   },
@@ -1349,6 +1439,8 @@
     "source": "https://www.kdd.org/kdd2017/News/view/announcing-kdd-cup-2017-highway-tollgates-traffic-flow-prediction",
     "verified": "2026-07-02",
     "flag": "KDD Cup recurs annually but themes change; traffic-flow edition was 2017 only. Reference/benchmark only.",
+    "descKo": "고속도로 요금소의 평균 통행 시간과 교통량을 예측하는 KDD Cup 데이터 챌린지입니다.",
+    "descEn": "A KDD Cup data challenge to predict average travel time and traffic volume through highway tollgates.",
     "scope": "international",
     "restricted": false
   },
@@ -1379,6 +1471,8 @@
     "source": "https://www.kdd.org/kdd2019/kdd-cup",
     "verified": "2026-07-02",
     "flag": "KDD Cup recurs annually but themes change; transportation edition was 2019 only. Reference/benchmark only.",
+    "descKo": "이용자 맥락에 맞춰 복합 교통수단 이동 경로를 추천·순위화하는 KDD Cup 챌린지입니다.",
+    "descEn": "A KDD Cup challenge to recommend and rank multimodal travel plans based on user preferences and context.",
     "scope": "international",
     "restricted": false
   },
@@ -1410,6 +1504,8 @@
     "source": "https://sites.google.com/view/trbaed50/activities/competitions",
     "verified": "2026-07-02",
     "flag": "Held irregularly (2013, 2019, 2022) at TRB Annual Meeting. Next edition unannounced.",
+    "descKo": "교통 속도 예측·보행자 횡단 감지 등 회차마다 다른 과제를 겨루는 TRB 산하 교통 예측 경연 대회입니다.",
+    "descEn": "A TRB-affiliated forecasting competition tackling edition-specific tasks like traffic-speed prediction and pedestrian-crossing detection.",
     "scope": "international",
     "restricted": false
   },
@@ -1440,6 +1536,8 @@
     "source": "https://www.trb-transit-mgmt-perf.org/annual-meetings/transit-data-challenge",
     "verified": "2026-07-02",
     "flag": "Annual at the January TRB Annual Meeting; organizers note the 2026 edition is on hold.",
+    "descKo": "대중교통 데이터의 혁신적 활용으로 대중교통 의사결정 개선을 겨루는 TRB 데이터 챌린지입니다.",
+    "descEn": "A TRB challenge to showcase innovative use of transit data for improving public-transit decision-making.",
     "scope": "international",
     "restricted": false
   },
@@ -1470,6 +1568,8 @@
     "source": "https://www.grab.com/sg/aiforsea/aiforseachallenges/",
     "verified": "2026-07-02",
     "flag": "Past edition (2019). Reference only; also had CV and Safety tracks.",
+    "descKo": "지역별 과거 수요 데이터로 승차 호출 수요를 여러 시점 앞서 예측하는 데이터 챌린지입니다.",
+    "descEn": "A data challenge to forecast ride-booking demand several steps ahead from geohash-aggregated historical demand.",
     "scope": "international",
     "restricted": false
   },
@@ -1500,6 +1600,8 @@
     "source": "https://zindi.africa/competitions/2025-accra-mobility-prediction-hackathon-powered",
     "verified": "2026-07-02",
     "flag": "2025 edition closed (Jul 5, 2025); a 2024 Accra edition also ran. Reference only. Region-restricted (Ghana).",
+    "descKo": "아크라의 운행·날씨 데이터로 택시 이동 시간을 예측하는 모빌리티 예측 해커톤입니다.",
+    "descEn": "A mobility-prediction hackathon to predict taxi ride time in Accra from trip and weather features.",
     "scope": "international",
     "restricted": false
   },
@@ -1530,6 +1632,8 @@
     "source": "https://zindi.africa/competitions/lusaka-mobility-prediction-hackathon",
     "verified": "2026-07-02",
     "flag": "One-day hackathon (Nov 4, 2023). Reference only. Region-restricted (Zambia).",
+    "descKo": "루사카의 도로 평균 속도를 하루에 걸쳐 15분 단위로 예측하는 모빌리티 예측 해커톤입니다.",
+    "descEn": "A mobility-prediction hackathon to predict average road speed in Lusaka at 15-minute intervals across the day.",
     "scope": "international",
     "restricted": false
   },
@@ -1559,6 +1663,8 @@
     "source": "https://www.kaggle.com/c/new-york-city-taxi-fare-prediction",
     "verified": "2026-07-02",
     "flag": "Past Playground competition (2018). Reference/benchmark only.",
+    "descKo": "승하차 위치·시간 등으로 뉴욕시 택시 요금을 예측하는 캐글 데이터 챌린지입니다.",
+    "descEn": "A Kaggle data challenge to predict NYC taxi fares from pickup/dropoff location, time, and passenger count.",
     "scope": "international",
     "restricted": false
   },
@@ -1592,6 +1698,8 @@
     "source": "https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program",
     "verified": "2026-07-02",
     "flag": "Requires enrollment at a US institution — not accessible from a Korean university. Annual NOFO on Grants.gov.",
+    "descKo": "미국 교통 분야 대학원생의 학업과 연구를 지원하는 미 연방도로청(FHWA)의 교통 펠로우십입니다.",
+    "descEn": "A US FHWA fellowship supporting graduate students in transportation-related programs.",
     "scope": "international",
     "restricted": true
   },
@@ -1623,6 +1731,8 @@
     "source": "https://enotrans.org/course/ldc/",
     "verified": "2026-07-02",
     "flag": "Requires nomination by a US institution — generally not accessible from a Korean university. Conference Jun 1-4, 2026.",
+    "descKo": "교통 분야 대학원생을 미래 리더로 키우는 Eno 센터의 워싱턴 DC 연수 펠로우십입니다.",
+    "descEn": "An Eno Center fellowship that develops transportation graduate students as future leaders through a DC program.",
     "scope": "international",
     "restricted": true
   },
@@ -1657,6 +1767,8 @@
     "source": "https://vref.se/future-urban-transport/2026/lee-schipper-2026-applications-are-open/",
     "verified": "2026-07-02",
     "flag": "2026 award structure should be confirmed in the official guidelines PDF; deadline is for the expression of interest.",
+    "descKo": "효율적·지속가능한 교통과 에너지 분야의 신진 연구자를 지원하는 추모 장학 펠로우십입니다.",
+    "descEn": "A memorial scholarship supporting early-career scholars in efficient and sustainable transport and energy.",
     "scope": "international",
     "restricted": false
   },
@@ -1690,6 +1802,8 @@
     "source": "https://www.wtsinternational.org/wts-foundation/scholarships",
     "verified": "2026-07-02",
     "flag": "Women only; must route the application through a WTS chapter (mostly US/Canada). Chapter deadlines typically fall; winners in May.",
+    "descKo": "교통 분야 여성 대학원생의 학업을 지원하는 WTS 재단의 대학원 장학 펠로우십입니다.",
+    "descEn": "A WTS Foundation graduate scholarship supporting women in transportation-related graduate programs.",
     "scope": "international",
     "restricted": false
   },
@@ -1721,6 +1835,8 @@
     "source": "https://research.nvidia.com/graduate-fellowships",
     "verified": "2026-07-02",
     "flag": "Mandatory internship at a listed NVIDIA office (none in Korea). 2026-27 cycle closed Sep 15, 2025 — reopens ~Aug/Sep.",
+    "descKo": "자율주행·로보틱스·AI 등 컴퓨팅 분야 박사과정생의 연구를 후원하는 NVIDIA 대학원 펠로우십입니다.",
+    "descEn": "An NVIDIA graduate fellowship supporting PhD students' research in computing fields like AV, robotics, and AI.",
     "scope": "international",
     "restricted": false
   },
@@ -1754,6 +1870,8 @@
     "source": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-south-korea",
     "verified": "2026-07-02",
     "flag": "Korea edition award is smaller than US/Europe QIF; confirm the current-year deadline (apply via Google Form).",
+    "descKo": "한국 대학 석·박사생의 자율주행·피지컬 AI 등 연구를 후원하는 퀄컴 혁신 펠로우십입니다.",
+    "descEn": "A Qualcomm Innovation Fellowship backing Korean MS/PhD students in areas like autonomous driving and physical AI.",
     "scope": "korean",
     "restricted": false
   },
@@ -1786,6 +1904,8 @@
     "source": "https://research.google/programs-and-events/phd-fellowship/",
     "verified": "2026-07-02",
     "flag": "General CS/ML fellowship (not transportation-specific); university nomination required; East Asia award smaller than other regions.",
+    "descKo": "머신러닝·기계 인지 등 분야 박사과정생을 후원하는 구글의 동아시아 박사 펠로우십입니다.",
+    "descEn": "A Google PhD Fellowship for East Asia supporting doctoral students in fields like machine learning and machine perception.",
     "scope": "international",
     "restricted": false
   },
@@ -1816,6 +1936,8 @@
     "source": "https://www.trb.org/ACRP/GraduateResearchAwards.aspx",
     "verified": "2026-07-02",
     "flag": "Requires enrollment at a US or Canadian institution — not accessible from a Korean university; aviation-focused.",
+    "descKo": "공공 항공 주제 연구를 수행하는 대학원생을 지원하는 TRB 공항협력연구프로그램(ACRP)의 연구상입니다.",
+    "descEn": "A TRB ACRP research award supporting graduate students who write research papers on public-sector aviation topics.",
     "scope": "international",
     "restricted": true
   },
@@ -1850,6 +1972,8 @@
     "source": "https://marie-sklodowska-curie-actions.ec.europa.eu/funding/msca-postdoctoral-fellowships-2026",
     "verified": "2026-07-02",
     "flag": "Field-agnostic; requires a European host. A KAIST researcher would apply to move to an EU host (or via Global PF).",
+    "descKo": "박사후연구자가 유럽 호스트로 이동해 연구하도록 지원하는 EU 호라이즌 유럽의 마리 퀴리 박사후 펠로우십입니다.",
+    "descEn": "A Horizon Europe Marie Sklodowska-Curie postdoctoral fellowship funding PhD holders' research mobility to European hosts.",
     "scope": "international",
     "restricted": false
   },
@@ -1884,6 +2008,8 @@
     "source": "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/humboldt-research-fellowship",
     "verified": "2026-07-02",
     "flag": "Field-agnostic; requires a German host. Applications anytime; committees meet Mar, Jul, Nov.",
+    "descKo": "해외 연구자가 독일 호스트에서 연구를 수행하도록 지원하는 알렉산더 폰 훔볼트 재단의 연구 펠로우십입니다.",
+    "descEn": "An Alexander von Humboldt Foundation fellowship supporting non-German researchers to conduct research at a German host.",
     "scope": "international",
     "restricted": false
   },
@@ -1919,6 +2045,8 @@
     "source": "https://easts.info/icra/",
     "verified": "2026-07-02",
     "flag": "Group-based grant requiring an established EASTS group — not directly targetable by an individual newcomer.",
+    "descKo": "EASTS에 등록된 국제 공동 연구 그룹의 협력 연구를 지원하는 연구 지원금입니다.",
+    "descEn": "A research grant supporting international cooperative research groups registered with EASTS.",
     "scope": "international",
     "restricted": false
   },
@@ -1951,6 +2079,8 @@
     "source": "https://biosci.snu.ac.kr/board/notice",
     "verified": "2026-07-02",
     "flag": "Apply through your institution's 산학협력단 and IRIS. Confirm current-year call dates on NRF/IRIS.",
+    "descKo": "교통·AI를 포함한 전 분야 신진 연구자의 기초연구를 지원하는 한국연구재단(NRF)의 세종과학펠로우십입니다.",
+    "descEn": "An NRF Sejong Science Fellowship supporting basic research by early-career researchers across all fields, including transport and AI.",
     "scope": "korean",
     "restricted": false
   },
@@ -1978,6 +2108,8 @@
     "source": "https://www.zonta.org/Web/Web/Programs/Education/Amelia_Earhart_Fellowship.aspx",
     "verified": "2026-07-02",
     "flag": "Women only and strictly aerospace/space — ground-transportation AV work out of scope. Next deadline ~Nov 15, 2026.",
+    "descKo": "항공우주공학·우주과학 분야 여성 박사과정생을 후원하는 존타 인터내셔널의 펠로우십입니다.",
+    "descEn": "A Zonta International fellowship supporting women PhD students in aerospace engineering and space sciences.",
     "scope": "international",
     "restricted": false
   },
@@ -2010,6 +2142,8 @@
     "source": "https://www.transportation.gov/utc/university-transportation-centers-annual-outstanding-student-year-awards",
     "verified": "2026-07-02",
     "flag": "Nomination by a US UTC only — not accessible from Korean institutions; a recognition award, not an open application.",
+    "descKo": "각 대학교통센터(UTC)가 추천한 우수 학생의 연구·리더십을 기리는 미 교통부 표창 상입니다.",
+    "descEn": "A USDOT award honoring an outstanding student nominated by each US University Transportation Center for research and leadership.",
     "scope": "international",
     "restricted": true
   },
@@ -2039,6 +2173,8 @@
     "source": "https://waymo.com/open/",
     "verified": "2026-07-02",
     "flag": "Google sign-in required; non-commercial Waymo Dataset License",
+    "descKo": "3D 탐지·추적·궤적 예측 등을 위한 다중 라이다·카메라 기반 자율주행 공개 데이터셋입니다.",
+    "descEn": "An open autonomous-driving dataset with multi-LiDAR and multi-camera data for 3D detection, tracking, and motion forecasting.",
     "scope": "international",
     "restricted": false
   },
@@ -2068,6 +2204,8 @@
     "source": "https://github.com/nutonomy/nuscenes-devkit",
     "verified": "2026-07-02",
     "flag": "Free registration; non-commercial CC BY-NC-SA 4.0",
+    "descKo": "360도 라이다·카메라·레이더로 도심 주행을 담아 3D 검출·추적·분할·예측 연구에 두루 쓰이는 자율주행 멀티모달 벤치마크 데이터셋입니다.",
+    "descEn": "A multimodal autonomous-driving benchmark with 360-degree LiDAR, camera, and radar data, widely used for 3D detection, tracking, segmentation, and prediction.",
     "scope": "international",
     "restricted": false
   },
@@ -2098,6 +2236,8 @@
     "source": "https://www.nuscenes.org/nuplan",
     "verified": "2026-07-02",
     "flag": "Free registration; non-commercial license",
+    "descKo": "1,200시간 분량의 주행 궤적과 HD 지도로 자율주행 모션 플래닝을 개·폐루프로 평가하는 벤치마크 데이터셋입니다.",
+    "descEn": "A large-scale motion-planning benchmark providing 1,200 hours of ego and agent trajectories with HD maps for closed- and open-loop planning evaluation.",
     "scope": "international",
     "restricted": false
   },
@@ -2127,6 +2267,8 @@
     "source": "https://www.argoverse.org/",
     "verified": "2026-07-02",
     "flag": "Non-commercial CC BY-NC-SA 4.0",
+    "descKo": "32만여 시나리오의 라이다·카메라·HD 지도를 담아 3D 추적과 차량 궤적 예측 연구에 쓰이는 자율주행 데이터셋입니다.",
+    "descEn": "An autonomous-driving dataset with LiDAR, cameras, and HD maps supporting 3D tracking and motion forecasting across 324k scenarios.",
     "scope": "international",
     "restricted": false
   },
@@ -2156,6 +2298,8 @@
     "source": "https://www.argoverse.org/",
     "verified": "2026-07-02",
     "flag": "Non-commercial CC BY-NC-SA 4.0",
+    "descKo": "3D 검출·추적, 25만 시나리오 궤적 예측, 라이다 자기지도학습, 지도 변화까지 아우르는 차세대 자율주행 데이터셋입니다.",
+    "descEn": "A next-generation autonomous-driving dataset covering 3D detection/tracking, 250k-scenario forecasting, LiDAR self-supervision, and map-change tasks.",
     "scope": "international",
     "restricted": false
   },
@@ -2185,6 +2329,8 @@
     "source": "https://www.cvlibs.net/datasets/kitti/",
     "verified": "2026-07-02",
     "flag": "Non-commercial CC BY-NC-SA 3.0",
+    "descKo": "스테레오 카메라와 라이다로 검출·추적·분할·깊이·주행거리계 등 다양한 비전 과제를 아우르는 대표적 자율주행 벤치마크 데이터셋입니다.",
+    "descEn": "A foundational autonomous-driving benchmark spanning stereo, flow, depth, odometry, and 2D/3D detection, tracking, and segmentation tasks.",
     "scope": "international",
     "restricted": false
   },
@@ -2213,6 +2359,8 @@
     "source": "https://once-for-auto-driving.github.io/",
     "verified": "2026-07-02",
     "flag": "Registration; Huawei terms of use (non-commercial)",
+    "descKo": "100만 라이다 장면과 700만 이미지로 준·자기지도 기반 3D 객체 검출 연구를 지원하는 대규모 자율주행 데이터셋입니다.",
+    "descEn": "A large-scale dataset of 1M LiDAR scenes and 7M images supporting semi- and self-supervised 3D object detection for autonomous driving.",
     "scope": "international",
     "restricted": false
   },
@@ -2241,6 +2389,8 @@
     "source": "https://www.cityscapes-dataset.com/",
     "verified": "2026-07-02",
     "flag": "Registration; free for non-commercial use",
+    "descKo": "도심 거리 장면의 픽셀·인스턴스·판옵틱 의미 분할과 3D 차량 검출을 위한 대표적 도시 주행 영상 데이터셋입니다.",
+    "descEn": "A benchmark dataset of urban street scenes for pixel, instance, and panoptic semantic segmentation and 3D vehicle detection.",
     "scope": "international",
     "restricted": false
   },
@@ -2270,6 +2420,8 @@
     "source": "https://bdd-data.berkeley.edu/",
     "verified": "2026-07-02",
     "flag": "Registration to download; project homepage currently unreachable",
+    "descKo": "10만 개 주행 영상으로 검출·분할·주행가능영역·차선·추적 등 10가지 주행 과제를 아우르는 대규모 자율주행 데이터셋입니다.",
+    "descEn": "A large-scale driving dataset of 100k videos spanning ten tasks including detection, segmentation, drivable area, lane marking, and tracking.",
     "scope": "international",
     "restricted": false
   },
@@ -2300,6 +2452,8 @@
     "source": "https://github.com/liyaguang/DCRNN",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "LA·베이에어리어 도로 센서망의 속도 시계열을 담아 시공간 교통 예측 연구의 표준 벤치마크로 쓰이는 데이터셋입니다.",
+    "descEn": "A standard spatiotemporal traffic-forecasting benchmark of road-sensor speed time series from 207 LA and 325 Bay Area sensors.",
     "scope": "international",
     "restricted": false
   },
@@ -2330,6 +2484,8 @@
     "source": "https://dot.ca.gov/programs/traffic-operations/mpr/pems-source",
     "verified": "2026-07-02",
     "flag": "Free account registration required",
+    "descKo": "캘리포니아 고속도로 4만여 검지기의 교통량·속도·점유율을 제공하며 여러 교통예측 벤치마크의 원천이 되는 데이터셋입니다.",
+    "descEn": "California's freeway loop-detector system providing flow, speed, and occupancy from ~40k detectors and serving as the source of the PEMS benchmarks.",
     "scope": "international",
     "restricted": false
   },
@@ -2360,6 +2516,8 @@
     "source": "https://neurips.cc/virtual/2023/poster/73480",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "캘리포니아 8,600개 센서의 5년치 교통량을 담아 대규모 교통 흐름 예측 연구를 위해 구축된 벤치마크 데이터셋입니다.",
+    "descEn": "A large-scale traffic-flow forecasting benchmark of 8,600 California sensors over five years, built for scalable forecasting research.",
     "scope": "international",
     "restricted": false
   },
@@ -2390,6 +2548,8 @@
     "source": "https://github.com/iarai/NeurIPS2022-traffic4cast",
     "verified": "2026-07-02",
     "flag": "IARAI closed; data via HERE / GitHub; mixed open licenses",
+    "descKo": "희소한 프로브·검지 데이터로 도시 전역 교통을 영상·그래프 형태로 예측하도록 구성된 시공간 교통 데이터셋입니다.",
+    "descEn": "A spatiotemporal dataset for city-wide traffic map-movie forecasting and graph-based ETA from sparse probe and loop data.",
     "scope": "international",
     "restricted": false
   },
@@ -2419,6 +2579,8 @@
     "source": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
     "verified": "2026-07-02",
     "flag": null,
+    "descKo": "뉴욕시 택시·차량호출의 승하차 시각·구역·거리·요금을 담아 이동 수요 분석에 널리 쓰이는 통행 기록 데이터셋입니다.",
+    "descEn": "New York City taxi and for-hire vehicle trip records with pickup/dropoff time, zone, distance, and fare, widely used for mobility-demand analysis.",
     "scope": "international",
     "restricted": false
   },
@@ -2449,6 +2611,8 @@
     "source": "https://levelxdata.com/highd-dataset/",
     "verified": "2026-07-02",
     "flag": "Registration; free non-commercial only, commercial license available",
+    "descKo": "드론으로 독일 고속도로 6곳의 차량 11만여 대 궤적을 촬영해 실주행 거동 분석에 쓰이는 자연주행 궤적 데이터셋입니다.",
+    "descEn": "A naturalistic trajectory dataset of 110,500 vehicles captured by drone at six German highway sites for real-world driving-behavior analysis.",
     "scope": "international",
     "restricted": false
   },
@@ -2479,6 +2643,8 @@
     "source": "https://levelxdata.com/ind-dataset/",
     "verified": "2026-07-02",
     "flag": "Registration; free non-commercial only, commercial license available",
+    "descKo": "드론으로 독일 도심 교차로의 차량·보행자 등 도로 이용자 궤적을 담아 상호작용 분석에 쓰이는 자연주행 궤적 데이터셋입니다.",
+    "descEn": "A drone-recorded naturalistic dataset of vehicle and vulnerable-road-user trajectories at German urban intersections for interaction analysis.",
     "scope": "international",
     "restricted": false
   },
@@ -2509,6 +2675,8 @@
     "source": "https://levelxdata.com/round-dataset/",
     "verified": "2026-07-02",
     "flag": "Registration; free non-commercial only, commercial license available",
+    "descKo": "드론으로 독일 회전교차로의 도로 이용자 약 1만 3,740명 궤적을 담아 회전부 거동 연구에 쓰이는 자연주행 궤적 데이터셋입니다.",
+    "descEn": "A drone-recorded naturalistic dataset of ~13,740 road-user trajectories at German roundabouts for studying roundabout behavior.",
     "scope": "international",
     "restricted": false
   },
@@ -2539,6 +2707,8 @@
     "source": "https://levelxdata.com/exid-dataset/",
     "verified": "2026-07-02",
     "flag": "Registration; free non-commercial only, commercial license available",
+    "descKo": "드론으로 독일 고속도로 진출입·합류부의 도로 이용자 약 6만 9,430명 궤적을 담은 자연주행 궤적 데이터셋입니다.",
+    "descEn": "A drone-recorded naturalistic dataset of ~69,430 road-user trajectories at German highway entries, exits, and merging zones.",
     "scope": "international",
     "restricted": false
   },
@@ -2569,6 +2739,8 @@
     "source": "https://catalog.data.gov/dataset/next-generation-simulation-ngsim-vehicle-trajectories-and-supporting-data",
     "verified": "2026-07-02",
     "flag": "US Government open data (public domain)",
+    "descKo": "미국 주요 도로의 차량 궤적을 10Hz로 정밀 기록해 차량 추종·차선 변경 모델링에 오랫동안 쓰여 온 궤적 데이터셋입니다.",
+    "descEn": "A classic 10 Hz vehicle-trajectory dataset from major U.S. roads, long used for car-following and lane-change modeling.",
     "scope": "international",
     "restricted": false
   },
@@ -2599,6 +2771,8 @@
     "source": "https://arxiv.org/abs/1910.03088",
     "verified": "2026-07-02",
     "flag": "Registration; non-commercial research license",
+    "descKo": "여러 나라의 회전교차로·교차로·합류부에서 다중 에이전트 상호작용 궤적과 HD 지도를 담은 궤적 예측 연구용 데이터셋입니다.",
+    "descEn": "A trajectory-prediction dataset capturing interactive multi-agent motion at roundabouts, intersections, and merges across several countries, with HD maps.",
     "scope": "international",
     "restricted": false
   },
@@ -2634,6 +2808,8 @@
     "source": "https://kst.or.kr/bbs/page.php?hid=prize",
     "verified": "2026-07-02",
     "flag": "Paper submission follows each conference call (spring ~Feb, autumn ~Sep); verify on KST notice.",
+    "descKo": "대한교통학회 학술대회에서 발표된 우수 논문에 폐회식에서 수여하는 최우수 논문상입니다.",
+    "descEn": "An award presented at the closing ceremony of Korean Society of Transportation conferences to recognize outstanding papers presented there.",
     "scope": "korean",
     "restricted": false
   },
@@ -2666,6 +2842,8 @@
     "source": "https://kst.or.kr/bbs/page.php?hid=prize",
     "verified": "2026-07-02",
     "flag": "Application/nomination process not detailed publicly; verify with KST secretariat.",
+    "descKo": "교통·도시계획을 전공하는 학부생과 교통 분야 대학원생을 지원하기 위해 대한교통학회가 수여하는 장학금입니다.",
+    "descEn": "A scholarship awarded by the Korean Society of Transportation to undergraduates in transportation/urban planning and transport-focused graduate students.",
     "scope": "korean",
     "restricted": false
   },
@@ -2697,6 +2875,8 @@
     "source": "https://kits.or.kr/conference/studentConfInfo.html",
     "verified": "2026-07-02",
     "flag": "2026 dates not yet posted; inferred from 2025 (Sep 19).",
+    "descKo": "한국ITS학회 추계학술대회에서 학부생이 제1저자인 논문을 심사와 발표로 겨루는 학부생 논문 경진대회입니다.",
+    "descEn": "An undergraduate paper competition held at the Korea ITS Society fall conference, judging student first-authored papers by review and presentation.",
     "scope": "korean",
     "restricted": false
   },
@@ -2729,6 +2909,8 @@
     "source": "https://research.severance.healthcare/research/project/news.do",
     "verified": "2026-07-02",
     "flag": "Two calls per year (~Jan, mid-year); eligibility limits and dates change annually — verify on NRF/IRIS.",
+    "descKo": "신진·젊은 연구자의 독창적인 개인 기초연구를 지원하는 한국연구재단의 신진연구 지원사업입니다.",
+    "descEn": "A National Research Foundation of Korea grant supporting individual basic research by new and early-career researchers across all fields.",
     "scope": "korean",
     "restricted": false
   },
@@ -2759,6 +2941,8 @@
     "source": "https://dhc.severance.healthcare/dhc/publicnotice.do",
     "verified": "2026-07-02",
     "flag": "Part of the annual 이공분야 학술연구지원사업 cycle (~February); confirm current-year dates on NRF/IRIS.",
+    "descKo": "국내 박사학위자가 해외 연구기관에서 연구 역량을 키우도록 지원하는 한국연구재단의 박사후 해외연수 펠로우십입니다.",
+    "descEn": "A National Research Foundation of Korea fellowship supporting domestic PhD holders in conducting research and training at overseas institutions.",
     "scope": "korean",
     "restricted": false
   },
@@ -2789,6 +2973,8 @@
     "source": "https://ie.snu.ac.kr/notice/",
     "verified": "2026-07-02",
     "flag": "Part of the annual 학문후속세대지원 cycle (~February); confirm current-year dates on NRF/IRIS.",
+    "descKo": "박사후연구원이 국내 대학·정부출연연구소에서 연구를 이어가도록 지원하는 한국연구재단의 국내연수 펠로우십입니다.",
+    "descEn": "A National Research Foundation of Korea fellowship supporting postdoctoral research at domestic universities and national research institutes.",
     "scope": "korean",
     "restricted": false
   },
@@ -2819,6 +3005,8 @@
     "source": "https://www.hyundaimotorgroup.com/ko/news/CONT0000000000188051",
     "verified": "2026-07-02",
     "flag": "2026 registration schedule not yet announced.",
+    "descKo": "대학생 팀이 K-City 기반 가상 시뮬레이터에서 AI 엔드투엔드 자율주행 기술을 겨루는 국내 최대 규모의 자율주행 대회입니다.",
+    "descEn": "Korea's largest university-student autonomous-driving competition, held in a K-City-based virtual simulator focused on AI end-to-end driving.",
     "scope": "korean",
     "restricted": false
   },
@@ -2852,6 +3040,8 @@
     "source": "https://www.kasa.kr/boards/notice/38353/detail/board/notice/",
     "verified": "2026-07-02",
     "flag": "Prize amounts not stated in the notice; verify the current call at kadif.kr.",
+    "descKo": "3D 객체 검출, 카메라 의미 분할, 주변 차량 궤적 예측을 겨루는 과기정통부 주최 자율주행 AI 경진대회입니다.",
+    "descEn": "An MSIT-hosted autonomous-driving AI competition on 3D object detection, camera semantic segmentation, and surrounding-vehicle trajectory prediction.",
     "scope": "korean",
     "restricted": false
   },
@@ -2883,6 +3073,8 @@
     "source": "https://ievexpo.org/",
     "verified": "2026-07-02",
     "flag": "Registration opens months ahead of the July event; confirm 2026 (5th) dates on the expo site.",
+    "descKo": "대학생을 대상으로 자율주행·AI 실습 교육과 경주를 결합해 국제e-모빌리티엑스포와 함께 열리는 전기차 자율주행 대회입니다.",
+    "descEn": "A university-student EV autonomous-driving competition combining hands-on driving/AI training with a race, held alongside the International e-Mobility Expo.",
     "scope": "korean",
     "restricted": false
   },
@@ -2913,6 +3105,8 @@
     "source": "https://autonomouscar.or.kr/",
     "verified": "2026-07-02",
     "flag": "Eligibility/prize/2026 dates not on the landing page; verify via KIMAC recruitment notice.",
+    "descKo": "산업통상자원부가 주최하고 KIMAC이 운영하는 팀 단위 자율주행 경진대회입니다.",
+    "descEn": "A team-based autonomous-driving challenge organized by Korea's Ministry of Trade, Industry and Energy and managed by KIMAC.",
     "scope": "korean",
     "restricted": false
   },
@@ -2945,6 +3139,8 @@
     "source": "https://www.koti.re.kr/user/bbs/noticeView.do",
     "verified": "2026-07-02",
     "flag": "Prize amounts not detailed; KOTI also runs a rolling '교통연구' journal paper call.",
+    "descKo": "국가 교통 빅데이터를 활용해 정책 아이디어와 제품·서비스 개발을 겨루는 한국교통연구원 주최 데이터 활용 공모전입니다.",
+    "descEn": "A big-data competition hosted by the Korea Transport Institute, using national transportation data across policy-idea and product/service tracks.",
     "scope": "korean",
     "restricted": false
   },
@@ -2977,6 +3173,8 @@
     "source": "https://www.g-enews.com/article/Real-Estate/2025/05/202505211048072267a9fc143920_1",
     "verified": "2026-07-02",
     "flag": "Prize structure varies by edition/track; confirm current-year call on ex.co.kr.",
+    "descKo": "대학(원)생이 미래 고속도로를 주제로 아이디어나 논문을 제출해 겨루는 한국도로공사 주최 공모전입니다.",
+    "descEn": "A competition hosted by the Korea Expressway Corporation inviting university students to submit ideas or papers on the future of highways.",
     "scope": "korean",
     "restricted": false
   },
@@ -3008,6 +3206,8 @@
     "source": "https://littfair.kr/",
     "verified": "2026-07-02",
     "flag": "General AI-video/drawing contests (limited fit for research papers); KAIA's researcher channel is 국토교통 R&D 과제공고 at kaia.re.kr.",
+    "descKo": "국토교통 R&D 성과 박람회의 일환으로 AI 영상 공모 등 일반 참여형 공모전을 여는 국토교통부·KAIA 주관 행사입니다.",
+    "descEn": "Public contests such as an AI video competition run as part of the MOLIT/KAIA national land, infrastructure, and transport R&D technology fair.",
     "scope": "korean",
     "restricted": false
   },
@@ -3042,6 +3242,8 @@
     "source": "https://dacon.io/competitions",
     "verified": "2026-07-02",
     "flag": "Platform aggregator — individual competitions open/close throughout the year; check the live list.",
+    "descKo": "자율주행 센서·교통사고 위험 예측 등 모빌리티 머신러닝 대회가 수시로 열리는 국내 대표 데이터사이언스 경진 플랫폼입니다.",
+    "descEn": "Korea's leading data-science competition platform that regularly hosts mobility-related ML challenges such as autonomous-driving sensor and traffic-accident-risk prediction.",
     "scope": "korean",
     "restricted": false
   },
@@ -3065,6 +3267,8 @@
       "north-america"
     ],
     "eligibilityNote": "Within ~1yr of PhD (or PhD from 2025+), non-faculty preferred. Research presentations + faculty-career panels at MIT.",
+    "descKo": "차세대 토목·교통 학계 리더를 발굴하고 교원 임용을 돕는 라이징스타 워크샵입니다.",
+    "descEn": "A rising-stars workshop that identifies and mentors the next generation of civil & transportation faculty.",
     "membershipRequired": null,
     "deadline": "2026-07-05",
     "recurrence": "annual-07",
@@ -3096,6 +3300,8 @@
       "north-america"
     ],
     "eligibilityNote": "Outstanding PhD students & postdocs in Cyber-Physical Systems (incl. AV/ITS) pursuing academic careers.",
+    "descKo": "자율주행·ITS를 포함한 사이버물리시스템 분야 우수 신진 연구자를 위한 라이징스타 워크샵입니다.",
+    "descEn": "A rising-stars workshop for outstanding early-career researchers in cyber-physical systems, including AV and ITS.",
     "membershipRequired": null,
     "deadline": null,
     "recurrence": "annual",

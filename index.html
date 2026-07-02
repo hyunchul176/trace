@@ -62,6 +62,32 @@
   .cta-sub{font-size:13.5px;color:rgba(255,255,255,.76);margin-top:3px;}
   .btn-light{background:#fff;color:var(--accent-ink);border:0;border-radius:10px;padding:11px 18px;font:inherit;font-size:14px;font-weight:800;cursor:pointer;white-space:nowrap;}
   .btn-light:hover{background:#EEF1FB;}
+  .tabs{display:flex;gap:2px;flex-wrap:wrap;flex:1;justify-content:center;}
+  .hero-eyebrow{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.01em;color:var(--accent-ink);background:var(--accent-soft);border-radius:999px;padding:5px 13px;margin-bottom:16px;}
+  .spotlight{display:grid;grid-template-columns:1.7fr 1fr;gap:18px;margin:6px 0 8px;}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;}
+  .panel-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+  .panel-t{font-size:15px;font-weight:800;color:var(--ink);}
+  .panel-more{background:none;border:0;cursor:pointer;font:inherit;font-size:12.5px;font-weight:700;color:var(--slate);}
+  .panel-more:hover{color:var(--accent);}
+  .rec-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .rec-card{border:1px solid var(--line);border-radius:12px;padding:13px 14px;cursor:pointer;border-left:4px solid var(--cc,var(--line-strong));transition:border-color .15s,transform .15s,box-shadow .15s;}
+  .rec-card:hover{transform:translateY(-1px);border-color:var(--accent);box-shadow:0 8px 20px -14px rgba(22,26,36,.4);}
+  .rc-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px;}
+  .rec-card .ctile{width:34px;height:34px;border-radius:9px;}
+  .rec-card .ctile .svgi{width:18px;height:18px;}
+  .rec-card h4{font-size:14px;font-weight:700;margin:0 0 9px;line-height:1.3;letter-spacing:-.01em;}
+  .rc-reason{font-size:12px;color:var(--slate);line-height:1.4;}
+  .rc-rl{display:block;font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--slate-soft);margin-bottom:2px;}
+  .due-list{display:flex;flex-direction:column;}
+  .due-row{display:flex;gap:12px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);cursor:pointer;}
+  .due-row:last-child{border-bottom:0;}
+  .due-row:hover .due-name{color:var(--accent);}
+  .due-d{flex:none;font-size:13px;font-weight:800;color:var(--accent);width:50px;font-variant-numeric:tabular-nums;}
+  .due-info{min-width:0;}
+  .due-date{font-size:11px;color:var(--slate-soft);font-weight:600;}
+  .due-name{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.3;}
+  @media(max-width:860px){.spotlight{grid-template-columns:1fr;}.rec-cards{grid-template-columns:1fr;}}
   header.top{border-bottom:2px solid var(--ink);padding-bottom:20px;}
   .toprow{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;}
   .brand{display:flex;flex-direction:column;gap:6px;cursor:pointer;}
@@ -275,9 +301,8 @@
         <span class="bw">TRA<span class="dot">C</span>E</span>
         <span class="bs">For Transportation Researchers</span>
       </a>
+      <nav class="tabs" id="catNav"></nav>
       <div class="navright">
-        <button class="navghost" id="deadlinesLink" type="button"></button>
-        <button class="btn-primary" id="recoBtn" type="button"></button>
         <div class="lang" role="group" aria-label="Language">
           <button type="button" data-lang="ko">한국어</button>
           <button type="button" data-lang="en">EN</button>
@@ -285,16 +310,15 @@
         <a class="ghicon" id="ghLink" href="https://github.com/hyunchul176/trace" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"></a>
       </div>
     </div>
-    <div class="subnav">
-      <div class="scopenav" id="scopeNav"></div>
-      <span class="subnav-sep"></span>
-      <div class="catnav" id="catNav"></div>
-    </div>
     <section class="hero">
-      <div class="hero-text"><h1 id="heroH"></h1><p id="heroP"></p></div>
+      <div class="hero-text"><span class="hero-eyebrow" id="heroEyebrow"></span><h1 id="heroH"></h1><p id="heroP"></p></div>
       <div class="hero-art"></div>
     </section>
   </header>
+  <section class="spotlight">
+    <div class="panel rec-panel"><div class="panel-h"><span class="panel-t" id="recTitle"></span><button class="panel-more" id="recMore" type="button"></button></div><div class="rec-cards" id="recCards"></div></div>
+    <div class="panel due-panel"><div class="panel-h"><span class="panel-t" id="dueTitle"></span><button class="panel-more" id="dueAll" type="button"></button></div><div class="due-list" id="dueList"></div></div>
+  </section>
   <div id="listview">
     <div class="controls">
       <div class="rowseg">
@@ -343,8 +367,10 @@ window.__traceInit = function(){
   var UI = {
     ko:{
       tagline:"교통 연구를 위한 <b>어워드 · 챌린지 · 펠로우십 · 데이터셋</b> 큐레이션. 자율주행 포함, 국내·해외 망라.",
-      heroH:'연구의 가치를 인정받을<br><span class="acc">다음 기회를 찾아보세요</span>',
+      heroEyebrow:"TRACE · Transportation Research: Awards, Challenges & Events",
+      heroH:'연구의 가치를 인정받고,<br><span class="acc">더 큰 기회를 연결하세요.</span>',
       heroP:'교통 분야의 어워드·워크샵·챌린지·펠로우십을 한눈에 확인하고<br>연구 성과를 더 넓은 무대로 연결하세요.',
+      tabHome:"홈", recTitle:"맞춤 추천", recMore:"더보기", dueTitle:"다가오는 마감일", dueAll:"전체 보기", korScope:"국내(한국) 기회만", recWhy:"추천 이유",
       navDeadlines:"마감 일정", ctaTitle:"마감 임박 공고를 놓치지 마세요", ctaSub:"관심 분야를 골라 나에게 맞는 기회를 바로 찾아보세요.", ctaBtn:"나에게 맞는 기회 찾기",
       about:"About", sKr:"Korean", sIntl:"International", sTotal:"전체", sOpen:"진행 중", sSoon:"임박",
       scopeIntl:"International", scopeKr:"Korean",
@@ -380,8 +406,10 @@ window.__traceInit = function(){
     },
     en:{
       tagline:"A curated hub of <b>Awards · Challenges · Fellowships · Datasets</b> for transportation research — autonomous driving included, Korean & international.",
-      heroH:'Find your next<br><span class="acc">recognition &amp; opportunity</span>',
+      heroEyebrow:"TRACE · Transportation Research: Awards, Challenges & Events",
+      heroH:'Get your work recognized,<br><span class="acc">and reach a bigger stage.</span>',
       heroP:'Awards, workshops, challenges and fellowships in transportation — all in one place,<br>connecting your research to a wider stage.',
+      tabHome:"Home", recTitle:"For you", recMore:"More", dueTitle:"Upcoming deadlines", dueAll:"View all", korScope:"Korean (domestic) only", recWhy:"Why",
       navDeadlines:"Deadlines", ctaTitle:"Don\'t miss upcoming deadlines", ctaSub:"Pick your fields and find opportunities that fit — right now.", ctaBtn:"Find opportunities for me",
       about:"About", sKr:"Korean", sIntl:"International", sTotal:"Total", sOpen:"Open", sSoon:"Soon",
       scopeIntl:"International", scopeKr:"Korean",
@@ -448,7 +476,7 @@ window.__traceInit = function(){
   };
   function subtypeLabel(e){var m=SUBTYPE[e.subtype];return m?m[state.lang]:UI[state.lang][e.category];}
   function oneLiner(e){var s=subtypeLabel(e);if(e.category==="award"||e.category==="fellowship"){var g=coarseOf(e)[0];if(g)s+=" · "+GROUPS[g][state.lang];}return s;}
-  function shortWhen(e,s){var t=UI[state.lang];if(s.dl)return s.dl;if(s.key==="recurring"){var m=parseMonth(e.recurrence);return m?(t.pRecur+" ~"+MONTHS[state.lang][m-1]):t.pRecur;}if(s.key==="rolling")return t.pRolling;if(s.key==="tbd")return t.pTbd;if(s.key==="past")return t.pPast;return "";}
+  function shortWhen(e,s){var t=UI[state.lang];if(s.dl)return s.dl;if(s.key==="recurring"){var m=parseMonth(e.recurrence);if(m){var y=nextMonthDate(m).getFullYear();return state.lang==="ko"?("~"+y+"년 "+MONTHS.ko[m-1]+" 예상"):("~"+MONTHS.en[m-1]+" "+y+" (est.)");}return t.pRecur;}if(s.key==="rolling")return t.pRolling;if(s.key==="tbd")return t.pTbd;if(s.key==="past")return t.pPast;return "";}
   var LOGOS = (typeof window!=="undefined") && window.__logos===true;
   function svg(inner){return '<svg class="svgi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+inner+'</svg>';}
   var ICONS={
@@ -484,7 +512,7 @@ window.__traceInit = function(){
   function logoHTML(e){var mono=esc(orgMono(e));var img=(LOGOS&&orgHost(e))?'<img src="https://www.google.com/s2/favicons?sz=64&domain='+esc(orgHost(e))+'" alt="" loading="lazy" onerror="this.remove()">':'';return '<span class="logo cat-'+e.category+'"><span class="mm">'+mono+'</span>'+img+'</span>';}
   function tileHTML(e){var host=orgHost(e);var img=(LOGOS&&host)?'<img src="https://www.google.com/s2/favicons?sz=64&domain='+esc(host)+'" alt="" loading="lazy" onerror="this.remove()">':'';return '<span class="ctile cat-'+e.category+'">'+catIcon(e.category)+img+'</span>';}
   function primaryFieldLabel(e){var g=coarseOf(e)[0];return g?GROUPS[g][state.lang]:"";}
-  function summaryText(e){var f=primaryFieldLabel(e),sub=subtypeLabel(e),c=e.category;
+  function summaryText(e){if(state.lang==="ko"&&e.descKo)return e.descKo;if(state.lang==="en"&&e.descEn)return e.descEn;var f=primaryFieldLabel(e),sub=subtypeLabel(e),c=e.category;
     if(state.lang==="ko"){
       if(c==="award")return f?f+" 분야의 "+sub+"입니다.":sub+"입니다.";
       if(c==="challenge")return f?f+" 관련 "+sub+"입니다.":sub+"입니다.";
@@ -497,7 +525,7 @@ window.__traceInit = function(){
     return f?sub+" in "+f+".":sub+".";
   }
 
-  var state = {lang:"ko",scope:"international",cat:"all",fields:[],careers:[],month:"",q:"",sort:"deadline",openOnly:false,koreaOnly:false,funded:false,membFree:false};
+  var state = {lang:"ko",cat:"all",fields:[],careers:[],month:"",q:"",sort:"deadline",openOnly:false,korScope:false,funded:false,membFree:false};
   var today = new Date(); today.setHours(0,0,0,0);
 
   function parseMonth(rec){ if(!rec) return null; var m=/^annual-(\d{2})$/.exec(rec); return m?parseInt(m[1],10):null; }
@@ -515,13 +543,13 @@ window.__traceInit = function(){
     if(rec==="one-time") return {key:"past",pill:t.pPast,sort:8e15,sub:t.dPastEd,dl:e.deadline||null};
     if(rec==="tbd") return {key:"tbd",pill:t.pTbd,sort:6.5e15,sub:t.dTbd,dl:null};
     var mon=parseMonth(rec);
-    if(mon){var nd=nextMonthDate(mon);return {key:"recurring",pill:t.pRecur+" · "+t.pNext+MONTHS[state.lang][mon-1],sort:nd.getTime()+1e11,sub:t.dNext+" ~"+MONTHS[state.lang][mon-1]+" "+nd.getFullYear(),dl:null};}
+    if(mon){var nd=nextMonthDate(mon);return {key:"recurring",pill:t.pRecur,sort:nd.getTime()+1e11,sub:"",dl:null};}
     var recurLab=rec==="biennial"?(state.lang==="ko"?"격년":"Biennial"):rec==="triennial"?(state.lang==="ko"?"3년마다":"Triennial"):t.pRecur;
     return {key:"recurring",pill:recurLab,sort:6e15,sub:"",dl:null};
   }
   function careerMatch(e,list){ if(!list.length) return true; if((e.career||[]).indexOf("open")>=0) return true; var g=careerGroupsOf(e); return list.some(function(x){return g.indexOf(x)>=0;}); }
   function matches(e){
-    if(e.scope!==state.scope) return false;
+    if(state.korScope && e.scope!=="korean") return false;
     if(state.cat!=="all" && e.category!==state.cat) return false;
     if(state.fields.length){var cg=coarseOf(e);if(!state.fields.some(function(g){return cg.indexOf(g)>=0;})) return false;}
     if(!careerMatch(e,state.careers)) return false;
@@ -586,7 +614,7 @@ window.__traceInit = function(){
   function detailHTML(e){
     var t=UI[state.lang]; var s=computeStatus(e);
     var badges='<span class="cicon cat-'+e.category+'">'+catIcon(e.category)+'</span><span class="cat" data-cat="'+e.category+'">'+esc(t[e.category])+'</span><span class="scopetag '+e.scope+'">'+(e.scope==="korean"?esc(t.sKr):esc(t.sIntl))+'</span><span class="pill '+s.key+'">'+esc(s.pill)+'</span>';
-    var big='<span class="dl">'+(s.dl?esc(s.dl):(s.key==="rolling"?esc(t.pRolling):s.key==="tbd"?esc(t.pTbd):esc(t.pRecur)))+'</span>'+(s.sub?'<span class="dsub">'+esc(s.sub)+'</span>':'');
+    var big='<span class="dl">'+esc(shortWhen(e,s)||t.pRecur)+'</span>';
     var fields=coarseOf(e).map(function(g){return esc(GROUPS[g][state.lang]);}).join(", ");
     var careers=esc(careerShort(e));
     var regions=(e.regions||[]).map(function(r){return REGIONS[r]?esc(REGIONS[r][state.lang]):esc(r);}).join(", ");
@@ -692,19 +720,29 @@ window.__traceInit = function(){
   }
 
   function chip(cls,n,l){return '<div class="schip '+cls+'"><span class="n">'+n+'</span><span class="l">'+esc(l)+'</span></div>';}
+  function renderSpotlight(){
+    var t=UI[state.lang];
+    var withD=DATA.map(function(e){return {e:e,s:computeStatus(e)};}).filter(function(x){return x.s.key==="open"||x.s.key==="soon"||x.s.key==="recurring";}).sort(function(a,b){return a.s.sort-b.s.sort;});
+    document.getElementById("recTitle").textContent=t.recTitle;
+    document.getElementById("recMore").textContent=t.recMore+" ›";
+    document.getElementById("dueTitle").textContent=t.dueTitle;
+    document.getElementById("dueAll").textContent=t.dueAll+" ›";
+    var catKo={award:"어워드",challenge:"챌린지",fellowship:"펠로우십",dataset:"데이터셋",workshop:"워크샵"};
+    document.getElementById("recCards").innerHTML=withD.slice(0,3).map(function(x){var e=x.e,s=x.s;var days=Math.max(0,Math.round((s.sort-today)/MS_DAY));var reason=(s.key==="open"||s.key==="soon")?(state.lang==="ko"?("마감 D-"+days+" · 지금 지원 가능"):("Open now · D-"+days)):(state.lang==="ko"?("매년 열리는 "+(catKo[e.category]||"기회")):("A recurring "+t[e.category].toLowerCase()));return '<div class="rec-card cat-'+e.category+'" data-id="'+esc(e.id)+'"><div class="rc-top">'+tileHTML(e)+'<span class="pill '+s.key+'">'+esc(s.pill)+'</span></div><h4>'+esc(e.title)+'</h4><div class="rc-reason"><span class="rc-rl">'+esc(t.recWhy)+'</span>'+esc(reason)+'</div></div>';}).join("");
+    document.getElementById("dueList").innerHTML=withD.slice(0,5).map(function(x){var e=x.e,s=x.s;var days=Math.max(0,Math.round((s.sort-today)/MS_DAY));return '<div class="due-row" data-id="'+esc(e.id)+'"><span class="due-d">D-'+days+'</span><div class="due-info"><div class="due-date">'+esc(shortWhen(e,s))+'</div><div class="due-name">'+esc(e.title)+'</div></div></div>';}).join("");
+  }
   function buildStatic(){
     var t=UI[state.lang];
+    document.getElementById("heroEyebrow").textContent=t.heroEyebrow;
     document.getElementById("heroH").innerHTML=t.heroH;
     document.getElementById("heroP").innerHTML=t.heroP;
     var ha=document.querySelector(".hero-art"); if(ha&&!ha.getAttribute("data-done")){ha.innerHTML=HERO_ART;ha.setAttribute("data-done","1");}
     var gh=document.getElementById("ghLink"); if(gh&&!gh.getAttribute("data-done")){gh.innerHTML=svg(ICONS.github);gh.setAttribute("data-done","1");}
-    document.getElementById("recoBtn").innerHTML=svg(ICONS.target)+'<span>'+esc(t.recoCardT)+'</span>';
-    document.getElementById("deadlinesLink").innerHTML=svg(ICONS.calendar)+'<span>'+esc(t.navDeadlines)+'</span>';
     document.documentElement.lang=state.lang;
     document.getElementById("search").placeholder=t.searchPh;
-    var sc=[["international",t.scopeIntl],["korean",t.scopeKr]];
-    document.getElementById("scopeNav").innerHTML=sc.map(function(x){return '<button class="navtab '+(state.scope===x[0]?"active":"")+'" data-scope="'+x[0]+'">'+esc(x[1])+'</button>';}).join("");
-    document.getElementById("catNav").innerHTML=CATS.map(function(c){return '<button class="navtab '+(state.cat===c?"active":"")+'" data-cat="'+c+'">'+esc(t[c])+'</button>';}).join("");
+    var tabs=[["all",t.tabHome]].concat(CATS.map(function(c){return [c,t[c]];}));
+    document.getElementById("catNav").innerHTML=tabs.map(function(x){return '<button class="navtab '+(state.cat===x[0]?"active":"")+'" data-cat="'+x[0]+'">'+esc(x[1])+'</button>';}).join("");
+    renderSpotlight();
     var cb=document.getElementById("ctaBanner"); if(cb) cb.innerHTML='<div class="cta-left"><span class="cta-ic">'+svg(ICONS.bell)+'</span><div><div class="cta-tt">'+esc(t.ctaTitle)+'</div><div class="cta-sub">'+esc(t.ctaSub)+'</div></div></div><button class="btn-light" id="ctaReco" type="button">'+esc(t.ctaBtn)+' ›</button>';
     var sorts=[["deadline",t.sortDeadline],["month",t.sortMonth],["name",t.sortName],["verified",t.sortVerified]];
     document.getElementById("sortsel").innerHTML=sorts.map(function(x){return '<option value="'+x[0]+'" '+(state.sort===x[0]?"selected":"")+'>'+esc(x[1])+'</option>';}).join("");
@@ -720,7 +758,8 @@ window.__traceInit = function(){
     document.getElementById("rowFields").innerHTML=fh;
     document.getElementById("rowCareer").innerHTML='<span class="filterlabel">'+esc(t.careerLabel)+'</span>'+CGROUP_ORDER.map(function(g){return '<button class="chip cr '+(state.careers.indexOf(g)>=0?"on":"")+'" data-career="'+g+'">'+esc(CGROUPS[g][state.lang])+'</button>';}).join("");
     document.getElementById("rowToggles").innerHTML=
-      '<button class="chip tog '+(state.openOnly?"on":"")+'" data-tog="openOnly">'+esc(t.togOpen)+'</button>';
+      '<button class="chip tog '+(state.openOnly?"on":"")+'" data-tog="openOnly">'+esc(t.togOpen)+'</button>'+
+      '<button class="chip tog '+(state.korScope?"on":"")+'" data-tog="korScope">'+esc(t.korScope)+'</button>';
     document.getElementById("aboutTitle").textContent=t.aboutTitle;
     document.getElementById("aboutBody").textContent=t.aboutBody;
     document.getElementById("roleAdvisor").textContent=t.roleAdvisor;
@@ -748,13 +787,14 @@ window.__traceInit = function(){
       return;
     }
     if(el.matches(".lang button")){state.lang=el.getAttribute("data-lang");buildStatic();if(document.getElementById("detail").style.display!=="none"){route();}else{render();}return;}
-    if(el.matches("#recoBtn")||el.matches("#ctaReco")||(el.closest&&(el.closest("#recoBtn")||el.closest("#ctaReco")))){openReco();return;}
-    if(el.matches("#deadlinesLink")||(el.closest&&el.closest("#deadlinesLink"))){state.sort="month";buildStatic();render();var rr=document.getElementById("results");if(rr&&rr.scrollIntoView)rr.scrollIntoView({behavior:"smooth",block:"start"});return;}
+    if(el.matches("#recMore")||el.matches("#ctaReco")||(el.closest&&(el.closest("#recMore")||el.closest("#ctaReco")))){openReco();return;}
+    if(el.matches("#dueAll")||(el.closest&&el.closest("#dueAll"))){state.sort="deadline";state.cat="all";buildStatic();render();var rr=document.getElementById("results");if(rr&&rr.scrollIntoView)rr.scrollIntoView({behavior:"smooth",block:"start"});return;}
     if(el.matches("#dback")){nav("");return;}
     if(el.matches("#shareBtn")){var b=el;var href=location.href;if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(href).then(function(){b.textContent=UI[state.lang].shared;setTimeout(function(){b.textContent=b.getAttribute("data-def");},1500);});}return;}
     var rc=el.closest && el.closest(".relcard"); if(rc){nav("#/o/"+rc.getAttribute("data-id"));return;}
     if(el.matches("#brand")||(el.closest&&el.closest("#brand"))){nav("");return;}
-    var stab=el.closest&&el.closest("#scopeNav .navtab"); if(stab){state.scope=stab.getAttribute("data-scope");buildStatic();render();return;}
+    var rcd=el.closest&&el.closest(".rec-card"); if(rcd){nav("#/o/"+rcd.getAttribute("data-id"));return;}
+    var drw=el.closest&&el.closest(".due-row"); if(drw){nav("#/o/"+drw.getAttribute("data-id"));return;}
     var ctab=el.closest&&el.closest("#catNav .navtab"); if(ctab){var cc=ctab.getAttribute("data-cat");state.cat=(state.cat===cc?"all":cc);buildStatic();render();return;}
     if(el.matches(".chip.fld")){var f=el.getAttribute("data-field");var i=state.fields.indexOf(f);if(i>=0)state.fields.splice(i,1);else state.fields.push(f);buildStatic();render();return;}
     if(el.matches(".chip.cr")){var c=el.getAttribute("data-career");var ic=state.careers.indexOf(c);if(ic>=0)state.careers.splice(ic,1);else state.careers.push(c);buildStatic();render();return;}
