@@ -244,7 +244,15 @@
   .logo{flex:none;position:relative;width:26px;height:26px;border-radius:7px;overflow:hidden;background:color-mix(in srgb,var(--cc) 12%,#fff);border:1px solid var(--line);display:grid;place-items:center;}
   .logo .mm{font-size:9px;font-weight:800;color:var(--cc);letter-spacing:-.03em;line-height:1;padding:0 1px;}
   .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:3px;}
-  .cfoot .org{margin:0;font-size:12px;color:var(--slate-soft);font-weight:600;flex:1;min-width:0;line-height:1.35;}
+  .cfoot .org{margin:0;font-size:12px;color:var(--slate-soft);font-weight:600;min-width:0;line-height:1.35;}
+  .cfoot-org{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;align-items:flex-start;}
+  .orgtag{font-size:10.5px;font-weight:700;padding:2px 8px;border-radius:6px;background:var(--ground);border:1px solid var(--line);color:var(--slate);white-space:nowrap;}
+  .orgtag.flag{background:#FBF3E2;border-color:#E7D6AE;color:#8A6412;}
+  .orgtag.t-government{background:#EAF0FB;border-color:#CBD8F5;color:#33468f;}
+  .orgtag.t-company{background:#EEEFF3;border-color:#DDE0E8;color:#4a5162;}
+  .orgtag.t-university{background:#EAF3EE;border-color:#CDE6D8;color:#0f6f52;}
+  .orgtag.t-foundation{background:#F3EFFB;border-color:#DED3F3;color:#5a4aa2;}
+  .detail .dorg{flex-wrap:wrap;} .detail .orgtag{font-size:11.5px;}
   .offbtn{flex:none;font-size:12.5px;font-weight:700;color:var(--accent);text-decoration:none;border:1px solid var(--line-strong);border-radius:8px;padding:6px 12px;white-space:nowrap;transition:border-color .14s,background .14s;display:inline-flex;align-items:center;gap:5px;}
   .offbtn:hover{border-color:var(--accent);background:var(--accent-soft);}
   .detail .whatis{font-size:16px;margin:8px 0 4px;}
@@ -557,6 +565,17 @@ window.__traceInit = function(){
   function logoHTML(e){var mono=esc(orgMono(e));var src=logoSrc(e);var img=(LOGOS&&src)?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':'';return '<span class="logo cat-'+e.category+'"><span class="mm">'+mono+'</span>'+img+'</span>';}
   function logoSrc(e){if(e.logo)return e.logo;var host=orgHost(e);return host?("https://www.google.com/s2/favicons?sz=64&domain="+host):"";}
   function tileHTML(e){var src=logoSrc(e);var img=(LOGOS&&src)?'<img src="'+esc(src)+'" alt="" onerror="this.remove()">':'';return '<span class="ctile cat-'+e.category+'">'+catIcon(e.category)+img+'</span>';}
+  var ORGLABEL={"society-flagship":{ko:"국제 대표 학회",en:"Top intl. society"},"society-major":{ko:"국제 학회",en:"Intl. society"},"society-regional":{ko:"지역 학회",en:"Regional society"},"university":{ko:"대학",en:"University"},"government":{ko:"정부·공공기관",en:"Government"},"company":{ko:"기업",en:"Industry"},"foundation":{ko:"재단·비영리",en:"Foundation"},"org":{ko:"기관",en:"Organization"}};
+  function orgClass(org){var o=(org||"").toLowerCase();
+    if(/ieee|informs|transportation research board|trb|asce|acm|sigkdd|kdd|cvpr|world conference on transport|wctrs/.test(o)) return "society-flagship";
+    if(/iatbr|institute of transportation engineers|ite|iros|icra|robotics society/.test(o)) return "society-major";
+    if(/eastern asia|easts|korean society of transportation|대한교통|korea institute of intelligent|한국its|service management/.test(o)) return "society-regional";
+    if(/universit|institute of technology|mit|kaist|berkeley|rwth|karlsruhe|kit|toyota technological/.test(o)) return "university";
+    if(/ministry|department of transportation|federal highway|fhwa|dot|caltrans|new york city|nyc|국토교통|과학기술정보|산업통상|european commission|horizon|national research foundation|한국연구재단|kaia|korea transport institute|한국교통연구원|한국도로공사|expressway|govtech|kadif|kimac/.test(o)) return "government";
+    if(/waymo|nvidia|qualcomm|google|alphabet|motional|argo|huawei|grab|yango|amazon|kaggle|zindi|dacon|hyundai|현대|bosch|iarai|here technolog|levelxdata|embodied ai|opendrivelab|shanghai ai|baidu|alibaba/.test(o)) return "company";
+    if(/foundation|eno center|vref|volvo|wts|humboldt|e-mobility expo/.test(o)) return "foundation";
+    return "org";}
+  function orgTag(e){var c=orgClass(e.org);return '<span class="orgtag t-'+c.split("-")[0]+(c==="society-flagship"?" flag":"")+'">'+esc(ORGLABEL[c][state.lang])+'</span>';}
   var AMODE={auto:"amAuto",apply:"amApply",entry:"amEntry"};
   function amodeLabel(e){return e.applyMode?UI[state.lang][AMODE[e.applyMode]]:"";}
   function amodeBadge(e){return e.applyMode?'<span class="amode am-'+e.applyMode+'">'+esc(amodeLabel(e))+'</span>':"";}
@@ -642,7 +661,7 @@ window.__traceInit = function(){
         '<div class="row"><span class="ri">'+svg(ICONS.calendar)+'</span><span class="rl">'+esc(t.kDeadline)+'</span><span class="rv">'+esc(shortWhen(e,s))+'</span></div>'+
         prizeRow+
       '</div>'+
-      '<div class="cfoot"><span class="org">'+esc(e.org)+'</span><span class="chev">'+svg(ICONS.chevron)+'</span></div></div>';
+      '<div class="cfoot"><div class="cfoot-org"><span class="org">'+esc(e.org)+'</span>'+orgTag(e)+'</div><span class="chev">'+svg(ICONS.chevron)+'</span></div></div>';
   }
 
   function render(){
@@ -709,7 +728,7 @@ window.__traceInit = function(){
     var relHTML=rel.length?'<div class="dsection"><h3>'+esc(t.relatedTitle)+'</h3><div class="relgrid">'+rel.map(function(o){return '<div class="relcard" data-id="'+esc(o.id)+'"><div class="rc">'+esc(t[o.category])+'</div><div class="rt">'+esc(o.title)+'</div></div>';}).join("")+'</div></div>':'';
     return '<button class="dback" id="dback">'+esc(t.dback)+'</button>'+
       '<div class="dhead">'+badges+'</div>'+
-      '<div class="dorg cat-'+e.category+'">'+logoHTML(e)+'<span>'+esc(e.org)+'</span></div>'+
+      '<div class="dorg cat-'+e.category+'">'+logoHTML(e)+'<span>'+esc(e.org)+'</span>'+orgTag(e)+'</div>'+
       '<h2>'+esc(e.title)+'</h2>'+((e.titleKo&&state.lang==="ko")?'<div class="dko">'+esc(e.titleKo)+'</div>':'')+
       '<div class="whatis">'+esc(oneLiner(e))+'</div>'+
       '<div class="forwho"><span class="fw-l">'+esc(t.forWho)+'</span>'+esc(careerShort(e))+'</div>'+
