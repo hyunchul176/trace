@@ -377,6 +377,7 @@
       </div>
       <div class="rowfilters" id="rowFields"></div>
       <div class="rowfilters" id="rowCareer"></div>
+      <div class="rowfilters" id="rowAmode"></div>
       <div class="rowfilters" id="rowToggles"></div>
     </div>
     <div class="countbar"><div class="countline" id="countline"></div><div class="viewtoggle" id="viewToggle"></div></div>
@@ -593,7 +594,7 @@ window.__traceInit = function(){
     return f?sub+" in "+f+".":sub+".";
   }
 
-  var state = {lang:"ko",cat:"all",fields:[],careers:[],month:"",q:"",sort:"deadline",view:"card",openOnly:false,hideKor:false,funded:false,membFree:false};
+  var state = {lang:"ko",cat:"all",fields:[],careers:[],amodes:[],month:"",q:"",sort:"deadline",view:"card",openOnly:false,hideKor:false,funded:false,membFree:false};
   var today = new Date(); today.setHours(0,0,0,0);
 
   function parseMonth(rec){ if(!rec) return null; var m=/^annual-(\d{2})$/.exec(rec); return m?parseInt(m[1],10):null; }
@@ -621,6 +622,7 @@ window.__traceInit = function(){
     if(state.cat!=="all" && e.category!==state.cat) return false;
     if(state.fields.length){var cg=coarseOf(e);if(!state.fields.some(function(g){return cg.indexOf(g)>=0;})) return false;}
     if(!careerMatch(e,state.careers)) return false;
+    if(state.amodes.length && state.amodes.indexOf(e.applyMode||"")<0) return false;
     if(state.month){ var mo=monthOf(e); if(state.month==="~"){ if(mo!==null) return false; } else if(mo!==parseInt(state.month,10)) return false; }
     if(state.koreaOnly && e.restricted) return false;
     if(state.funded && !hasFunding(e)) return false;
@@ -840,10 +842,11 @@ window.__traceInit = function(){
     var present={}; DATA.forEach(function(e){coarseOf(e).forEach(function(g){present[g]=1;});});
     var gkeys=GROUP_ORDER.filter(function(g){return present[g];});
     var fh='<span class="filterlabel">'+esc(t.fieldsLabel)+'</span>'+gkeys.map(function(g){return '<button class="chip fld '+(state.fields.indexOf(g)>=0?"on":"")+'" data-field="'+g+'">'+esc(GROUPS[g][state.lang])+'</button>';}).join("");
-    var anyFilter=state.fields.length||state.careers.length||state.month||state.q||state.openOnly||state.hideKor||state.funded||state.membFree||state.cat!=="all";
+    var anyFilter=state.fields.length||state.careers.length||state.amodes.length||state.month||state.q||state.openOnly||state.hideKor||state.funded||state.membFree||state.cat!=="all";
     if(anyFilter) fh+='<button class="clearbtn" id="clearBtn">'+esc(t.clear)+'</button>';
     document.getElementById("rowFields").innerHTML=fh;
     document.getElementById("rowCareer").innerHTML='<span class="filterlabel">'+esc(t.careerLabel)+'</span>'+CGROUP_ORDER.map(function(g){return '<button class="chip cr '+(state.careers.indexOf(g)>=0?"on":"")+'" data-career="'+g+'">'+esc(CGROUPS[g][state.lang])+'</button>';}).join("");
+    document.getElementById("rowAmode").innerHTML='<span class="filterlabel">'+esc(t.amLabel)+'</span>'+[["auto",t.amAuto],["apply",t.amApply],["entry",t.amEntry]].map(function(x){return '<button class="chip am '+(state.amodes.indexOf(x[0])>=0?"on":"")+'" data-am="'+x[0]+'">'+esc(x[1])+'</button>';}).join("");
     document.getElementById("rowToggles").innerHTML=
       '<span class="filterlabel">'+esc(t.optLabel)+'</span>'+
       '<button class="chip tog '+(state.openOnly?"on":"")+'" data-tog="openOnly">'+esc(t.togOpen)+'</button>'+
@@ -886,8 +889,9 @@ window.__traceInit = function(){
     var ctab=el.closest&&el.closest("#catNav .navtab"); if(ctab){var cc=ctab.getAttribute("data-cat");state.cat=(state.cat===cc?"all":cc);buildStatic();render();return;}
     if(el.matches(".chip.fld")){var f=el.getAttribute("data-field");var i=state.fields.indexOf(f);if(i>=0)state.fields.splice(i,1);else state.fields.push(f);buildStatic();render();return;}
     if(el.matches(".chip.cr")){var c=el.getAttribute("data-career");var ic=state.careers.indexOf(c);if(ic>=0)state.careers.splice(ic,1);else state.careers.push(c);buildStatic();render();return;}
+    if(el.matches(".chip.am")){var am=el.getAttribute("data-am");var ia=state.amodes.indexOf(am);if(ia>=0)state.amodes.splice(ia,1);else state.amodes.push(am);buildStatic();render();return;}
     if(el.matches(".chip.tog")){var k2=el.getAttribute("data-tog");state[k2]=!state[k2];buildStatic();render();return;}
-    if(el.matches("#clearBtn")){state.fields=[];state.careers=[];state.month="";state.q="";state.openOnly=false;state.hideKor=false;state.funded=false;state.membFree=false;state.cat="all";document.getElementById("search").value="";buildStatic();render();return;}
+    if(el.matches("#clearBtn")){state.fields=[];state.careers=[];state.amodes=[];state.month="";state.q="";state.openOnly=false;state.hideKor=false;state.funded=false;state.membFree=false;state.cat="all";document.getElementById("search").value="";buildStatic();render();return;}
     var vbtn=el.closest&&el.closest("#viewToggle button"); if(vbtn){state.view=vbtn.getAttribute("data-view");buildStatic();render();return;}
     var card=el.closest && el.closest(".card, .lrow"); if(card && !(el.closest&&el.closest("a"))){nav("#/o/"+card.getAttribute("data-id"));return;}
   });
